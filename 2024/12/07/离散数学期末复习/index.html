@@ -21,7 +21,7 @@
   
     <meta name="description" content="第一章 集合 1.描述集合的方式 1.列举法 2.部分列举法 3.命题法 4.归纳定义法  用这种方法定义一个非空集合A时，一般包含以下三步： i）基本项 已知某些元素（常用\(S_0\)表示由这些元素组成的非空集合）属于A（即\(S_0 \subseteq A\)）。这是构造A的基础，并保证A*不空。 ii）归纳项 给出一组归纳规则，从A中的元素出发，依据这些规则所获得的">
 <meta property="og:type" content="article">
-<meta property="og:title" content="离散数学期末复习（进行中）">
+<meta property="og:title" content="离散数学期末复习">
 <meta property="og:url" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/index.html">
 <meta property="og:site_name" content="Nanxer&#39;s blog">
 <meta property="og:description" content="第一章 集合 1.描述集合的方式 1.列举法 2.部分列举法 3.命题法 4.归纳定义法  用这种方法定义一个非空集合A时，一般包含以下三步： i）基本项 已知某些元素（常用\(S_0\)表示由这些元素组成的非空集合）属于A（即\(S_0 \subseteq A\)）。这是构造A的基础，并保证A*不空。 ii）归纳项 给出一组归纳规则，从A中的元素出发，依据这些规则所获得的">
@@ -29,8 +29,27 @@
 <meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/2.4.png">
 <meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/2.5.png">
 <meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/3.11.png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/4.5.png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/4.8.png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.1.png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.2.png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.3.png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(1).png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(2).png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(3).png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(4).png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(5).png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(6).png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(7).png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(8).png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.5.png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.6.png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.7%20(1).png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.7%20(2).png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/7.15.png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/7.19.png">
 <meta property="article:published_time" content="2024-12-07T01:24:52.000Z">
-<meta property="article:modified_time" content="2024-12-09T09:29:38.496Z">
+<meta property="article:modified_time" content="2024-12-09T13:05:17.588Z">
 <meta property="article:author" content="Nanxer">
 <meta property="article:tag" content="期末复习">
 <meta name="twitter:card" content="summary_large_image">
@@ -38,7 +57,7 @@
   
   
   
-  <title>离散数学期末复习（进行中） - Nanxer&#39;s blog</title>
+  <title>离散数学期末复习 - Nanxer&#39;s blog</title>
 
   <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
@@ -236,7 +255,7 @@
       <div class="banner-text text-center fade-in-up">
         <div class="h2">
           
-            <span id="subtitle" data-typed-text="离散数学期末复习（进行中）"></span>
+            <span id="subtitle" data-typed-text="离散数学期末复习"></span>
           
         </div>
 
@@ -264,7 +283,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          4.2k 字
+          7.7k 字
         
       </span>
     
@@ -325,12 +344,12 @@
       <div class="container nopadding-x-md" id="board-ctn">
         <div id="board">
           <article class="post-content mx-auto">
-            <h1 id="seo-header">离散数学期末复习（进行中）</h1>
+            <h1 id="seo-header">离散数学期末复习</h1>
             
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2024-12-09T17:29:38+08:00
+                    本文最后更新于 2024-12-09T21:05:17+08:00
                   
                   
 
@@ -792,6 +811,292 @@ f = h ◦ f 时，皆有 g = h。</p></li>
 <li><p>在一般规则的基础上，与命题的含义相结合进行连词的符号化，选取合适的逻辑联结词；</p></li>
 <li><p>可将符号化后的命题逻辑转换回自然语言表达的命题，对比二者的含义，可用来检查符号化结果是否正确。</p></li>
 </ol>
+<h2 id="永真永假与可满足">3.永真、永假与可满足</h2>
+<p>设 ϕ 是合式公式。</p>
+<ol type="1">
+<li><p>如果 ϕ 在任何指派下真值均为 T，则称 ϕ
+为永真式或重言式（tautology）；</p></li>
+<li><p>如果 ϕ 在任何指派下真值均为 F，则称 ϕ
+为永假式或矛盾式（contradiction）；</p></li>
+<li><p>如果 ϕ 至少在一个指派下真值为 T，则称 ϕ
+为可满足的（satisfiable）。</p></li>
+</ol>
+<h2 id="代换法">4.代换法</h2>
+<p>设 ϕ 是包含 n 个命题变元 P1, P2, · · · , Pn 的合式公式，Pi1, Pi2, · ·
+· , Pir（1 ⩽ r ⩽ n）为其中 r 个不同的命题变元，用合式公式 ψ1, ψ2, · · ·
+, ψr 分别同时取代 ϕ 中的 Pi1, Pi2, · · · , Pir 所得到的新合式公式称为 ϕ
+的一个代换实例。</p>
+<h2 id="常用等价式">5.常用等价式</h2>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/4.5.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="置换与代换">6.置换与代换</h2>
+<p>区别：</p>
+<ol type="1">
+<li><p>被动对象：代入是对命题变元进行取代，而置换是对分子公式进行取代。</p></li>
+<li><p>主动对象：可用任意合式公式代入命题变元，而仅可用与分子公式等价的合式公式置换该分子公式。</p></li>
+<li><p>位置：代入必须取代该命题变元的所有出现，而置换可以取代该分子公式的若干出现。</p></li>
+<li><p>结果：代入后得到的新公式与原公式不一定等价，而置换后得到的新公式必与原公式等价。</p></li>
+</ol>
+<h2 id="对偶式">7.对偶式</h2>
+<p>设合式公式 ϕ 只包含逻辑联结词 ¬, ∨, ∧，在 ϕ 中，用 ∧ 代替 ∨，用 ∨
+代替 ∧，用 T 代替 F，用 F 代替 T，所得到的合式公式称为 ϕ 的对偶式，记为
+ϕ ∗。</p>
+<p><strong>对偶原理</strong></p>
+<p>设 ϕ 与 ψ 是只包含逻辑联结词 ¬, ∧, ∨ 的合式公式，如果 ϕ ⇔ ψ，则 ϕ ∗ ⇔
+ψ ∗。</p>
+<h2 id="常用蕴含式">8.常用蕴含式</h2>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/4.8.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="主范式">9.主范式</h2>
+<p>设 ϕ 为包含命题变元 P1, P2, · · · , Pn 的合式公式，如果合式公式ψ 与 ϕ
+等价，并且 ψ 是若干个不同的关于 P1, P2, · · · , Pn 的极大 (小) 项的合
+(析) 取，则称 ψ 为 ϕ 的主合 (析)
+取范式，主合取范式和主析取范式称为主范式。</p>
+<h2 id="主合析取范式">10.主合（析）取范式</h2>
+<p>设 ϕ 为任意合式公式</p>
+<ol type="1">
+<li><p>如果 ϕ 不是永真式，则 ϕ 必有主合取范式；</p></li>
+<li><p>如果 ϕ 不是永假式，则 ϕ 必有主析取范式。</p></li>
+</ol>
+<h1 id="第五章-谓词逻辑">第五章 谓词逻辑</h1>
+<h2 id="符号化">1.符号化</h2>
+<p>谓词逻辑符号集：</p>
+<p>Σ = {a, b, c, · · · ,个体常元</p>
+<p>x, y, z, · · · ,个体变元</p>
+<p>f, g, h, · · · ,函词</p>
+<p>F,T,命题常元</p>
+<p>P, Q, R, · · · ,命题词或谓词</p>
+<p>¬, ∧, ∨, →, ↔︎,逻辑联结词</p>
+<p>∀, ∃,量词</p>
+<p>(,)括号</p>
+<p>}</p>
+<p>逐词翻译的原则：即要分析命题的句子成分，将命题分解为一个个词，每个词一般都需符号化为合适的形式符号。</p>
+<p>词性翻译：在将分解的词符号化为合适的形式符号时，遵循其词性，有一般性的符号化原则：</p>
+<ol type="1">
+<li><p>名词：专有名词、普通名词、被名词所有格或物主代词修饰的名词，通常分别符号化为个体常元、谓词和函词。</p></li>
+<li><p>代词：人称代词、指示代词，通常符号化为个体常元。</p></li>
+<li><p>形容词：通常符号化为谓词。</p></li>
+<li><p>动词：一般符号化为谓词，其涉及的思维对象的个数，即为谓词的元数。</p></li>
+<li><p>数量词：全体概念、部分概念，分别符号化为全称量词和存在量词。</p></li>
+<li><p>副词：通常与其他词类合并，不单独符号化。</p></li>
+<li><p>连词：符号化为对应的逻辑联结词。</p></li>
+<li><p>特性谓词：论域为全域或命题涉及的思维对象为论域的子域时，必须引入特性谓词。特性谓词在全称量词
+约束下用“→”，在存在量词 约束下用“∧”。</p></li>
+</ol>
+<h2 id="量词的辖域">2.量词的辖域</h2>
+<p>（量词的辖域）量词所约束的范围称为该量词的辖域。所谓约束范围，即为紧接在
+(∀x) 或 (∃x) 之后的合式公式。</p>
+<h2 id="自由约束变元">3.自由/约束变元</h2>
+<p>对个体变元 x 在公式 ϕ 中的某次出现，若 x 在 ϕ 的分子公式(∀x)ψ 或
+(∃x)ψ 中出现，则称 x
+的此次出现为约束出现，否则，称为自由出现。在合式公式 ϕ
+中自由出现的个体变元为自由变元，约束出现的个体变元为约束变元。</p>
+<h1 id="第六章-自然推理系统">第六章 自然推理系统</h1>
+<h2 id="无量词规则">1.无量词规则</h2>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.1.png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.2.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="导出规则">2.导出规则</h2>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.3.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="常用证明策略">3.常用证明策略</h2>
+<figure>
+<img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(1).png" srcset="/img/loading.gif" lazyload alt="loading-ag-1094">
+<figcaption aria-hidden="true">loading-ag-1094</figcaption>
+</figure>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(2).png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(3).png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(4).png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(5).png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(6).png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(7).png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.4%20(8).png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="带量词规则">4.带量词规则</h2>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.5.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="导出规则-1">5.导出规则</h2>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.6.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="证明策略">6.证明策略</h2>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.7%20(1).png" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/6.7%20(2).png" srcset="/img/loading.gif" lazyload></p>
+<h1 id="第七章-图论">第七章 图论</h1>
+<h2 id="节点的度">1.节点的度</h2>
+<p>设 v 是图 G 的结点。</p>
+<ol type="1">
+<li><p>如果 G 是无向图，G 中与 v 关联的边的数目之和称为 v 的度，记为
+dG(v)。</p></li>
+<li><p>如果 G 是有向图，G 中以 v 为起点的边的数目称为 v 的出度，记为 d +
+G (v)；G 中以 v 为终点的边的数目称为 v 的入度，记为 d − G (v)；v
+的出度与入度之和称为 v 的度，记为 dG(v)</p></li>
+</ol>
+<h2 id="一些特殊图">2.一些特殊图</h2>
+<p>以下定义一些特殊图</p>
+<ol type="1">
+<li><p>结点都是孤立点的图称为零图。</p></li>
+<li><p>一阶零图称为平凡图。</p></li>
+<li><p>所有结点的度均为自然数 d 的无向图称为 d 度正则图。</p></li>
+<li><p>设 n ∈ I+，如果 n 阶简单无向图 G 是 n − 1 度正则图，则称 G
+为完全无向图，记为 Kn。</p></li>
+<li><p>设 n ∈ I+，每个结点的出度和入度均为 n − 1 的 n
+阶简单有向图称为完全有向图。</p></li>
+</ol>
+<h2 id="子图">3.子图</h2>
+<p>设图 G = ⟨V, E, Ψ⟩，G ′ = ⟨V ′ , E ′ , Ψ′ ⟩。</p>
+<ol type="1">
+<li><p>如果 V ′ ⊆ V，E ′ ⊆ E，Ψ′ ⊆ Ψ，则称 G ′ 是 G 的子图，记为G ′ ⊆
+G，并称 G 是 G ′ 的母图。</p></li>
+<li><p>如果 V ′ ⊆ V，E ′ ⊂ E，Ψ′ ⊂ Ψ，则称 G ′ 是 G 的真子图，记为 G ′ ⊂
+G。</p></li>
+<li><p>如果 V ′ = V，E ′ ⊆ E，Ψ′ ⊆ Ψ，则称 G ′ 是 G 的生成子图（Spanning
+Subgraph）。</p></li>
+</ol>
+<p><strong>导出子图</strong></p>
+<p>设图 G = ⟨V, E, Ψ⟩，</p>
+<ol type="1">
+<li><p>V ′ ⊆ V 且 V ′ = ∅，以 V ′ 为节点集合，以所有起点和终点均在 V ′
+中的边为集合的 G 的子图，称为由 V ′ 导出的 G 的子图，记为 G[V ′ ]。若 V
+′ ⊂ V，导出子图 G[V−V ′ ] 记为 G−V ′。</p></li>
+<li><p>E ′ ⊆ E 且 E ′ = ∅，令 V ′ = {v|v ∈ V且有e ∈ E ′使v与e关联}。以 V
+′ 为节点集合，以 E ′ 为边集合的 G 的子图，称为由 E ′导出的 G
+的子图，记为 G[E ′ ]。</p></li>
+</ol>
+<h2 id="图的运算">4.图的运算</h2>
+<p>设图 G1 = ⟨V1, E1, Ψ1⟩ 和 G2 = ⟨V2, E2, Ψ2⟩ 为可运算的。</p>
+<ol type="1">
+<li><p>称以 V1 ∩ V2 为结点集合，以 E1 ∩ E2 为边集合的 G1 与
+G2的公共子图为 G1 与 G2 的交，记为 G1 ∩ G2。</p></li>
+<li><p>称以 V1 ∪ V2 为结点集合，以 E1 ∪ E2 为边集合的 G1 与
+G2的公共母图为 G1 与 G2 的并，记为 G1 ∪ G2。</p></li>
+<li><p>称以 V1 ∪ V2 为结点集合，以 E1 ⊕ E2 为边集合的 G1 ∪ G2的子图为 G1
+与 G2 的环和，记为 G1 ⊕ G2。</p></li>
+</ol>
+<h2 id="补图性质">5.补图性质</h2>
+<p>n 阶图 G 与 G 中节点具有这样的性质：对任意的 v1, v2 ∈ Kn，若 v1, v2
+在图 G 中邻接，当且仅当v1, v2 在图 G 中不邻接若 v1, v2 在图 G
+中邻接，当且仅当 v1, v2 在图 G 中不邻接</p>
+<h2 id="图同构">6.图同构</h2>
+<p>设图 G = ⟨V, E, Ψ⟩ 与 G ′ = ⟨V ′ , E ′ , Ψ′ ⟩。若存在双射 f : V → V
+′与 g : E → E ′，使得对于任意 e ∈ E 及 v1, v2 ∈ V 都有:</p>
+<p><span class="math display">\[
+\Psi&#39;(g(e)=\begin{cases}{f(v_1),f(v_2)}&amp; 若\Psi(e)=\{v1,v2\}\\
+&lt;f(v_1),f(v_2)&gt;&amp; 若\Psi(e)=&lt;v1,v2&gt;\end{cases}
+\]</span></p>
+<p>则称 G 与 G ′ 同构，记做 G ∼= G ′，并称 f 和 g 为 G 与 G ′
+之间的同构映射，简称同构。</p>
+<h2 id="可达集与不可达集">7.可达集与不可达集</h2>
+<p>设图 G = ⟨V, E, Ψ⟩，v, v ′ ∈ V。如果在 G 中存在从 v 至 v ′
+的路径，则称在 G 中从 v 可达 v ′，否则称在 G 中从 v 不可达 v ′。对于图 G
+的结点 v，我们用 R(v) 表示从 v 可达的全体结点的集合，称为节点 v
+的可达集。</p>
+<h2 id="距离与直径">8.距离与直径</h2>
+<p>设图 G = ⟨V, E, Ψ⟩，v, v ′ ∈ V。若 v 可达 v ′，则称从 v 至 v ′
+的路径中长度最短者为从 v 至 v ′ 的测地线，并称测地线的长度为从v 至 v ′
+的距离。记为 d(v, v ′ )。如果从 v 不可达 v ′，则称从 v 至v′的距离 d(v, v
+′ ) 为 ∞。并且规定 ∞ + ∞ = ∞，n + ∞ = ∞ + n = ∞，其中n ∈ N且∞ &gt;
+n。</p>
+<p>图 G = ⟨V, E, Ψ⟩ 的直径 diam(G) 定义为 max d(v, v ′ ) v,v′∈V。</p>
+<h2 id="连通">9.连通</h2>
+<p>如果无向图 G 的任意两个结点都互相可达，则称 G 是连通的，否则称 G
+是非连通的。</p>
+<p>设有向图 G = ⟨V, E, Ψ⟩，定义<span class="math inline">\(Ψ′ : E →
+\{\{v1, v2\}|v1 ∈ V且v2 ∈ V\}\)</span> 为：</p>
+<p>对任意 e ∈ E 和v1, v2 ∈ V，若 Ψ(e) = ⟨v1, v2⟩，则 Ψ′ (e) = {v1,
+v2}。称无向图G ′ = ⟨V, E, Ψ′ ⟩ 为有向图 G 的基础图。</p>
+<p>有向图 G = ⟨V, E, Ψ⟩ 是强连通的，当且仅当不存在 W ⊂ V 使得R(W) ⊆
+W。</p>
+<h2 id="分支">10.分支</h2>
+<p>设 G ′ 是图 G 的具有某性质的子图，并且对于 G 的具有该性质的任意子图 G
+′′，只要 G ′ ⊆ G ′′，就有 G ′ = G ′′，则称 G ′ 相对于该性质是 G
+的极大子图。</p>
+<p>无向图 G 的极大连通子图称为 G 的分支。</p>
+<p>设 G 是有向图。</p>
+<ol type="1">
+<li><p>G 的极大强连通子图称为 G 的强分支。</p></li>
+<li><p>G 的极大单向连通子图称为 G 的单向分支。</p></li>
+<li><p>G 的极大弱连通子图称为 G 的弱分支。</p></li>
+</ol>
+<p>连通无向图恰有一个分支。非连通无向图有一个以上分支。</p>
+<p>强连通 (单向连通，弱连通) 有向图恰有一个强分支
+(单向分支，弱分支)。非强连通 (非单向连通，非弱连通)
+有向图有一个以上强分支 (单向分支，弱分支)。</p>
+<h2 id="桥割点">11.桥、割点</h2>
+<p>设 G = ⟨V, E, Ψ⟩ 为连通无向图，若有边 e ∈ E 使得 G − {e}
+为非连通的，则称这样的边为桥。若有节点 v ∈ V 使得 G − {v}
+为非连通的，则称这样的节点为割点或关节点。</p>
+<h2 id="回路">12.回路</h2>
+<p>若无向图 G = ⟨V, E, Ψ⟩ 是连通的，且对每个节点 v ∈ V 有dG(v) = 2，则 G
+是一个回路。</p>
+<h2 id="非循环">13.非循环</h2>
+<p>如果回路 (有向回路，半回路)C 是图 G 的子图，则称 G
+有回路(有向回路，半回路)C。没有回路的无向图和没有半回路的有向图称为非循环图。</p>
+<p>图 G 不是非循环图当且仅当 G 有子图 G ′ 满足：对于 G ′ 的任意结点
+v，dG′(v) &gt; 1。</p>
+<h2 id="最短路径">14.最短路径</h2>
+<p>设图 G = ⟨V, E, Ψ⟩ 且 ⟨G, W⟩ 为加权图，v, v ′ ∈ V。⟨G, W⟩ 中路径 P
+中所有边的加权长度之和，记为 W(P)，称为该路径的加权长度。从结点 v 至结点
+v ′ 的路径中加权长度最小的称为从 v 至v′的最短路径，记为 dW(v, v ′
+)。若从 v 可达 v ′，则称从 v 至 v ′ 的最短路径的加权长度为从 v
+至v′的加权距离；若从 v 不可达 v ′，则称从 v 至 v ′ 的加权距离为∞。</p>
+<h2 id="dijkstra算法">15.Dijkstra算法</h2>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/7.15.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="欧拉图">16.欧拉图</h2>
+<p>设 G 是连通无向图，G 是欧拉图当且仅当 G 有欧拉闭路。</p>
+<p>设 G = ⟨V, E, Ψ⟩ 为连通无向图，v1, v2 ∈ V 且 v1 = v2。则 G 有一条从
+v1 至 v2 的欧拉路径当且仅当 G 恰有两个奇结点 v1 和 v2。</p>
+<p>设 G 为弱连通的有向图。G 是欧拉有向图当且仅当 G 有欧拉闭路。</p>
+<p><strong>运算</strong></p>
+<p>如果 G1 和 G2 是可运算的欧拉图，则 G1 ⊕ G2 是欧拉图。</p>
+<h2 id="哈密顿图">17.哈密顿图</h2>
+<p>如果回路 (有向回路)C 是图 G 的生成子图，则称 C 为 G
+的哈密顿回路（哈密顿有向回路）。图 G 中包含它的所有结点的基本路径称为 G
+的哈密顿路径。有哈密顿回路（Hamilton
+有向回路）的图称为哈密顿图（哈密顿有向图）。</p>
+<p><strong>寻找规则</strong></p>
+<ol type="1">
+<li><p>如果 v 是 G 中度为 2 的节点，则与 v 关联的两条边必包含在 G
+的任何哈密顿回路。</p></li>
+<li><p>在构造哈密顿回路过程中，如果由第 1) 步边构成的回路不是 G
+的生成子图，那么 G 中无哈密顿回路，G 不是哈密顿图。</p></li>
+<li><p>在构造哈密顿回路过程中，如果与某节点关联的两条边是必须包含在哈密顿回路中的，那么，与该节点关联的其他所有边都须删除。</p></li>
+</ol>
+<p><strong>一些条件</strong></p>
+<ol type="1">
+<li><p>必要条件：若 G 是哈密顿图，则对任意的 S ⊂ V，c(G − S) ⩽ |S|，其中
+c(G ′ ) 表示图 G ′ 的分支数目。</p></li>
+<li><p>充分条件：设 n ⩾ 3，对任意的 v ∈ V 若有 dG(v) ⩾ n 2，则
+G是哈密顿图。</p></li>
+<li><p>充分条件：设 n ⩾ 3，对任意的 u, v ∈ V 且 u 与 v 不相邻，若有
+dG(u) + dG(v) ⩾ n，则 G 是哈密顿图。</p></li>
+</ol>
+<h2 id="无向树的定义">18.无向树的定义</h2>
+<p>设 G = ⟨V, E, Ψ⟩ 是 n 阶无向图，则以下条件是等价的：</p>
+<ol type="1">
+<li><p>G 是连通的，又是非循环的。</p></li>
+<li><p>G 没有自圈，并且对于 G 的任意两结点 v 和 v ′，在 G
+中存在唯一的一条从 v 至 v ′ 的基本路径。</p></li>
+<li><p>G 是连通的，如果 v 和 v ′ 是 G 的两结点，e 不是 G 的边，当令 Ψ′ =
+{⟨e, {v, v ′ }⟩} 时，则 G + {e}Ψ′ 有唯一的一条回路。</p></li>
+<li><p>G 是连通的，并且对于 G 的任意边 e，G − e 非连通。</p></li>
+<li><p>G 是连通的，并且有 n − 1 条边。</p></li>
+<li><p>G 是非循环的，并且有 n − 1 条边。</p></li>
+</ol>
+<p><strong>森林</strong></p>
+<p>每个分支都是树的无向图称为森林。</p>
+<p><strong>生成树</strong></p>
+<p>如果树 T 是无向图 G 的生成子图，则称 T 为 G 的生成树。如果森林 F
+是无向图 G 的生成子图，则称 F 为 G 的生成森林。</p>
+<h2 id="生成树构造方法">19.生成树构造方法</h2>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/7.19.png" srcset="/img/loading.gif" lazyload></p>
+<p><strong>最小生成树</strong></p>
+<p>设 ⟨G, W⟩ 是加权图，G ′ ⊆ G。G ′ 中所有边的加权长度之和称为G ′
+的加权长度。设 G 是连通无向图，⟨G, W⟩ 是加权图，G
+的所有生成树中加权长度最小者称为 ⟨G, W⟩ 的最小生成树。</p>
+<h2 id="余圈秩与圈秩">20.余圈秩与圈秩</h2>
+<p>设 n 阶无向图 G 有 m 条边和 k 个分支，定义 G 的余圈秩r = n − k，圈秩
+µ = m − n + k。</p>
+<h2 id="叶加权二叉树">21.叶加权二叉树</h2>
+<p>设 V 是二叉树 D 的叶的集合，W : V → R+，则称 ⟨D, W⟩
+为叶加权二叉树。对于 D 的任意叶 v，称 W(v) 为 v 的权，∑(W(v) × L(v)) v∈V
+称为⟨D, W⟩ 的叶加权路径长度，其中 L(v) 为 v 的级。</p>
+<p>设 ⟨D, W⟩ 是叶加权二叉树。如果对任一叶加权二叉树 ⟨D ′ , W′
+⟩，只要对于任意正实数 r，D 与 D ′ 中权等于 r 的叶的数目相同，就有 ⟨D, W⟩
+的叶加权路径长度不大于 ⟨D ′ , W′ ⟩ 的叶加权路径长度，则称 ⟨D, W⟩
+为最优的。</p>
 
                 
               </div>
@@ -837,7 +1142,7 @@ f = h ◦ f 时，皆有 g = h。</p></li>
 
   <div class="license-box my-3">
     <div class="license-title">
-      <div>离散数学期末复习（进行中）</div>
+      <div>离散数学期末复习</div>
       <div>https://nanxer.github.io/2024/12/07/离散数学期末复习/</div>
     </div>
     <div class="license-meta">
