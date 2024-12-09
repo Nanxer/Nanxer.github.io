@@ -19,17 +19,18 @@
   <meta name="author" content="Nanxer">
   <meta name="keywords" content="">
   
-    <meta name="description" content="第一章 集合 1.描述集合的方式 1.列举法 2.部分列举法 3.命题法 4.归纳定义法  用这种方法定义一个非空集合A时，一般包含以下三步： i）基本项 已知某些元素（常用\(S0\)表示由这些元素组成的非空集合）属于A（即\(S0 \subseteq A\)）。这是构造A的基础，并保证A*不空。 ii）归纳项 给出一组归纳规则，从A中的元素出发，依据这些规则所获得的元素">
+    <meta name="description" content="第一章 集合 1.描述集合的方式 1.列举法 2.部分列举法 3.命题法 4.归纳定义法  用这种方法定义一个非空集合A时，一般包含以下三步： i）基本项 已知某些元素（常用\(S_0\)表示由这些元素组成的非空集合）属于A（即\(S_0 \subseteq A\)）。这是构造A的基础，并保证A*不空。 ii）归纳项 给出一组归纳规则，从A中的元素出发，依据这些规则所获得的">
 <meta property="og:type" content="article">
 <meta property="og:title" content="离散数学期末复习（进行中）">
 <meta property="og:url" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/index.html">
 <meta property="og:site_name" content="Nanxer&#39;s blog">
-<meta property="og:description" content="第一章 集合 1.描述集合的方式 1.列举法 2.部分列举法 3.命题法 4.归纳定义法  用这种方法定义一个非空集合A时，一般包含以下三步： i）基本项 已知某些元素（常用\(S0\)表示由这些元素组成的非空集合）属于A（即\(S0 \subseteq A\)）。这是构造A的基础，并保证A*不空。 ii）归纳项 给出一组归纳规则，从A中的元素出发，依据这些规则所获得的元素">
+<meta property="og:description" content="第一章 集合 1.描述集合的方式 1.列举法 2.部分列举法 3.命题法 4.归纳定义法  用这种方法定义一个非空集合A时，一般包含以下三步： i）基本项 已知某些元素（常用\(S_0\)表示由这些元素组成的非空集合）属于A（即\(S_0 \subseteq A\)）。这是构造A的基础，并保证A*不空。 ii）归纳项 给出一组归纳规则，从A中的元素出发，依据这些规则所获得的">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/2.4.png">
 <meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/2.5.png">
+<meta property="og:image" content="https://nanxer.github.io/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/3.11.png">
 <meta property="article:published_time" content="2024-12-07T01:24:52.000Z">
-<meta property="article:modified_time" content="2024-12-07T07:52:47.696Z">
+<meta property="article:modified_time" content="2024-12-09T09:29:38.496Z">
 <meta property="article:author" content="Nanxer">
 <meta property="article:tag" content="期末复习">
 <meta name="twitter:card" content="summary_large_image">
@@ -263,7 +264,7 @@
       <span class="post-meta mr-2">
         <i class="iconfont icon-chart"></i>
         
-          1.5k 字
+          4.2k 字
         
       </span>
     
@@ -329,7 +330,7 @@
               <p id="updated-time" class="note note-info" style="display: none">
                 
                   
-                    本文最后更新于 2024-12-07T15:52:47+08:00
+                    本文最后更新于 2024-12-09T17:29:38+08:00
                   
                   
 
@@ -348,7 +349,7 @@
 <ul>
 <li><p>用这种方法定义一个非空集合A时，一般包含以下三步：</p></li>
 <li><p>i）基本项</p></li>
-<li><p>已知某些元素（常用<span class="math inline">\(S0\)</span>表示由这些元素组成的非空集合）属于<em>A</em>（即<span class="math inline">\(S0 \subseteq
+<li><p>已知某些元素（常用<span class="math inline">\(S_0\)</span>表示由这些元素组成的非空集合）属于<em>A</em>（即<span class="math inline">\(S_0 \subseteq
 A\)</span>）。这是构造<em>A</em>的基础，并保证A*不空。</p></li>
 <li><p>ii）归纳项</p></li>
 <li><p>给出一组归纳规则，从<em>A</em>中的元素出发，依据这些规则所获得的元素，仍然是<em>A</em>中的元素。这是构造<em>A</em>的关键步骤。</p></li>
@@ -526,6 +527,271 @@ x_n\}\)</span>上的二元关系，<span class="math inline">\(a_{ij}（1 ⩽ i,
 出发，沿着有向边箭头方向，经过若干个节点后能到达 xj。）</p></li>
 </ol>
 <p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/2.5.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="关系的合成">6.关系的合成</h2>
+<p>设二元关系 R1 ⊆ A×B，R2 ⊆ B×C，则称从 A 到 C 的二元关系{⟨x, z⟩|有y ∈
+B使⟨x, y⟩ ∈ R1且⟨y, z⟩ ∈ R2}为 R1 与 R2 的合成，并记为 R1 ◦ R2。</p>
+<h2 id="关系的闭包">7.关系的闭包</h2>
+<p>设二元关系 R ⊆ A 2，如果二元关系 R ′ ⊆ A 2 满足：</p>
+<ol type="1">
+<li><p>R ′ 是自反的（对称的，或传递的）；</p></li>
+<li><p>R ⊆ R ′；</p></li>
+<li><p>若 A 上的二元关系 R ′′ 也满足 1) 和 2)，则 R ′ ⊆ R ′′。</p></li>
+</ol>
+<p>就称 R ′ 为 R 的自反（对称，或传递）闭包，记为 r(R)（s(R)，或
+t(R)）。</p>
+<p><strong>设二元关系 <span class="math inline">\(R ⊆
+A^2\)</span>，</strong></p>
+<ol type="1">
+<li><p>R 是自反的当且仅当 r(R) = R；</p></li>
+<li><p>R 是对称的当且仅当 s(R) = R；</p></li>
+<li><p>R 是传递的当且仅当 t(R) = R。</p></li>
+</ol>
+<p><strong>计算</strong></p>
+<p>设二元关系 R ⊆ A 2，</p>
+<ol type="1">
+<li><p><span class="math inline">\(r(R) = R ∪ I_A\)</span>；</p></li>
+<li><p><span class="math inline">\(s(R) = R ∪ R^{−1}\)</span>；</p></li>
+<li><p><span class="math inline">\(t(R) =
+R^+=\bigcup_{n=1}^{\infty}R^n\)</span> 。</p></li>
+</ol>
+<p><strong>性质</strong> 设 A 为任意集合，二元关系 R ⊆ A 2</p>
+<ol type="1">
+<li><p>rs(R) = sr(R)；</p></li>
+<li><p>rt(R) = tr(R)；</p></li>
+<li><p>st(R) ⊆ ts(R)。</p></li>
+</ol>
+<h2 id="相容关系">8.相容关系</h2>
+<p>如果集合 A 上的二元关系 R 是<strong>自反的和对称的</strong>，则称 R
+为 A 上的相容关系。若 xRy 则称 x 和 y 相容；否则称 x 和 y 不相容。</p>
+<p>若 R 为集合 A 上的二元关系，则 R 为 A 上的相容关系，当且仅当 r(R) =
+s(R) = R。</p>
+<p><strong>相容类与最大相容类</strong></p>
+<p>设 R 为集合 A 上的相容关系。</p>
+<ol type="1">
+<li><p>若 S ⊆ A 且 S = ∅，如果对任意 x, y ∈ S 皆有 ⟨x, y⟩ ∈ R，则称 S
+为相容关系 R 产生的一个相容类。</p></li>
+<li><p>设 S 为 R 产生的相容类，若当 y ̸∈ S 时，皆有 x ∈ S 使得⟨x, y⟩ ̸∈
+R，则称 S 为 R 的一个最大相容类。</p></li>
+</ol>
+<h2 id="覆盖与分块">9.覆盖与分块</h2>
+<p>设 A 为非空有限集合，若<span class="math inline">\(B ⊆
+\Rho(A)\)</span>且<span class="math inline">\(B = {A_i |1 ⩽ i ⩽ n且A_i ⊆
+A}\)</span> 满足</p>
+<p><span class="math inline">\(A_i \neq ∅（1 ⩽ i ⩽ n）\)</span>；</p>
+<p><span class="math inline">\(\bigcup B = A\)</span>。</p>
+<p>则称 B 为集合 A 的覆盖，称 Ai ∈ B 为分块。</p>
+<h2 id="等价关系">10.等价关系</h2>
+<p>如果集合 A 上的二元关系 R
+是<strong>自反的、对称的和传递的</strong>，则称R 为 A 上的等价关系。</p>
+<p>若 R 为集合 A 上的二元关系，则 R 为 A 上的等价关系，当且仅当 r(R) =
+s(R) = t(R) = R。</p>
+<p><strong>等价类</strong></p>
+<p>设 R 为集合 A 上的等价关系。对每个 x ∈ A，令[x]R = {y|y ∈ A且xRy}称
+[x]R 为 x 关于 R 的等价类。当不强调 R 时，就把 [x]R 简记为[x]，并称为 x
+的等价类。</p>
+<h2 id="拟序和半序">11.拟序和半序</h2>
+<p>设 R 是集合 A 上的二元关系。</p>
+<ol type="1">
+<li><p>如果 R 是<strong>反自反的和传递的</strong>，则称 R 为 A
+上的拟序关系，简称拟序，一般用“≺”表示，并称 ⟨A, R⟩ 为拟序结构。</p></li>
+<li><p>如果 R 是<strong>自反的、反对称的和传递的</strong>，则称 R 为 A
+上的半序关系，简称半序（偏序、部分序），一般用“≼”表示，并称 ⟨A, R⟩
+为半序结构。</p></li>
+</ol>
+<p><strong>关系</strong></p>
+<p>设 R 是集合 A 上的二元关系。</p>
+<ol type="1">
+<li><p>若 R 为 A 上的拟序，则 r(R) 是 A 上的半序。</p></li>
+<li><p>若 R 为 A 上的半序，则 R − IA 是 A 上的拟序。</p></li>
+</ol>
+<p><strong>覆盖</strong></p>
+<p>设 R 是集合 A 上的半序且 a ∈ A，若 b ∈ A 满足：</p>
+<ol type="1">
+<li><p>b <span class="math inline">\(\neq\)</span> a 且 aRb；</p></li>
+<li><p>若 x ∈ A 使 aRx 且 xRb，则必有 x = a 或 x = b。</p></li>
+</ol>
+<p>就称 b 为 a 关于 R 的覆盖。在不特别强调关系时，也往往简称“b 为 a
+的覆盖”。</p>
+<p>元素 a 的覆盖 b，指的是在半序关系下，a
+的“直接上级”b，即在半序关系下，元素 a 和 b 之间没法再插入其他元素。</p>
+<h2 id="全序">12.全序</h2>
+<p>如果集合 A 上的半序 R 满足：若 x, y ∈ A，则 xRy 或 yRx。就称R 为 A
+上的全序关系，简称全序（或线性序），并称 ⟨A, R⟩
+为链或全序结构（或线性有序集）。</p>
+<h2 id="极最大小元">13.极（最）大（小）元</h2>
+<p>设 ≼ 为非空集合 A 上的半序，S ⊆ A 且 S = ∅。</p>
+<ol type="1">
+<li><p>若有 a ∈ S，使得当 x ∈ S 且 a ≼ x（或 x ≼ a）时皆有x = a，就称 S
+有极大 (或极小) 元，并称 a 为 S 的一个极大（或极小）元。</p></li>
+<li><p>若有 a ∈ S，使得对每个 x ∈ S 皆有 x ≼ a（或 a ≼ x），就称S 有最大
+(或最小) 元，并称 a 为 S 的一个最大（或最小）元。</p></li>
+</ol>
+<h2 id="上下确界">14.上（下）（确）界</h2>
+<p>设 ≼ 为非空集合 A 上的半序，S ⊆ A 且 S = ∅。</p>
+<p>若有 a ∈ A，使得对每个 x ∈ S 皆有 x ≼ a（或 a ≼ x），就称S 有上
+(或下) 界，并称 a 为 S 的一个上 (或下) 界。</p>
+<p>若有 S 的上 (或下) 界 a，使得对 S 的每个上 (或下) 界 y 皆有 a ≼ y（或
+y ≼ a），就称 S 有上 (或下) 确界，并称 a 为 S的一个上 (或下) 确界，记为
+a = supS（或 a = infS）。</p>
+<h2 id="良序">15.良序</h2>
+<p>设 R 为非空集合 A 上的半序，如果 A 的每个非空子集都有最小元，就称 R
+为 A 上的良序关系，简称良序，并称 ⟨A, R⟩ 为良序结构。也称集合 A
+为良序集合。</p>
+<h1 id="第三章-函数">第三章 函数</h1>
+<h2 id="像与原像">1.像与原像</h2>
+<p>设 f 为从集合 X 到 Y 的部分函数，A ⊆ X 且 B ⊆ Y。令</p>
+<p>f[A] = {y|有x ∈ A使y = f(x)}</p>
+<p>f −1 [B] = {x|有y ∈ B使f(x) = y}</p>
+<p>称 f[A] 为 A 在 f 下的像，f −1 [B] 为 B 在 f 下的原像。</p>
+<h2 id="性质">2.性质</h2>
+<p>设 f 为从集合 X 到集合 Y 的部分函数。</p>
+<ol type="1">
+<li><p>若 A1 ⊆ A2 ⊆ X，则 f[A1] ⊆ f[A2]；</p></li>
+<li><p>若 B1 ⊆ B2 ⊆ Y，则 <span class="math inline">\(f^{−1} [B1] ⊆
+f^{−1} [B2]\)</span>；</p></li>
+<li><p>若 A ⊆ domf，则 <span class="math inline">\(A ⊆ f^{−1}
+[f[A]]\)</span>；</p></li>
+<li><p>若 B ⊆ ranf，则 <span class="math inline">\(B = f[f^{−1}
+[B]]\)</span>。</p></li>
+</ol>
+<p>设 f 为从集合 X 到集合 Y 的部分函数，A ⊆ P(X)，B ⊆ P(Y)。</p>
+<ol type="1">
+<li><p>f[∪A] = ∪ {f[A]|A ∈ A}；</p></li>
+<li><p>若 <span class="math inline">\(A \neq  ∅\)</span>，则 f[ ∩ A] ⊆
+∩{f[A]|A ∈ A}；</p></li>
+<li><p><span class="math inline">\(f^{−1} [ ∪ B] = ∪ \{ f^{−1} [B]|B ∈
+B\}\)</span>；</p></li>
+<li><p>若 B ̸= ∅，则 <span class="math inline">\(f^{−1} [ ∩ B] = ∩
+\{f^{−1} [B]|B ∈ B\}\)</span>。</p></li>
+</ol>
+<h2 id="特殊函数">3.特殊函数</h2>
+<p>设 f 为从集合 X 到 Y 的部分函数。</p>
+<ol type="1">
+<li><p>若 domf = X，则称 f 为从 X 到 Y 的全函数，简称 f 为从 X到 Y
+的（全）函数，记为 X −→ f Y 或 f : X → Y。</p></li>
+<li><p>若 domf ⊂ X，则称 f 为从 X 到 Y 的严格部分函数。</p></li>
+<li><p>若 ranf = Y，则称 f 为从 X 到 Y 上的部分函数。</p></li>
+<li><p>若 ranf ⊂ Y，则称 f 为从 X 到 Y 内的部分函数。</p></li>
+<li><p>若对任意的 x1, x2 ∈ domf，当 x1 = x2 时皆有 f(x1) = f(x2)，则称 f
+为从 X 到 Y 的 1 − 1 部分函数。</p></li>
+</ol>
+<h2 id="重要函数">4.重要函数</h2>
+<p>设 f : X → Y</p>
+<ol type="1">
+<li><p>若 ranf = Y，则称 f 为满射（surjective function）。</p></li>
+<li><p>若 f 是 1 − 1 的，则称 f 为内射（injective function）。</p></li>
+<li><p>若 f 既是满射，又是内射，则称 f 为双射（bijetive
+function）。</p></li>
+</ol>
+<h2 id="合成函数">5.合成函数</h2>
+<p>合成函数 g ◦ f 与合成关系 f ◦ g 表示同一个集合
+历史形成的，具有其方便之处：</p>
+<ol type="1">
+<li><p>对合成函数 g ◦ f，当 z = (g ◦ f)(x) 时，必有 z = g(f(x))，g ◦ f
+与 g(f(x)) 的这种顺序关系很自然。</p></li>
+<li><p>对合成关系 f ◦ g，当 ⟨x, z⟩ ∈ f ◦ g 时，必有 y ∈ Y 使 ⟨x, y⟩ ∈
+f且 ⟨y, z⟩ ∈ g。这种顺序也很符合关系合成序偶的选取顺序。</p></li>
+</ol>
+<h2 id="特殊函数与函数合成">6.特殊函数与函数合成</h2>
+<p>设 f : X → Y 和 g : Y → Z。则</p>
+<ol type="1">
+<li><p>若 f 和 g 都是满射，则 g ◦ f 也是满射；</p></li>
+<li><p>若 f 和 g 都是内射，则 g ◦ f 也是内射；</p></li>
+<li><p>若 f 和 g 都是双射，则 g ◦ f 也是双射。</p></li>
+</ol>
+<p>设 f : X → Y 和 g : Y → Z。则</p>
+<ol type="1">
+<li><p>若 g ◦ f 是满射，则 g 是满射；</p></li>
+<li><p>若 g ◦ f 是内射，则 f 是内射；</p></li>
+<li><p>若 g ◦ f 是双射，则 g 是满射且 f
+是内射。简称“左满右内”。</p></li>
+</ol>
+<h2 id="逆函数">7.逆函数</h2>
+<p>设 X 和 Y 为两个集合，f : X → Y。</p>
+<ol type="1">
+<li><p>Y若有 g : Y → X 使 g ◦ f =<span class="math inline">\(I_X\)</span>，则称 f 为左可逆的，并称 g 为f
+的一个左逆函数，简称左逆。</p></li>
+<li><p>若有 g : Y → X 使 f ◦ g =<span class="math inline">\(I_Y\)</span>，则称 f 为右可逆的，并称 g 为f
+的一个右逆函数，简称右逆。</p></li>
+<li><p>若有 g : Y → X 使 g ◦ f =<span class="math inline">\(I_X\)</span>，且 f ◦ g =<span class="math inline">\(I_Y\)</span>，则称 f 为可逆的，并称 g 为 f
+的一个逆函数，简称逆。</p></li>
+</ol>
+<h2 id="内射与左可逆">8.内射与左可逆</h2>
+<p>设 X 和 Y 为两个集合且 X = ∅，若 f : X → Y，则下列条件等价：</p>
+<ol type="1">
+<li><p>f 为内射；</p></li>
+<li><p>f 左可逆；</p></li>
+<li><p>f 左可消去。即对任意集合 Z 及任意的 g : Z → X 和h : Z → X，当 f ◦
+g = f ◦ h 时，皆有 g = h。</p></li>
+</ol>
+<h2 id="满射与右可逆">9.满射与右可逆</h2>
+<p>设 X 和 Y 为二集合且 X = ∅，若 f : X → Y，则下列条件等价：</p>
+<ol type="1">
+<li><p>f 为满射；</p></li>
+<li><p>f 右可逆；</p></li>
+<li><p>f 右可消去。即对任意集合 Z 及任意的 g : Y → Z 和h : Y → Z，当 g ◦
+f = h ◦ f 时，皆有 g = h。</p></li>
+</ol>
+<h2 id="双射与可逆">10.双射与可逆</h2>
+<p>设 X 和 Y 为二集合，若 f : X → Y 既是左可逆的，又是右可逆的，则 f
+是可逆的，且 f 的左逆和右逆都等于 f 的唯一逆。</p>
+<p><strong>性质</strong></p>
+<p>若 X 和 Y 为二集合且 f : X → Y，则下列条件等价：</p>
+<ol type="1">
+<li><p>f 是双射；</p></li>
+<li><p>f 既是左可逆的，又是右可逆的；</p></li>
+<li><p>f 是可逆的；</p></li>
+<li><p>f 的逆关系 <span class="math inline">\(f^{-1}\)</span> 即为 f
+的逆函数</p></li>
+</ol>
+<h2 id="特征函数">11.特征函数</h2>
+<p>设 U 为全集，A ⊆ U，χA 为如下定义的从 U 到 R 的函数：</p>
+<p><span class="math display">\[
+\chi_A(x)=\begin{cases}1&amp;x\in A\\0&amp;x\notin A \end{cases}
+\]</span></p>
+<p>称 χA 为集合 A 的特征函数。</p>
+<p><strong>运算</strong></p>
+<p><img src="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/3.11.png" srcset="/img/loading.gif" lazyload></p>
+<h2 id="序数">12.序数</h2>
+<p>序数定义如下：</p>
+<ol type="1">
+<li><p>0 是序数；</p></li>
+<li><p>若 a 是序数，则 a + 也是序数；</p></li>
+<li><p>若 S 是序数的集合（即 S 的元素都是序数），则 ∪ S
+是一个序数；</p></li>
+<li><p>任意一个序数都是经 1)-3) 获得的。</p></li>
+</ol>
+<p>每一个自然数都是序数</p>
+<p>N 是一个序数</p>
+<p><strong>约定用 ω 来表示自然数集合 N 这个序数</strong></p>
+<h2 id="可良序">13.可良序</h2>
+<p>设 S 为任一集合，若 R 是 S 上的一个良序，则称集合 S 是由关系 R
+所良序的。对于任意一集合 S，如果有一关系 R，使得 S 是由 R
+所良序的，就称集合 S 是可良序的，或称 S 是良序的。</p>
+<h2 id="集合的基数">14.集合的基数</h2>
+<p>集合的势也称集合的基数，是用来衡量集合元素数量的量。</p>
+<h2 id="鸽笼原理抽屉原理">15.鸽笼原理/抽屉原理</h2>
+<p>通俗地表达为：如果把 n + 1 本书放进 n
+个抽屉里，至少在一个抽屉里有两本或两本以上的书（鸽子）</p>
+<h2 id="无限集的性质">16.无限集的性质</h2>
+<p>与 N 等势的集合称为可列集或可数集。</p>
+<p>设 A 为集合。</p>
+<ol type="1">
+<li><p>A 为无限集合；</p></li>
+<li><p>A 有可列子集；</p></li>
+<li><p>A 有与它等势的真子集。</p></li>
+</ol>
+<h1 id="第四章-命题逻辑">第四章 命题逻辑</h1>
+<h2 id="命题">1.命题</h2>
+<p>具有确定真假意义的陈述句称为命题。由简单陈述句表示的判断称为简单命题，而由复合陈述句表示的判断称为复合命题。</p>
+<h2 id="符号化原则">2.符号化原则</h2>
+<p>基于符号集 Σ，命题逻辑的符号化原则一般为：</p>
+<ol type="1">
+<li><p>若命题为简单命题，可直接将其符号化为一个命题词；</p></li>
+<li><p>若命题为复合命题，首先划分出构成该命题的所有简单命题，对每个简单命题，用不同的命题词进行符号化。其次，将复合命题中连词符号化为合适的逻辑联结词，用联结词连接命题词，即为复合命题的符号化结果；</p></li>
+<li><p>在一般规则的基础上，与命题的含义相结合进行连词的符号化，选取合适的逻辑联结词；</p></li>
+<li><p>可将符号化后的命题逻辑转换回自然语言表达的命题，对比二者的含义，可用来检查符号化结果是否正确。</p></li>
+</ol>
 
                 
               </div>
@@ -590,7 +856,7 @@ x_n\}\)</span>上的二元关系，<span class="math inline">\(a_{ij}（1 ⩽ i,
       
         <div class="license-meta-item license-meta-date">
           <div>更新于</div>
-          <div>2024年12月7日</div>
+          <div>2024年12月9日</div>
         </div>
       
       
