@@ -1,703 +1,6679 @@
-<!DOCTYPE html><html lang="zh-CN" data-theme="light"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0,viewport-fit=cover"><title>常用可见ASCII码表 | Nanxer's blog</title><meta name="author" content="Nanxer"><meta name="copyright" content="Nanxer"><meta name="format-detection" content="telephone=no"><meta name="theme-color" content="ffffff"><meta name="description" content="ASCII 值 ASCII 值     32 (space) 80 P   33 ！ 81 Q   34 ” 82 R   35 # 83 S   36 $ 84 T   37 % 85 U   38 &amp; 86 V   39 &#39; 87 W   40 ( 88 X">
+
+
+<!DOCTYPE html>
+<html lang="zh-CN" data-default-color-scheme=auto>
+
+
+
+<head>
+  <meta charset="UTF-8">
+
+  <link rel="apple-touch-icon" sizes="76x76" href="/img/tab.jpg">
+  <link rel="icon" href="/img/tab.jpg">
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, shrink-to-fit=no">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+  
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+  
+  <meta name="theme-color" content="#2f4154">
+  <meta name="author" content="Nanxer">
+  <meta name="keywords" content="">
+  
+    <meta name="description" content=".tg  {border-collapse:collapse;border-spacing:0;} .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;   overflow:hidden;padding:10px 5px;wor">
 <meta property="og:type" content="article">
-<meta property="og:title" content="常用可见ASCII码表">
+<meta property="og:title" content="ASCII码表">
 <meta property="og:url" content="https://nanxer.netlify.app/2024/12/06/ASCII%E7%A0%81%E8%A1%A8/index.html">
 <meta property="og:site_name" content="Nanxer&#39;s blog">
-<meta property="og:description" content="ASCII 值 ASCII 值     32 (space) 80 P   33 ！ 81 Q   34 ” 82 R   35 # 83 S   36 $ 84 T   37 % 85 U   38 &amp; 86 V   39 &#39; 87 W   40 ( 88 X">
+<meta property="og:description" content=".tg  {border-collapse:collapse;border-spacing:0;} .tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;   overflow:hidden;padding:10px 5px;wor">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://nanxer.netlify.app/img/head.jpg">
 <meta property="article:published_time" content="2024-12-06T01:35:13.000Z">
-<meta property="article:modified_time" content="2024-12-11T01:54:09.560Z">
+<meta property="article:modified_time" content="2024-12-11T07:36:37.875Z">
 <meta property="article:author" content="Nanxer">
-<meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://nanxer.netlify.app/img/head.jpg"><link rel="shortcut icon" href="/img/tab.jag"><link rel="canonical" href="https://nanxer.netlify.app/2024/12/06/ASCII%E7%A0%81%E8%A1%A8/index.html"><link rel="preconnect" href="//cdn.jsdelivr.net"/><link rel="stylesheet" href="/css/index.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free/css/all.min.css"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.css" media="print" onload="this.media='all'"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.min.css" media="print" onload="this.media='all'"><script>
-    (() => {
-      
-    const saveToLocal = {
-      set: (key, value, ttl) => {
-        if (!ttl) return
-        const expiry = Date.now() + ttl * 86400000
-        localStorage.setItem(key, JSON.stringify({ value, expiry }))
-      },
-      get: key => {
-        const itemStr = localStorage.getItem(key)
-        if (!itemStr) return undefined
-        const { value, expiry } = JSON.parse(itemStr)
-        if (Date.now() > expiry) {
-          localStorage.removeItem(key)
-          return undefined
-        }
-        return value
-      }
-    }
-
-    window.btf = {
-      saveToLocal,
-      getScript: (url, attr = {}) => new Promise((resolve, reject) => {
-        const script = document.createElement('script')
-        script.src = url
-        script.async = true
-        Object.entries(attr).forEach(([key, val]) => script.setAttribute(key, val))
-        script.onload = script.onreadystatechange = () => {
-          if (!script.readyState || /loaded|complete/.test(script.readyState)) resolve()
-        }
-        script.onerror = reject
-        document.head.appendChild(script)
-      }),
-      getCSS: (url, id) => new Promise((resolve, reject) => {
-        const link = document.createElement('link')
-        link.rel = 'stylesheet'
-        link.href = url
-        if (id) link.id = id
-        link.onload = link.onreadystatechange = () => {
-          if (!link.readyState || /loaded|complete/.test(link.readyState)) resolve()
-        }
-        link.onerror = reject
-        document.head.appendChild(link)
-      }),
-      addGlobalFn: (key, fn, name = false, parent = window) => {
-        if (!false && key.startsWith('pjax')) return
-        const globalFn = parent.globalFn || {}
-        globalFn[key] = globalFn[key] || {}
-        globalFn[key][name || Object.keys(globalFn[key]).length] = fn
-        parent.globalFn = globalFn
-      }
-    }
+<meta name="twitter:card" content="summary_large_image">
   
-      
-      const activateDarkMode = () => {
-        document.documentElement.setAttribute('data-theme', 'dark')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', '#0d0d0d')
-        }
-      }
-      const activateLightMode = () => {
-        document.documentElement.setAttribute('data-theme', 'light')
-        if (document.querySelector('meta[name="theme-color"]') !== null) {
-          document.querySelector('meta[name="theme-color"]').setAttribute('content', 'ffffff')
-        }
-      }
+  
+    <meta name="referrer" content="no-referrer-when-downgrade">
+  
+  
+  <title>ASCII码表のNanxer&#39;s blog</title>
 
-      btf.activateDarkMode = activateDarkMode
-      btf.activateLightMode = activateLightMode
+  <link  rel="stylesheet" href="https://lib.baomitu.com/twitter-bootstrap/4.6.1/css/bootstrap.min.css" />
 
-      const theme = saveToLocal.get('theme')
+
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/github-markdown-css/4.0.0/github-markdown.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/hint.css/2.7.0/hint.min.css" />
+
+  <link  rel="stylesheet" href="https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.css" />
+
+
+
+<!-- 主题依赖的图标库，不要自行修改 -->
+<!-- Do not modify the link that theme dependent icons -->
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1749284_5i9bdhy70f8.css">
+
+
+
+<link rel="stylesheet" href="//at.alicdn.com/t/c/font_1736178_k526ubmyhba.css">
+
+
+<link  rel="stylesheet" href="/css/main.css" />
+
+
+  <link id="highlight-css" rel="stylesheet" href="/css/highlight.css" />
+  
+    <link id="highlight-css-dark" rel="stylesheet" href="/css/highlight-dark.css" />
+  
+
+
+
+  
+<link rel="stylesheet" href="/css/scrollbar.css">
+<link rel="stylesheet" href="/css/indeximg-hover.css">
+
+
+
+  <script id="fluid-configs">
+    var Fluid = window.Fluid || {};
+    Fluid.ctx = Object.assign({}, Fluid.ctx)
+    var CONFIG = {"hostname":"nanxer.netlify.app","root":"/","version":"1.9.8","typing":{"enable":true,"typeSpeed":80,"cursorChar":"¶","loop":false,"scope":[]},"anchorjs":{"enable":true,"element":"h1,h2,h3,h4,h5,h6","placement":"left","visible":"hover","icon":"❡"},"progressbar":{"enable":true,"height_px":4,"color":"#29d","options":{"showSpinner":false,"trickleSpeed":100}},"code_language":{"enable":true,"default":"TEXT"},"copy_btn":true,"image_caption":{"enable":true},"image_zoom":{"enable":true,"img_url_replace":["",""]},"toc":{"enable":true,"placement":"right","headingSelector":"h1,h2,h3,h4,h5,h6","collapseDepth":0},"lazyload":{"enable":true,"loading_img":"/img/loading.gif","onlypost":false,"offset_factor":2},"web_analytics":{"enable":true,"follow_dnt":true,"baidu":null,"google":{"measurement_id":null},"tencent":{"sid":null,"cid":null},"leancloud":{"app_id":"S9gubhKsLgjHDOcY9bUhrKnT-gzGzoHsz","app_key":"zerFf1BfdowSPXSdYAr3p5HK","server_url":null,"path":"window.location.pathname","ignore_local":true},"umami":{"src":null,"website_id":null,"domains":null,"start_time":"2024-01-01T00:00:00.000Z","token":null,"api_server":null}},"search_path":"/local-search.xml","include_content_in_search":true};
+
+    if (CONFIG.web_analytics.follow_dnt) {
+      var dntVal = navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack;
+      Fluid.ctx.dnt = dntVal && (dntVal.startsWith('1') || dntVal.startsWith('yes') || dntVal.startsWith('on'));
+    }
+  </script>
+  <script  src="/js/utils.js" ></script>
+  <script  src="/js/color-schema.js" ></script>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
     
-          theme === 'dark' ? activateDarkMode() : theme === 'light' ? activateLightMode() : null
+  
+
+
+
+  
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.10.0/katex.min.css" rel="stylesheet" type="text/css">
+<meta name="generator" content="Hexo 7.3.0"></head>
+
+
+
+<body><!-- hexo injector body_begin start --><div id="web_bg"></div><!-- hexo injector body_begin end -->
+  
+
+  <header>
+    
+
+<div class="header-inner" style="height: 70vh;">
+  <nav id="navbar" class="navbar fixed-top  navbar-expand-lg navbar-dark scrolling-navbar">
+  <div class="container">
+    <a class="navbar-brand" href="/">
+      <strong>Nanxer&#39;s blog</strong>
+    </a>
+
+    <button id="navbar-toggler-btn" class="navbar-toggler" type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <div class="animated-icon"><span></span><span></span><span></span></div>
+    </button>
+
+    <!-- Collapsible content -->
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav ml-auto text-center">
         
-      
-      const asideStatus = saveToLocal.get('aside-status')
-      if (asideStatus !== undefined) {
-        document.documentElement.classList.toggle('hide-aside', asideStatus === 'hide')
-      }
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/" target="_self">
+                <i class="iconfont icon-home-fill"></i>
+                <span>首页</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/archives/" target="_self">
+                <i class="iconfont icon-archive-fill"></i>
+                <span>归档</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/categories/" target="_self">
+                <i class="iconfont icon-category-fill"></i>
+                <span>分类</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/tags/" target="_self">
+                <i class="iconfont icon-tags-fill"></i>
+                <span>标签</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/about/" target="_self">
+                <i class="iconfont icon-user-fill"></i>
+                <span>关于</span>
+              </a>
+            </li>
+          
+        
+          
+          
+          
+          
+            <li class="nav-item">
+              <a class="nav-link" href="/links/" target="_self">
+                <i class="iconfont icon-link-fill"></i>
+                <span>友链</span>
+              </a>
+            </li>
+          
+        
+        
+          <li class="nav-item" id="search-btn">
+            <a class="nav-link" target="_self" href="javascript:;" data-toggle="modal" data-target="#modalSearch" aria-label="Search">
+              <i class="iconfont icon-search"></i>
+            </a>
+          </li>
+          
+        
+        
+          <li class="nav-item" id="color-toggle-btn">
+            <a class="nav-link" target="_self" href="javascript:;" aria-label="Color Toggle">
+              <i class="iconfont icon-dark" id="color-toggle-icon"></i>
+            </a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+</nav>
+
+  
+
+<div id="banner" class="banner" parallax=true
+     style="background: url('/img/back.png') no-repeat center center; background-size: cover;">
+  <div class="full-bg-img">
+    <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
+      <div class="banner-text text-center fade-in-up">
+        <div class="h2">
+          
+            <span id="subtitle" data-typed-text="ASCII码表"></span>
+          
+        </div>
+
+        
+          
+  <div class="mt-3">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-author" aria-hidden="true"></i>
+        Nanxer
+      </span>
+    
+    
+      <span class="post-meta">
+        <i class="iconfont icon-date-fill" aria-hidden="true"></i>
+        <time datetime="2024-12-06 09:35" pubdate>
+          2024年12月6日 上午
+        </time>
+      </span>
+    
+  </div>
+
+  <div class="mt-1">
+    
+      <span class="post-meta mr-2">
+        <i class="iconfont icon-chart"></i>
+        
+          1.7k 字
+        
+      </span>
+    
+
+    
+
+    
     
       
-    const detectApple = () => {
-      if (/iPad|iPhone|iPod|Macintosh/.test(navigator.userAgent)) {
-        document.documentElement.classList.add('apple')
-      }
-    }
-    detectApple()
-  
-    })()
-  </script><script>const GLOBAL_CONFIG = {
-  root: '/',
-  algolia: undefined,
-  localSearch: {"path":"/search.xml","preload":false,"top_n_per_article":1,"unescape":false,"languages":{"hits_empty":"未找到符合您查询的内容：${query}","hits_stats":"共找到 ${hits} 篇文章"}},
-  translate: {"defaultEncoding":2,"translateDelay":0,"msgToTraditionalChinese":"繁","msgToSimplifiedChinese":"简"},
-  highlight: {"plugin":"highlight.js","highlightCopy":true,"highlightLang":true,"highlightHeightLimit":false,"highlightFullpage":false,"highlightMacStyle":false},
-  copy: {
-    success: '复制成功',
-    error: '复制失败',
-    noSupport: '浏览器不支持'
-  },
-  relativeDate: {
-    homepage: false,
-    post: false
-  },
-  runtime: '天',
-  dateSuffix: {
-    just: '刚刚',
-    min: '分钟前',
-    hour: '小时前',
-    day: '天前',
-    month: '个月前'
-  },
-  copyright: undefined,
-  lightbox: 'fancybox',
-  Snackbar: {"chs_to_cht":"已切换为繁体中文","cht_to_chs":"已切换为简体中文","day_to_night":"已切换为深色模式","night_to_day":"已切换为浅色模式","bgLight":"#49b1f5","bgDark":"#1f1f1f","position":"bottom-center"},
-  infinitegrid: {
-    js: 'https://cdn.jsdelivr.net/npm/@egjs/infinitegrid/dist/infinitegrid.min.js',
-    buttonText: '加载更多'
-  },
-  isPhotoFigcaption: false,
-  islazyload: false,
-  isAnchor: false,
-  percent: {
-    toc: true,
-    rightside: true,
-  },
-  autoDarkmode: false
-}</script><script id="config-diff">var GLOBAL_CONFIG_SITE = {
-  title: '常用可见ASCII码表',
-  isPost: true,
-  isHome: false,
-  isHighlightShrink: false,
-  isToc: false,
-  isShuoshuo: false
-}</script><meta name="generator" content="Hexo 7.3.0"></head><body><div id="loading-box"><div class="loading-left-bg"></div><div class="loading-right-bg"></div><div class="spinner-box"><div class="configure-border-1"><div class="configure-core"></div></div><div class="configure-border-2"><div class="configure-core"></div></div><div class="loading-word">加载中...</div></div></div><script>(()=>{
-  const $loadingBox = document.getElementById('loading-box')
-  const $body = document.body
-  const preloader = {
-    endLoading: () => {
-      $body.style.overflow = ''
-      $loadingBox.classList.add('loaded')
-    },
-    initLoading: () => {
-      $body.style.overflow = 'hidden'
-      $loadingBox.classList.remove('loaded')
-    }
-  }
+        <span id="busuanzi_container_page_pv" style="display: none">
+          <i class="iconfont icon-eye" aria-hidden="true"></i>
+          <span id="busuanzi_value_page_pv"></span> 次
+        </span>
+        
 
-  preloader.initLoading()
-  window.addEventListener('load', preloader.endLoading)
+      
+    
+  </div>
 
-  if (false) {
-    btf.addGlobalFn('pjaxSend', preloader.initLoading, 'preloader_init')
-    btf.addGlobalFn('pjaxComplete', preloader.endLoading, 'preloader_end')
-  }
-})()</script><div id="web_bg" style="background-image: url(/img/back.jpg);"></div><div id="sidebar"><div id="menu-mask"></div><div id="sidebar-menus"><div class="avatar-img text-center"><img src="/img/head.jpg" onerror="onerror=null;src='/img/friend_404.gif'" alt="avatar"/></div><div class="site-data text-center"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div></div></div><div class="post" id="body-wrap"><header class="post-bg" id="page-header" style="background: transparent;"><nav id="nav"><span id="blog-info"><a class="nav-site-title" href="/"><span class="site-name">Nanxer's blog</span></a><a class="nav-page-title" href="/"><span class="site-name">常用可见ASCII码表</span></a></span><div id="menus"><div id="search-button"><span class="site-page social-icon search"><i class="fas fa-search fa-fw"></i><span> 搜索</span></span></div><div class="menus_items"><div class="menus_item"><a class="site-page" href="/"><i class="fa-fw fas fa-home"></i><span> 首页</span></a></div><div class="menus_item"><a class="site-page" href="/archives/"><i class="fa-fw fas fa-archive"></i><span> 时间轴</span></a></div><div class="menus_item"><a class="site-page" href="/tags/"><i class="fa-fw fas fa-tags"></i><span> 标签</span></a></div><div class="menus_item"><a class="site-page" href="/categories/"><i class="fa-fw fas fa-folder-open"></i><span> 分类</span></a></div><div class="menus_item"><a class="site-page" href="/about/"><i class="fa-fw fas fa-heart"></i><span> 关于</span></a></div><div class="menus_item"><a class="site-page" href="/link/"><i class="fa-fw fas fa-link"></i><span> 友链</span></a></div></div><div id="toggle-menu"><span class="site-page"><i class="fas fa-bars fa-fw"></i></span></div></div></nav><div id="post-info"><h1 class="post-title">常用可见ASCII码表</h1><div id="post-meta"><div class="meta-firstline"><span class="post-meta-date"><i class="far fa-calendar-alt fa-fw post-meta-icon"></i><span class="post-meta-label">发表于</span><time class="post-meta-date-created" datetime="2024-12-06T01:35:13.000Z" title="发表于 2024-12-06 09:35:13">2024-12-06</time><span class="post-meta-separator">|</span><i class="fas fa-history fa-fw post-meta-icon"></i><span class="post-meta-label">更新于</span><time class="post-meta-date-updated" datetime="2024-12-11T01:54:09.560Z" title="更新于 2024-12-11 09:54:09">2024-12-11</time></span><span class="post-meta-categories"><span class="post-meta-separator">|</span><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/">计算机</a><i class="fas fa-angle-right post-meta-separator"></i><i class="fas fa-inbox fa-fw post-meta-icon"></i><a class="post-meta-categories" href="/categories/CTF/">CTF</a></span></div><div class="meta-secondline"><span class="post-meta-separator">|</span><span class="leancloud_visitors" id="/2024/12/06/ASCII%E7%A0%81%E8%A1%A8/" data-flag-title="常用可见ASCII码表"><i class="far fa-eye fa-fw post-meta-icon"></i><span class="post-meta-label">浏览量:</span><span class="leancloud-visitors-count"><i class="fa-solid fa-spinner fa-spin"></i></span></span></div></div></div></header><main class="layout" id="content-inner"><div id="post"><article class="container post-content" id="article-container"><div id="post-outdate-notice" data="{&quot;limitDay&quot;:365,&quot;messagePrev&quot;:&quot;已经过了&quot;,&quot;messageNext&quot;:&quot;天自上次更新，文章内容可能已过时。&quot;,&quot;postUpdate&quot;:&quot;2024-12-11 09:54:09&quot;}" hidden></div><table>
+
+        
+      </div>
+
+      
+    </div>
+  </div>
+</div>
+
+</div>
+
+  </header>
+
+  <main>
+    
+      
+
+<div class="container-fluid nopadding-x">
+  <div class="row nomargin-x">
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+
+    </div>
+
+    <div class="col-lg-8 nopadding-x-md">
+      <div class="container nopadding-x-md" id="board-ctn">
+        <div id="board">
+          <article class="post-content mx-auto">
+            <h1 id="seo-header">ASCII码表</h1>
+            
+              <p id="updated-time" class="note note-info" style="display: none">
+                
+                  
+                    本文最后更新于 2024-12-11T15:36:37+08:00
+                  
+                  
+
+                
+              </p>
+            
+            
+              <div class="markdown-body">
+                
+                <style type="text/css">
+.tg  {border-collapse:collapse;border-spacing:0;}
+.tg td{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg th{border-color:black;border-style:solid;border-width:1px;font-family:Arial, sans-serif;font-size:14px;
+  font-weight:normal;overflow:hidden;padding:10px 5px;word-break:normal;}
+.tg .tg-c3ow{border-color:inherit;text-align:center;vertical-align:top}
+.tg .tg-be0w{background-color:#009688;border-color:inherit;color:#FFF;text-align:center;vertical-align:top}
+.tg .tg-ei0w{border-color:inherit;color:#666;text-align:center;vertical-align:top}
+.tg .tg-nolz{background-color:#F2F2F2;border-color:inherit;color:#666;text-align:center;vertical-align:top}
+.tg .tg-xgb2{background-color:#FEB;border-color:inherit;color:#666;text-align:center;vertical-align:top}
+.tg .tg-0pky{border-color:inherit;text-align:left;vertical-align:top}
+.tg .tg-wvkc{background-color:#F9F9F9;border-color:inherit;color:#666;text-align:center;vertical-align:top}
+</style>
+<table class="tg">
 <thead>
 <tr>
-<th>ASCII</th>
-<th>值</th>
-<th>ASCII</th>
-<th>值</th>
+<th class="tg-be0w">
+十进制
+</th>
+<th class="tg-be0w">
+八进制
+</th>
+<th class="tg-be0w">
+十六进制
+</th>
+<th class="tg-be0w">
+二进制
+</th>
+<th class="tg-be0w">
+符号
+</th>
+<th class="tg-be0w">
+HTML
+</th>
+<th class="tg-be0w">
+中文解释
+</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>32</td>
-<td>(space)</td>
-<td>80</td>
-<td>P</td>
+<td class="tg-be0w">
+DEC
+</td>
+<td class="tg-be0w">
+OCT
+</td>
+<td class="tg-be0w">
+HEX
+</td>
+<td class="tg-be0w">
+BIN
+</td>
+<td class="tg-be0w">
+Symbol
+</td>
+<td class="tg-be0w">
+实体编码
+</td>
+<td class="tg-be0w">
+Description
+</td>
 </tr>
 <tr>
-<td>33</td>
-<td>！</td>
-<td>81</td>
-<td>Q</td>
+<td class="tg-ei0w" colspan="7">
+前128个称为基本ASCII码，从二进制角度来看，它们的最高位bit[7]=0，只使用了低7位bit[6,0]来进行编码。
+</td>
 </tr>
 <tr>
-<td>34</td>
-<td>”</td>
-<td>82</td>
-<td>R</td>
+<td class="tg-ei0w" colspan="7">
+0~31 之间的ASCII码常用于控制像打印机一样的外围设备。
+</td>
 </tr>
 <tr>
-<td>35</td>
-<td>#</td>
-<td>83</td>
-<td>S</td>
+<td class="tg-nolz">
+0
+</td>
+<td class="tg-nolz">
+0
+</td>
+<td class="tg-nolz">
+0
+</td>
+<td class="tg-nolz">
+0
+</td>
+<td class="tg-nolz">
+NUL
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+空字符 终止符
+</td>
 </tr>
 <tr>
-<td>36</td>
-<td>$</td>
-<td>84</td>
-<td>T</td>
+<td class="tg-nolz">
+1
+</td>
+<td class="tg-nolz">
+1
+</td>
+<td class="tg-nolz">
+1
+</td>
+<td class="tg-nolz">
+1
+</td>
+<td class="tg-nolz">
+SOH
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+标题开始
+</td>
 </tr>
 <tr>
-<td>37</td>
-<td>%</td>
-<td>85</td>
-<td>U</td>
+<td class="tg-nolz">
+2
+</td>
+<td class="tg-nolz">
+2
+</td>
+<td class="tg-nolz">
+2
+</td>
+<td class="tg-nolz">
+10
+</td>
+<td class="tg-nolz">
+STX
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+正文开始
+</td>
 </tr>
 <tr>
-<td>38</td>
-<td>&amp;</td>
-<td>86</td>
-<td>V</td>
+<td class="tg-nolz">
+3
+</td>
+<td class="tg-nolz">
+3
+</td>
+<td class="tg-nolz">
+3
+</td>
+<td class="tg-nolz">
+11
+</td>
+<td class="tg-nolz">
+ETX
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+正文结束
+</td>
 </tr>
 <tr>
-<td>39</td>
-<td>'</td>
-<td>87</td>
-<td>W</td>
+<td class="tg-nolz">
+4
+</td>
+<td class="tg-nolz">
+4
+</td>
+<td class="tg-nolz">
+4
+</td>
+<td class="tg-nolz">
+100
+</td>
+<td class="tg-nolz">
+EOT
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+传输结束
+</td>
 </tr>
 <tr>
-<td>40</td>
-<td>(</td>
-<td>88</td>
-<td>X</td>
+<td class="tg-nolz">
+5
+</td>
+<td class="tg-nolz">
+5
+</td>
+<td class="tg-nolz">
+5
+</td>
+<td class="tg-nolz">
+101
+</td>
+<td class="tg-nolz">
+ENQ
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+询问
+</td>
 </tr>
 <tr>
-<td>41</td>
-<td>)</td>
-<td>89</td>
-<td>Y</td>
+<td class="tg-nolz">
+6
+</td>
+<td class="tg-nolz">
+6
+</td>
+<td class="tg-nolz">
+6
+</td>
+<td class="tg-nolz">
+110
+</td>
+<td class="tg-nolz">
+ACK
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+收到通知
+</td>
 </tr>
 <tr>
-<td>42</td>
-<td>*</td>
-<td>90</td>
-<td>Z</td>
+<td class="tg-nolz">
+7
+</td>
+<td class="tg-nolz">
+7
+</td>
+<td class="tg-nolz">
+7
+</td>
+<td class="tg-nolz">
+111
+</td>
+<td class="tg-nolz">
+BEL
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+铃
+</td>
 </tr>
 <tr>
-<td>43</td>
-<td>+</td>
-<td>91</td>
-<td>[</td>
+<td class="tg-nolz">
+8
+</td>
+<td class="tg-nolz">
+10
+</td>
+<td class="tg-nolz">
+8
+</td>
+<td class="tg-nolz">
+1000
+</td>
+<td class="tg-nolz">
+BS
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+退格
+</td>
 </tr>
 <tr>
-<td>44</td>
-<td>,</td>
-<td>92</td>
-<td>\</td>
+<td class="tg-nolz">
+9
+</td>
+<td class="tg-nolz">
+11
+</td>
+<td class="tg-nolz">
+9
+</td>
+<td class="tg-nolz">
+1001
+</td>
+<td class="tg-nolz">
+HT
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+水平制表符
+</td>
 </tr>
 <tr>
-<td>45</td>
-<td>-</td>
-<td>93</td>
-<td>]</td>
+<td class="tg-xgb2">
+10
+</td>
+<td class="tg-xgb2">
+12
+</td>
+<td class="tg-xgb2">
+0A
+</td>
+<td class="tg-xgb2">
+1010
+</td>
+<td class="tg-xgb2">
+LF
+</td>
+<td class="tg-xgb2">
+</td>
+<td class="tg-xgb2">
+换行符
+</td>
 </tr>
 <tr>
-<td>46</td>
-<td>.</td>
-<td>94</td>
-<td>^</td>
+<td class="tg-nolz">
+11
+</td>
+<td class="tg-nolz">
+13
+</td>
+<td class="tg-nolz">
+0B
+</td>
+<td class="tg-nolz">
+1011
+</td>
+<td class="tg-nolz">
+VT
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+垂直制表符
+</td>
 </tr>
 <tr>
-<td>47</td>
-<td>/</td>
-<td>95</td>
-<td>—</td>
+<td class="tg-nolz">
+12
+</td>
+<td class="tg-nolz">
+14
+</td>
+<td class="tg-nolz">
+0C
+</td>
+<td class="tg-nolz">
+1100
+</td>
+<td class="tg-nolz">
+FF
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+换页符
+</td>
 </tr>
 <tr>
-<td>48</td>
-<td>0</td>
-<td>96</td>
-<td>、</td>
+<td class="tg-xgb2">
+13
+</td>
+<td class="tg-xgb2">
+15
+</td>
+<td class="tg-xgb2">
+0D
+</td>
+<td class="tg-xgb2">
+1101
+</td>
+<td class="tg-xgb2">
+CR
+</td>
+<td class="tg-xgb2">
+</td>
+<td class="tg-xgb2">
+回车符 /td&gt;
+</td></tr>
+<tr>
+<td class="tg-nolz">
+14
+</td>
+<td class="tg-nolz">
+16
+</td>
+<td class="tg-nolz">
+0E
+</td>
+<td class="tg-nolz">
+1110
+</td>
+<td class="tg-nolz">
+SO
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+移出
+</td>
 </tr>
 <tr>
-<td>49</td>
-<td>1</td>
-<td>97</td>
-<td>a</td>
+<td class="tg-nolz">
+15
+</td>
+<td class="tg-nolz">
+17
+</td>
+<td class="tg-nolz">
+0F
+</td>
+<td class="tg-nolz">
+1111
+</td>
+<td class="tg-nolz">
+SI
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+移入
+</td>
 </tr>
 <tr>
-<td>50</td>
-<td>2</td>
-<td>98</td>
-<td>b</td>
+<td class="tg-nolz">
+16
+</td>
+<td class="tg-nolz">
+20
+</td>
+<td class="tg-nolz">
+10
+</td>
+<td class="tg-nolz">
+10000
+</td>
+<td class="tg-nolz">
+DLE
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+数据链路转义
+</td>
 </tr>
 <tr>
-<td>51</td>
-<td>3</td>
-<td>99</td>
-<td>c</td>
+<td class="tg-nolz">
+17
+</td>
+<td class="tg-nolz">
+21
+</td>
+<td class="tg-nolz">
+11
+</td>
+<td class="tg-nolz">
+10001
+</td>
+<td class="tg-nolz">
+DC1
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+设备控制 1
+</td>
 </tr>
 <tr>
-<td>52</td>
-<td>4</td>
-<td>100</td>
-<td>d</td>
+<td class="tg-nolz">
+18
+</td>
+<td class="tg-nolz">
+22
+</td>
+<td class="tg-nolz">
+12
+</td>
+<td class="tg-nolz">
+10010
+</td>
+<td class="tg-nolz">
+DC2
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+设备控制 2
+</td>
 </tr>
 <tr>
-<td>53</td>
-<td>5</td>
-<td>101</td>
-<td>e</td>
+<td class="tg-nolz">
+19
+</td>
+<td class="tg-nolz">
+23
+</td>
+<td class="tg-nolz">
+13
+</td>
+<td class="tg-nolz">
+10011
+</td>
+<td class="tg-nolz">
+DC3
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+设备控制 3
+</td>
 </tr>
 <tr>
-<td>54</td>
-<td>6</td>
-<td>102</td>
-<td>f</td>
+<td class="tg-nolz">
+20
+</td>
+<td class="tg-nolz">
+24
+</td>
+<td class="tg-nolz">
+14
+</td>
+<td class="tg-nolz">
+10100
+</td>
+<td class="tg-nolz">
+DC4
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+设备控制 4
+</td>
 </tr>
 <tr>
-<td>55</td>
-<td>7</td>
-<td>103</td>
-<td>g</td>
+<td class="tg-nolz">
+21
+</td>
+<td class="tg-nolz">
+25
+</td>
+<td class="tg-nolz">
+15
+</td>
+<td class="tg-nolz">
+10101
+</td>
+<td class="tg-nolz">
+NAK
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+拒绝接收
+</td>
 </tr>
 <tr>
-<td>56</td>
-<td>8</td>
-<td>104</td>
-<td>h</td>
+<td class="tg-nolz">
+22
+</td>
+<td class="tg-nolz">
+26
+</td>
+<td class="tg-nolz">
+16
+</td>
+<td class="tg-nolz">
+10110
+</td>
+<td class="tg-nolz">
+SYN
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+同步空闲
+</td>
 </tr>
 <tr>
-<td>57</td>
-<td>9</td>
-<td>105</td>
-<td>i</td>
+<td class="tg-nolz">
+23
+</td>
+<td class="tg-nolz">
+27
+</td>
+<td class="tg-nolz">
+17
+</td>
+<td class="tg-nolz">
+10111
+</td>
+<td class="tg-nolz">
+ETB
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+传输块结束
+</td>
 </tr>
 <tr>
-<td>58</td>
-<td>:</td>
-<td>106</td>
-<td>j</td>
+<td class="tg-nolz">
+24
+</td>
+<td class="tg-nolz">
+30
+</td>
+<td class="tg-nolz">
+18
+</td>
+<td class="tg-nolz">
+11000
+</td>
+<td class="tg-nolz">
+CAN
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+取消
+</td>
 </tr>
 <tr>
-<td>59</td>
-<td>;</td>
-<td>107</td>
-<td>k</td>
+<td class="tg-nolz">
+25
+</td>
+<td class="tg-nolz">
+31
+</td>
+<td class="tg-nolz">
+19
+</td>
+<td class="tg-nolz">
+11001
+</td>
+<td class="tg-nolz">
+EM
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+介质中断
+</td>
 </tr>
 <tr>
-<td>60</td>
-<td>&lt;</td>
-<td>108</td>
-<td>l</td>
+<td class="tg-nolz">
+26
+</td>
+<td class="tg-nolz">
+32
+</td>
+<td class="tg-nolz">
+1A
+</td>
+<td class="tg-nolz">
+11010
+</td>
+<td class="tg-nolz">
+SUB
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+替换
+</td>
 </tr>
 <tr>
-<td>61</td>
-<td>=</td>
-<td>109</td>
-<td>m</td>
+<td class="tg-nolz">
+27
+</td>
+<td class="tg-nolz">
+33
+</td>
+<td class="tg-nolz">
+1B
+</td>
+<td class="tg-nolz">
+11011
+</td>
+<td class="tg-nolz">
+ESC
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+换码符
+</td>
 </tr>
 <tr>
-<td>62</td>
-<td>&gt;</td>
-<td>110</td>
-<td>n</td>
+<td class="tg-nolz">
+28
+</td>
+<td class="tg-nolz">
+34
+</td>
+<td class="tg-nolz">
+1C
+</td>
+<td class="tg-nolz">
+11100
+</td>
+<td class="tg-nolz">
+FS
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+文件分隔符
+</td>
 </tr>
 <tr>
-<td>63</td>
-<td>?</td>
-<td>111</td>
-<td>o</td>
+<td class="tg-nolz">
+29
+</td>
+<td class="tg-nolz">
+35
+</td>
+<td class="tg-nolz">
+1D
+</td>
+<td class="tg-nolz">
+11101
+</td>
+<td class="tg-nolz">
+GS
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+组分隔符
+</td>
 </tr>
 <tr>
-<td>64</td>
-<td>@</td>
-<td>112</td>
-<td>p</td>
+<td class="tg-nolz">
+30
+</td>
+<td class="tg-nolz">
+36
+</td>
+<td class="tg-nolz">
+1E
+</td>
+<td class="tg-nolz">
+11110
+</td>
+<td class="tg-nolz">
+RS
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+记录分离符
+</td>
 </tr>
 <tr>
-<td>65</td>
-<td>A</td>
-<td>113</td>
-<td>q</td>
+<td class="tg-nolz">
+31
+</td>
+<td class="tg-nolz">
+37
+</td>
+<td class="tg-nolz">
+1F
+</td>
+<td class="tg-nolz">
+11111
+</td>
+<td class="tg-nolz">
+US
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+单元分隔符
+</td>
 </tr>
 <tr>
-<td>66</td>
-<td>B</td>
-<td>114</td>
-<td>r</td>
+<td class="tg-0pky" colspan="7">
+十进制 32~127 区间一共 127-32+1=96
+个ASCII码表示的符号，在我们的键盘上都可以被找到。其中：32表示空格，127表示删除命令。
+</td>
 </tr>
 <tr>
-<td>67</td>
-<td>C</td>
-<td>115</td>
-<td>s</td>
+<td class="tg-nolz">
+32
+</td>
+<td class="tg-nolz">
+40
+</td>
+<td class="tg-nolz">
+20
+</td>
+<td class="tg-nolz">
+100000
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+
+</td>
+<td class="tg-nolz">
+空格
+</td>
 </tr>
 <tr>
-<td>68</td>
-<td>D</td>
-<td>116</td>
-<td>t</td>
+<td class="tg-nolz">
+33
+</td>
+<td class="tg-nolz">
+41
+</td>
+<td class="tg-nolz">
+21
+</td>
+<td class="tg-nolz">
+100001
+</td>
+<td class="tg-nolz">
+!
+</td>
+<td class="tg-nolz">
+!
+</td>
+<td class="tg-nolz">
+感叹号
+</td>
 </tr>
 <tr>
-<td>69</td>
-<td>E</td>
-<td>117</td>
-<td>u</td>
+<td class="tg-nolz">
+34
+</td>
+<td class="tg-nolz">
+42
+</td>
+<td class="tg-nolz">
+22
+</td>
+<td class="tg-nolz">
+100010
+</td>
+<td class="tg-nolz">
+"
+</td>
+<td class="tg-nolz">
+"
+</td>
+<td class="tg-nolz">
+双引号
+</td>
 </tr>
 <tr>
-<td>70</td>
-<td>F</td>
-<td>118</td>
-<td>v</td>
+<td class="tg-nolz">
+35
+</td>
+<td class="tg-nolz">
+43
+</td>
+<td class="tg-nolz">
+23
+</td>
+<td class="tg-nolz">
+100011
+</td>
+<td class="tg-nolz">
+#
+</td>
+<td class="tg-nolz">
+#
+</td>
+<td class="tg-nolz">
+井号
+</td>
 </tr>
 <tr>
-<td>71</td>
-<td>G</td>
-<td>119</td>
-<td>w</td>
+<td class="tg-nolz">
+36
+</td>
+<td class="tg-nolz">
+44
+</td>
+<td class="tg-nolz">
+24
+</td>
+<td class="tg-nolz">
+100100
+</td>
+<td class="tg-nolz">
+$
+</td>
+<td class="tg-nolz">
+$
+</td>
+<td class="tg-nolz">
+美元符
+</td>
 </tr>
 <tr>
-<td>72</td>
-<td>H</td>
-<td>120</td>
-<td>x</td>
+<td class="tg-nolz">
+37
+</td>
+<td class="tg-nolz">
+45
+</td>
+<td class="tg-nolz">
+25
+</td>
+<td class="tg-nolz">
+100101
+</td>
+<td class="tg-nolz">
+%
+</td>
+<td class="tg-nolz">
+%
+</td>
+<td class="tg-nolz">
+百分号
+</td>
 </tr>
 <tr>
-<td>73</td>
-<td>I</td>
-<td>121</td>
-<td>y</td>
+<td class="tg-nolz">
+38
+</td>
+<td class="tg-nolz">
+46
+</td>
+<td class="tg-nolz">
+26
+</td>
+<td class="tg-nolz">
+100110
+</td>
+<td class="tg-nolz">
+&amp;
+</td>
+<td class="tg-nolz">
+&amp;
+</td>
+<td class="tg-nolz">
+与
+</td>
 </tr>
 <tr>
-<td>74</td>
-<td>J</td>
-<td>122</td>
-<td>z</td>
+<td class="tg-nolz">
+39
+</td>
+<td class="tg-nolz">
+47
+</td>
+<td class="tg-nolz">
+27
+</td>
+<td class="tg-nolz">
+100111
+</td>
+<td class="tg-nolz">
+'
+</td>
+<td class="tg-nolz">
+'
+</td>
+<td class="tg-nolz">
+单引号
+</td>
 </tr>
 <tr>
-<td>75</td>
-<td>K</td>
-<td>123</td>
-<td>{</td>
+<td class="tg-nolz">
+40
+</td>
+<td class="tg-nolz">
+50
+</td>
+<td class="tg-nolz">
+28
+</td>
+<td class="tg-nolz">
+101000
+</td>
+<td class="tg-nolz">
+(
+</td>
+<td class="tg-nolz">
+(
+</td>
+<td class="tg-nolz">
+左括号
+</td>
 </tr>
 <tr>
-<td>76</td>
-<td>L</td>
-<td>124</td>
-<td>|</td>
+<td class="tg-nolz">
+41
+</td>
+<td class="tg-nolz">
+51
+</td>
+<td class="tg-nolz">
+29
+</td>
+<td class="tg-nolz">
+101001
+</td>
+<td class="tg-nolz">
+)
+</td>
+<td class="tg-nolz">
+)
+</td>
+<td class="tg-nolz">
+右括号
+</td>
 </tr>
 <tr>
-<td>77</td>
-<td>M</td>
-<td>125</td>
-<td>}</td>
+<td class="tg-nolz">
+42
+</td>
+<td class="tg-nolz">
+52
+</td>
+<td class="tg-nolz">
+2A
+</td>
+<td class="tg-nolz">
+101010
+</td>
+<td class="tg-nolz">
+*
+</td>
+<td class="tg-nolz">
+*
+</td>
+<td class="tg-nolz">
+星号
+</td>
 </tr>
 <tr>
-<td>78</td>
-<td>N</td>
-<td>126</td>
-<td>~</td>
+<td class="tg-nolz">
+43
+</td>
+<td class="tg-nolz">
+53
+</td>
+<td class="tg-nolz">
+2B
+</td>
+<td class="tg-nolz">
+101011
+</td>
+<td class="tg-nolz">
++
+</td>
+<td class="tg-nolz">
++
+</td>
+<td class="tg-nolz">
+加号
+</td>
 </tr>
 <tr>
-<td>79</td>
-<td>O</td>
-<td></td>
-<td></td>
+<td class="tg-nolz">
+44
+</td>
+<td class="tg-nolz">
+54
+</td>
+<td class="tg-nolz">
+2C
+</td>
+<td class="tg-nolz">
+101100
+</td>
+<td class="tg-nolz">
+,
+</td>
+<td class="tg-nolz">
+,
+</td>
+<td class="tg-nolz">
+逗号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+45
+</td>
+<td class="tg-nolz">
+55
+</td>
+<td class="tg-nolz">
+2D
+</td>
+<td class="tg-nolz">
+101101
+</td>
+<td class="tg-nolz">
+-
+</td>
+<td class="tg-nolz">
+-
+</td>
+<td class="tg-nolz">
+连字号或减号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+46
+</td>
+<td class="tg-nolz">
+56
+</td>
+<td class="tg-nolz">
+2E
+</td>
+<td class="tg-nolz">
+101110
+</td>
+<td class="tg-nolz">
+.
+</td>
+<td class="tg-nolz">
+.
+</td>
+<td class="tg-nolz">
+句点或小数点
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+47
+</td>
+<td class="tg-nolz">
+57
+</td>
+<td class="tg-nolz">
+2F
+</td>
+<td class="tg-nolz">
+101111
+</td>
+<td class="tg-nolz">
+/
+</td>
+<td class="tg-nolz">
+/
+</td>
+<td class="tg-nolz">
+斜杠
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+48
+</td>
+<td class="tg-xgb2">
+60
+</td>
+<td class="tg-xgb2">
+30
+</td>
+<td class="tg-xgb2">
+110000
+</td>
+<td class="tg-xgb2">
+0
+</td>
+<td class="tg-xgb2">
+0
+</td>
+<td class="tg-xgb2">
+0
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+49
+</td>
+<td class="tg-xgb2">
+61
+</td>
+<td class="tg-xgb2">
+31
+</td>
+<td class="tg-xgb2">
+110001
+</td>
+<td class="tg-xgb2">
+1
+</td>
+<td class="tg-xgb2">
+1
+</td>
+<td class="tg-xgb2">
+1
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+50
+</td>
+<td class="tg-xgb2">
+62
+</td>
+<td class="tg-xgb2">
+32
+</td>
+<td class="tg-xgb2">
+110010
+</td>
+<td class="tg-xgb2">
+2
+</td>
+<td class="tg-xgb2">
+2
+</td>
+<td class="tg-xgb2">
+2
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+51
+</td>
+<td class="tg-xgb2">
+63
+</td>
+<td class="tg-xgb2">
+33
+</td>
+<td class="tg-xgb2">
+110011
+</td>
+<td class="tg-xgb2">
+3
+</td>
+<td class="tg-xgb2">
+3
+</td>
+<td class="tg-xgb2">
+3
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+52
+</td>
+<td class="tg-xgb2">
+64
+</td>
+<td class="tg-xgb2">
+34
+</td>
+<td class="tg-xgb2">
+110100
+</td>
+<td class="tg-xgb2">
+4
+</td>
+<td class="tg-xgb2">
+4
+</td>
+<td class="tg-xgb2">
+4
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+53
+</td>
+<td class="tg-xgb2">
+65
+</td>
+<td class="tg-xgb2">
+35
+</td>
+<td class="tg-xgb2">
+110101
+</td>
+<td class="tg-xgb2">
+5
+</td>
+<td class="tg-xgb2">
+5
+</td>
+<td class="tg-xgb2">
+5
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+54
+</td>
+<td class="tg-xgb2">
+66
+</td>
+<td class="tg-xgb2">
+36
+</td>
+<td class="tg-xgb2">
+110110
+</td>
+<td class="tg-xgb2">
+6
+</td>
+<td class="tg-xgb2">
+6
+</td>
+<td class="tg-xgb2">
+6
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+55
+</td>
+<td class="tg-xgb2">
+67
+</td>
+<td class="tg-xgb2">
+37
+</td>
+<td class="tg-xgb2">
+110111
+</td>
+<td class="tg-xgb2">
+7
+</td>
+<td class="tg-xgb2">
+7
+</td>
+<td class="tg-xgb2">
+7
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+56
+</td>
+<td class="tg-xgb2">
+70
+</td>
+<td class="tg-xgb2">
+38
+</td>
+<td class="tg-xgb2">
+111000
+</td>
+<td class="tg-xgb2">
+8
+</td>
+<td class="tg-xgb2">
+8
+</td>
+<td class="tg-xgb2">
+8
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+57
+</td>
+<td class="tg-xgb2">
+71
+</td>
+<td class="tg-xgb2">
+39
+</td>
+<td class="tg-xgb2">
+111001
+</td>
+<td class="tg-xgb2">
+9
+</td>
+<td class="tg-xgb2">
+9
+</td>
+<td class="tg-xgb2">
+9
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+58
+</td>
+<td class="tg-nolz">
+72
+</td>
+<td class="tg-nolz">
+3A
+</td>
+<td class="tg-nolz">
+111010
+</td>
+<td class="tg-nolz">
+:
+</td>
+<td class="tg-nolz">
+:
+</td>
+<td class="tg-nolz">
+冒号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+59
+</td>
+<td class="tg-nolz">
+73
+</td>
+<td class="tg-nolz">
+3B
+</td>
+<td class="tg-nolz">
+111011
+</td>
+<td class="tg-nolz">
+;
+</td>
+<td class="tg-nolz">
+;
+</td>
+<td class="tg-nolz">
+分号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+60
+</td>
+<td class="tg-nolz">
+74
+</td>
+<td class="tg-nolz">
+3C
+</td>
+<td class="tg-nolz">
+111100
+</td>
+<td class="tg-nolz">
+&lt;
+</td>
+<td class="tg-nolz">
+&lt;
+</td>
+<td class="tg-nolz">
+小于
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+61
+</td>
+<td class="tg-nolz">
+75
+</td>
+<td class="tg-nolz">
+3D
+</td>
+<td class="tg-nolz">
+111101
+</td>
+<td class="tg-nolz">
+=
+</td>
+<td class="tg-nolz">
+=
+</td>
+<td class="tg-nolz">
+等号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+62
+</td>
+<td class="tg-nolz">
+76
+</td>
+<td class="tg-nolz">
+3E
+</td>
+<td class="tg-nolz">
+111110
+</td>
+<td class="tg-nolz">
+<blockquote>
+</blockquote></td>
+<td class="tg-nolz">
+&gt;
+</td>
+<td class="tg-nolz">
+大于
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+63
+</td>
+<td class="tg-nolz">
+77
+</td>
+<td class="tg-nolz">
+3F
+</td>
+<td class="tg-nolz">
+111111
+</td>
+<td class="tg-nolz">
+?
+</td>
+<td class="tg-nolz">
+?
+</td>
+<td class="tg-nolz">
+问号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+64
+</td>
+<td class="tg-nolz">
+100
+</td>
+<td class="tg-nolz">
+40
+</td>
+<td class="tg-nolz">
+1000000
+</td>
+<td class="tg-nolz">
+@
+</td>
+<td class="tg-nolz">
+@
+</td>
+<td class="tg-nolz">
+电子邮件符号
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+65
+</td>
+<td class="tg-xgb2">
+101
+</td>
+<td class="tg-xgb2">
+41
+</td>
+<td class="tg-xgb2">
+1000001
+</td>
+<td class="tg-xgb2">
+A
+</td>
+<td class="tg-xgb2">
+A
+</td>
+<td class="tg-xgb2">
+大写字母 A
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+66
+</td>
+<td class="tg-xgb2">
+102
+</td>
+<td class="tg-xgb2">
+42
+</td>
+<td class="tg-xgb2">
+1000010
+</td>
+<td class="tg-xgb2">
+B
+</td>
+<td class="tg-xgb2">
+B
+</td>
+<td class="tg-xgb2">
+大写字母 B
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+67
+</td>
+<td class="tg-xgb2">
+103
+</td>
+<td class="tg-xgb2">
+43
+</td>
+<td class="tg-xgb2">
+1000011
+</td>
+<td class="tg-xgb2">
+C
+</td>
+<td class="tg-xgb2">
+C
+</td>
+<td class="tg-xgb2">
+大写字母 C
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+68
+</td>
+<td class="tg-xgb2">
+104
+</td>
+<td class="tg-xgb2">
+44
+</td>
+<td class="tg-xgb2">
+1000100
+</td>
+<td class="tg-xgb2">
+D
+</td>
+<td class="tg-xgb2">
+D
+</td>
+<td class="tg-xgb2">
+大写字母 D
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+69
+</td>
+<td class="tg-xgb2">
+105
+</td>
+<td class="tg-xgb2">
+45
+</td>
+<td class="tg-xgb2">
+1000101
+</td>
+<td class="tg-xgb2">
+E
+</td>
+<td class="tg-xgb2">
+E
+</td>
+<td class="tg-xgb2">
+大写字母 E
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+70
+</td>
+<td class="tg-xgb2">
+106
+</td>
+<td class="tg-xgb2">
+46
+</td>
+<td class="tg-xgb2">
+1000110
+</td>
+<td class="tg-xgb2">
+F
+</td>
+<td class="tg-xgb2">
+F
+</td>
+<td class="tg-xgb2">
+大写字母 F
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+71
+</td>
+<td class="tg-xgb2">
+107
+</td>
+<td class="tg-xgb2">
+47
+</td>
+<td class="tg-xgb2">
+1000111
+</td>
+<td class="tg-xgb2">
+G
+</td>
+<td class="tg-xgb2">
+G
+</td>
+<td class="tg-xgb2">
+大写字母 G
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+72
+</td>
+<td class="tg-xgb2">
+110
+</td>
+<td class="tg-xgb2">
+48
+</td>
+<td class="tg-xgb2">
+1001000
+</td>
+<td class="tg-xgb2">
+H
+</td>
+<td class="tg-xgb2">
+H
+</td>
+<td class="tg-xgb2">
+大写字母 H
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+73
+</td>
+<td class="tg-xgb2">
+111
+</td>
+<td class="tg-xgb2">
+49
+</td>
+<td class="tg-xgb2">
+1001001
+</td>
+<td class="tg-xgb2">
+I
+</td>
+<td class="tg-xgb2">
+I
+</td>
+<td class="tg-xgb2">
+大写字母 I
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+74
+</td>
+<td class="tg-xgb2">
+112
+</td>
+<td class="tg-xgb2">
+4A
+</td>
+<td class="tg-xgb2">
+1001010
+</td>
+<td class="tg-xgb2">
+J
+</td>
+<td class="tg-xgb2">
+J
+</td>
+<td class="tg-xgb2">
+大写字母 J
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+75
+</td>
+<td class="tg-xgb2">
+113
+</td>
+<td class="tg-xgb2">
+4B
+</td>
+<td class="tg-xgb2">
+1001011
+</td>
+<td class="tg-xgb2">
+K
+</td>
+<td class="tg-xgb2">
+K
+</td>
+<td class="tg-xgb2">
+大写字母 K
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+76
+</td>
+<td class="tg-xgb2">
+114
+</td>
+<td class="tg-xgb2">
+4C
+</td>
+<td class="tg-xgb2">
+1001100
+</td>
+<td class="tg-xgb2">
+L
+</td>
+<td class="tg-xgb2">
+L
+</td>
+<td class="tg-xgb2">
+大写字母 L
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+77
+</td>
+<td class="tg-xgb2">
+115
+</td>
+<td class="tg-xgb2">
+4D
+</td>
+<td class="tg-xgb2">
+1001101
+</td>
+<td class="tg-xgb2">
+M
+</td>
+<td class="tg-xgb2">
+M
+</td>
+<td class="tg-xgb2">
+大写字母 M
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+78
+</td>
+<td class="tg-xgb2">
+116
+</td>
+<td class="tg-xgb2">
+4E
+</td>
+<td class="tg-xgb2">
+1001110
+</td>
+<td class="tg-xgb2">
+N
+</td>
+<td class="tg-xgb2">
+N
+</td>
+<td class="tg-xgb2">
+大写字母 N
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+79
+</td>
+<td class="tg-xgb2">
+117
+</td>
+<td class="tg-xgb2">
+4F
+</td>
+<td class="tg-xgb2">
+1001111
+</td>
+<td class="tg-xgb2">
+O
+</td>
+<td class="tg-xgb2">
+O
+</td>
+<td class="tg-xgb2">
+大写字母 O
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+80
+</td>
+<td class="tg-xgb2">
+120
+</td>
+<td class="tg-xgb2">
+50
+</td>
+<td class="tg-xgb2">
+1010000
+</td>
+<td class="tg-xgb2">
+P
+</td>
+<td class="tg-xgb2">
+P
+</td>
+<td class="tg-xgb2">
+大写字母 P
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+81
+</td>
+<td class="tg-xgb2">
+121
+</td>
+<td class="tg-xgb2">
+51
+</td>
+<td class="tg-xgb2">
+1010001
+</td>
+<td class="tg-xgb2">
+Q
+</td>
+<td class="tg-xgb2">
+Q
+</td>
+<td class="tg-xgb2">
+大写字母 Q
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+82
+</td>
+<td class="tg-xgb2">
+122
+</td>
+<td class="tg-xgb2">
+52
+</td>
+<td class="tg-xgb2">
+1010010
+</td>
+<td class="tg-xgb2">
+R
+</td>
+<td class="tg-xgb2">
+R
+</td>
+<td class="tg-xgb2">
+大写字母 R
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+83
+</td>
+<td class="tg-xgb2">
+123
+</td>
+<td class="tg-xgb2">
+53
+</td>
+<td class="tg-xgb2">
+1010011
+</td>
+<td class="tg-xgb2">
+S
+</td>
+<td class="tg-xgb2">
+S
+</td>
+<td class="tg-xgb2">
+大写字母 S
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+84
+</td>
+<td class="tg-xgb2">
+124
+</td>
+<td class="tg-xgb2">
+54
+</td>
+<td class="tg-xgb2">
+1010100
+</td>
+<td class="tg-xgb2">
+T
+</td>
+<td class="tg-xgb2">
+T
+</td>
+<td class="tg-xgb2">
+大写字母 T
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+85
+</td>
+<td class="tg-xgb2">
+125
+</td>
+<td class="tg-xgb2">
+55
+</td>
+<td class="tg-xgb2">
+1010101
+</td>
+<td class="tg-xgb2">
+U
+</td>
+<td class="tg-xgb2">
+U
+</td>
+<td class="tg-xgb2">
+大写字母 U
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+86
+</td>
+<td class="tg-xgb2">
+126
+</td>
+<td class="tg-xgb2">
+56
+</td>
+<td class="tg-xgb2">
+1010110
+</td>
+<td class="tg-xgb2">
+V
+</td>
+<td class="tg-xgb2">
+V
+</td>
+<td class="tg-xgb2">
+大写字母 V
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+87
+</td>
+<td class="tg-xgb2">
+127
+</td>
+<td class="tg-xgb2">
+57
+</td>
+<td class="tg-xgb2">
+1010111
+</td>
+<td class="tg-xgb2">
+W
+</td>
+<td class="tg-xgb2">
+W
+</td>
+<td class="tg-xgb2">
+大写字母 W
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+88
+</td>
+<td class="tg-xgb2">
+130
+</td>
+<td class="tg-xgb2">
+58
+</td>
+<td class="tg-xgb2">
+1011000
+</td>
+<td class="tg-xgb2">
+X
+</td>
+<td class="tg-xgb2">
+X
+</td>
+<td class="tg-xgb2">
+大写字母 X
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+89
+</td>
+<td class="tg-xgb2">
+131
+</td>
+<td class="tg-xgb2">
+59
+</td>
+<td class="tg-xgb2">
+1011001
+</td>
+<td class="tg-xgb2">
+Y
+</td>
+<td class="tg-xgb2">
+Y
+</td>
+<td class="tg-xgb2">
+大写字母 Y
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+90
+</td>
+<td class="tg-xgb2">
+132
+</td>
+<td class="tg-xgb2">
+5A
+</td>
+<td class="tg-xgb2">
+1011010
+</td>
+<td class="tg-xgb2">
+Z
+</td>
+<td class="tg-xgb2">
+Z
+</td>
+<td class="tg-xgb2">
+大写字母 Z
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+91
+</td>
+<td class="tg-nolz">
+133
+</td>
+<td class="tg-nolz">
+5B
+</td>
+<td class="tg-nolz">
+1011011
+</td>
+<td class="tg-nolz">
+[]
+</td>
+<td class="tg-nolz">
+]
+</td>
+<td class="tg-nolz">
+右中括号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+94
+</td>
+<td class="tg-nolz">
+136
+</td>
+<td class="tg-nolz">
+5E
+</td>
+<td class="tg-nolz">
+1011110
+</td>
+<td class="tg-nolz">
+^
+</td>
+<td class="tg-nolz">
+^
+</td>
+<td class="tg-nolz">
+音调符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+95
+</td>
+<td class="tg-nolz">
+137
+</td>
+<td class="tg-nolz">
+5F
+</td>
+<td class="tg-nolz">
+1011111
+</td>
+<td class="tg-nolz">
+_
+</td>
+<td class="tg-nolz">
+_
+</td>
+<td class="tg-nolz">
+下划线
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+96
+</td>
+<td class="tg-nolz">
+140
+</td>
+<td class="tg-nolz">
+60
+</td>
+<td class="tg-nolz">
+1100000
+</td>
+<td class="tg-nolz">
+`
+</td>
+<td class="tg-nolz">
+`
+</td>
+<td class="tg-nolz">
+重音符
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+97
+</td>
+<td class="tg-xgb2">
+141
+</td>
+<td class="tg-xgb2">
+61
+</td>
+<td class="tg-xgb2">
+1100001
+</td>
+<td class="tg-xgb2">
+a
+</td>
+<td class="tg-xgb2">
+a
+</td>
+<td class="tg-xgb2">
+小写字母 a
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+98
+</td>
+<td class="tg-xgb2">
+142
+</td>
+<td class="tg-xgb2">
+62
+</td>
+<td class="tg-xgb2">
+1100010
+</td>
+<td class="tg-xgb2">
+b
+</td>
+<td class="tg-xgb2">
+b
+</td>
+<td class="tg-xgb2">
+小写字母 b
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+99
+</td>
+<td class="tg-xgb2">
+143
+</td>
+<td class="tg-xgb2">
+63
+</td>
+<td class="tg-xgb2">
+1100011
+</td>
+<td class="tg-xgb2">
+c
+</td>
+<td class="tg-xgb2">
+c
+</td>
+<td class="tg-xgb2">
+小写字母 c
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+100
+</td>
+<td class="tg-xgb2">
+144
+</td>
+<td class="tg-xgb2">
+64
+</td>
+<td class="tg-xgb2">
+1100100
+</td>
+<td class="tg-xgb2">
+d
+</td>
+<td class="tg-xgb2">
+d
+</td>
+<td class="tg-xgb2">
+小写字母 d
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+101
+</td>
+<td class="tg-xgb2">
+145
+</td>
+<td class="tg-xgb2">
+65
+</td>
+<td class="tg-xgb2">
+1100101
+</td>
+<td class="tg-xgb2">
+e
+</td>
+<td class="tg-xgb2">
+e
+</td>
+<td class="tg-xgb2">
+小写字母 e
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+102
+</td>
+<td class="tg-xgb2">
+146
+</td>
+<td class="tg-xgb2">
+66
+</td>
+<td class="tg-xgb2">
+1100110
+</td>
+<td class="tg-xgb2">
+f
+</td>
+<td class="tg-xgb2">
+f
+</td>
+<td class="tg-xgb2">
+小写字母 f
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+103
+</td>
+<td class="tg-xgb2">
+147
+</td>
+<td class="tg-xgb2">
+67
+</td>
+<td class="tg-xgb2">
+1100111
+</td>
+<td class="tg-xgb2">
+g
+</td>
+<td class="tg-xgb2">
+g
+</td>
+<td class="tg-xgb2">
+小写字母 g
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+104
+</td>
+<td class="tg-xgb2">
+150
+</td>
+<td class="tg-xgb2">
+68
+</td>
+<td class="tg-xgb2">
+1101000
+</td>
+<td class="tg-xgb2">
+h
+</td>
+<td class="tg-xgb2">
+h
+</td>
+<td class="tg-xgb2">
+小写字母 h
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+105
+</td>
+<td class="tg-xgb2">
+151
+</td>
+<td class="tg-xgb2">
+69
+</td>
+<td class="tg-xgb2">
+1101001
+</td>
+<td class="tg-xgb2">
+i
+</td>
+<td class="tg-xgb2">
+i
+</td>
+<td class="tg-xgb2">
+小写字母 i
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+106
+</td>
+<td class="tg-xgb2">
+152
+</td>
+<td class="tg-xgb2">
+6A
+</td>
+<td class="tg-xgb2">
+1101010
+</td>
+<td class="tg-xgb2">
+j
+</td>
+<td class="tg-xgb2">
+j
+</td>
+<td class="tg-xgb2">
+小写字母 j
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+107
+</td>
+<td class="tg-xgb2">
+153
+</td>
+<td class="tg-xgb2">
+6B
+</td>
+<td class="tg-xgb2">
+1101011
+</td>
+<td class="tg-xgb2">
+k
+</td>
+<td class="tg-xgb2">
+k
+</td>
+<td class="tg-xgb2">
+小写字母 k
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+108
+</td>
+<td class="tg-xgb2">
+154
+</td>
+<td class="tg-xgb2">
+6C
+</td>
+<td class="tg-xgb2">
+1101100
+</td>
+<td class="tg-xgb2">
+l
+</td>
+<td class="tg-xgb2">
+l
+</td>
+<td class="tg-xgb2">
+小写字母 l
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+109
+</td>
+<td class="tg-xgb2">
+155
+</td>
+<td class="tg-xgb2">
+6D
+</td>
+<td class="tg-xgb2">
+1101101
+</td>
+<td class="tg-xgb2">
+m
+</td>
+<td class="tg-xgb2">
+m
+</td>
+<td class="tg-xgb2">
+小写字母 m
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+110
+</td>
+<td class="tg-xgb2">
+156
+</td>
+<td class="tg-xgb2">
+6E
+</td>
+<td class="tg-xgb2">
+1101110
+</td>
+<td class="tg-xgb2">
+n
+</td>
+<td class="tg-xgb2">
+n
+</td>
+<td class="tg-xgb2">
+小写字母 n
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+111
+</td>
+<td class="tg-xgb2">
+157
+</td>
+<td class="tg-xgb2">
+6F
+</td>
+<td class="tg-xgb2">
+1101111
+</td>
+<td class="tg-xgb2">
+o
+</td>
+<td class="tg-xgb2">
+o
+</td>
+<td class="tg-xgb2">
+小写字母 o
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+112
+</td>
+<td class="tg-xgb2">
+160
+</td>
+<td class="tg-xgb2">
+70
+</td>
+<td class="tg-xgb2">
+1110000
+</td>
+<td class="tg-xgb2">
+p
+</td>
+<td class="tg-xgb2">
+p
+</td>
+<td class="tg-xgb2">
+小写字母 p
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+113
+</td>
+<td class="tg-xgb2">
+161
+</td>
+<td class="tg-xgb2">
+71
+</td>
+<td class="tg-xgb2">
+1110001
+</td>
+<td class="tg-xgb2">
+q
+</td>
+<td class="tg-xgb2">
+q
+</td>
+<td class="tg-xgb2">
+小写字母 q
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+114
+</td>
+<td class="tg-xgb2">
+162
+</td>
+<td class="tg-xgb2">
+72
+</td>
+<td class="tg-xgb2">
+1110010
+</td>
+<td class="tg-xgb2">
+r
+</td>
+<td class="tg-xgb2">
+r
+</td>
+<td class="tg-xgb2">
+小写字母 r
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+115
+</td>
+<td class="tg-xgb2">
+163
+</td>
+<td class="tg-xgb2">
+73
+</td>
+<td class="tg-xgb2">
+1110011
+</td>
+<td class="tg-xgb2">
+s
+</td>
+<td class="tg-xgb2">
+s
+</td>
+<td class="tg-xgb2">
+小写字母 s
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+116
+</td>
+<td class="tg-xgb2">
+164
+</td>
+<td class="tg-xgb2">
+74
+</td>
+<td class="tg-xgb2">
+1110100
+</td>
+<td class="tg-xgb2">
+t
+</td>
+<td class="tg-xgb2">
+t
+</td>
+<td class="tg-xgb2">
+小写字母 t
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+117
+</td>
+<td class="tg-xgb2">
+165
+</td>
+<td class="tg-xgb2">
+75
+</td>
+<td class="tg-xgb2">
+1110101
+</td>
+<td class="tg-xgb2">
+u
+</td>
+<td class="tg-xgb2">
+u
+</td>
+<td class="tg-xgb2">
+小写字母 u
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+118
+</td>
+<td class="tg-xgb2">
+166
+</td>
+<td class="tg-xgb2">
+76
+</td>
+<td class="tg-xgb2">
+1110110
+</td>
+<td class="tg-xgb2">
+v
+</td>
+<td class="tg-xgb2">
+v
+</td>
+<td class="tg-xgb2">
+小写字母 v
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+119
+</td>
+<td class="tg-xgb2">
+167
+</td>
+<td class="tg-xgb2">
+77
+</td>
+<td class="tg-xgb2">
+1110111
+</td>
+<td class="tg-xgb2">
+w
+</td>
+<td class="tg-xgb2">
+w
+</td>
+<td class="tg-xgb2">
+小写字母 w
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+120
+</td>
+<td class="tg-xgb2">
+170
+</td>
+<td class="tg-xgb2">
+78
+</td>
+<td class="tg-xgb2">
+1111000
+</td>
+<td class="tg-xgb2">
+x
+</td>
+<td class="tg-xgb2">
+x
+</td>
+<td class="tg-xgb2">
+小写字母 x
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+121
+</td>
+<td class="tg-xgb2">
+171
+</td>
+<td class="tg-xgb2">
+79
+</td>
+<td class="tg-xgb2">
+1111001
+</td>
+<td class="tg-xgb2">
+y
+</td>
+<td class="tg-xgb2">
+y
+</td>
+<td class="tg-xgb2">
+小写字母 y
+</td>
+</tr>
+<tr>
+<td class="tg-xgb2">
+122
+</td>
+<td class="tg-xgb2">
+172
+</td>
+<td class="tg-xgb2">
+7A
+</td>
+<td class="tg-xgb2">
+1111010
+</td>
+<td class="tg-xgb2">
+z
+</td>
+<td class="tg-xgb2">
+z
+</td>
+<td class="tg-xgb2">
+小写字母 z
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+123
+</td>
+<td class="tg-nolz">
+173
+</td>
+<td class="tg-nolz">
+7B
+</td>
+<td class="tg-nolz">
+1111011
+</td>
+<td class="tg-nolz">
+{
+</td>
+<td class="tg-nolz">
+{
+</td>
+<td class="tg-nolz">
+左大括号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+124
+</td>
+<td class="tg-nolz">
+174
+</td>
+<td class="tg-nolz">
+7C
+</td>
+<td class="tg-nolz">
+1111100
+</td>
+<td class="tg-nolz">
+|
+</td>
+<td class="tg-nolz">
+|
+</td>
+<td class="tg-nolz">
+垂直线
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+125
+</td>
+<td class="tg-nolz">
+175
+</td>
+<td class="tg-nolz">
+7D
+</td>
+<td class="tg-nolz">
+1111101
+</td>
+<td class="tg-nolz">
+}
+</td>
+<td class="tg-nolz">
+}
+</td>
+<td class="tg-nolz">
+右大括号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+126
+</td>
+<td class="tg-nolz">
+176
+</td>
+<td class="tg-nolz">
+7E
+</td>
+<td class="tg-nolz">
+1111110
+</td>
+<td class="tg-nolz">
+~
+</td>
+<td class="tg-nolz">
+~
+</td>
+<td class="tg-nolz">
+波浪号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+127
+</td>
+<td class="tg-nolz">
+177
+</td>
+<td class="tg-nolz">
+7F
+</td>
+<td class="tg-nolz">
+1111111
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+
+</td>
+<td class="tg-nolz">
+删除
+</td>
+</tr>
+<tr>
+<td class="tg-c3ow" colspan="7">
+扩展ASCII码
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+128
+</td>
+<td class="tg-wvkc">
+200
+</td>
+<td class="tg-wvkc">
+80
+</td>
+<td class="tg-wvkc">
+10000000
+</td>
+<td class="tg-wvkc">
+€
+</td>
+<td class="tg-wvkc">
+€
+</td>
+<td class="tg-wvkc">
+欧元符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+129
+</td>
+<td class="tg-nolz">
+201
+</td>
+<td class="tg-nolz">
+81
+</td>
+<td class="tg-nolz">
+10000001
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+未定义
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+130
+</td>
+<td class="tg-wvkc">
+202
+</td>
+<td class="tg-wvkc">
+82
+</td>
+<td class="tg-wvkc">
+10000010
+</td>
+<td class="tg-wvkc">
+‚
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+单低 9 引号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+131
+</td>
+<td class="tg-wvkc">
+203
+</td>
+<td class="tg-wvkc">
+83
+</td>
+<td class="tg-wvkc">
+10000011
+</td>
+<td class="tg-wvkc">
+ƒ
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+带钩的拉丁小写字母f
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+132
+</td>
+<td class="tg-wvkc">
+204
+</td>
+<td class="tg-wvkc">
+84
+</td>
+<td class="tg-wvkc">
+10000100
+</td>
+<td class="tg-wvkc">
+„
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+双低 9 引号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+133
+</td>
+<td class="tg-wvkc">
+205
+</td>
+<td class="tg-wvkc">
+85
+</td>
+<td class="tg-wvkc">
+10000101
+</td>
+<td class="tg-wvkc">
+…
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+水平省略号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+134
+</td>
+<td class="tg-wvkc">
+206
+</td>
+<td class="tg-wvkc">
+86
+</td>
+<td class="tg-wvkc">
+10000110
+</td>
+<td class="tg-wvkc">
+†
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+剑号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+135
+</td>
+<td class="tg-wvkc">
+207
+</td>
+<td class="tg-wvkc">
+87
+</td>
+<td class="tg-wvkc">
+10000111
+</td>
+<td class="tg-wvkc">
+‡
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+双剑号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+136
+</td>
+<td class="tg-wvkc">
+210
+</td>
+<td class="tg-wvkc">
+88
+</td>
+<td class="tg-wvkc">
+10001000
+</td>
+<td class="tg-wvkc">
+ˆ
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+修正字符 抑扬音符号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+137
+</td>
+<td class="tg-wvkc">
+211
+</td>
+<td class="tg-wvkc">
+89
+</td>
+<td class="tg-wvkc">
+10001001
+</td>
+<td class="tg-wvkc">
+‰
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+千分号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+138
+</td>
+<td class="tg-wvkc">
+212
+</td>
+<td class="tg-wvkc">
+8A
+</td>
+<td class="tg-wvkc">
+10001010
+</td>
+<td class="tg-wvkc">
+Š
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+带弯音号的拉丁大写字母 S
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+139
+</td>
+<td class="tg-wvkc">
+213
+</td>
+<td class="tg-wvkc">
+8B
+</td>
+<td class="tg-wvkc">
+10001011
+</td>
+<td class="tg-wvkc">
+‹
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+左单书名号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+140
+</td>
+<td class="tg-wvkc">
+214
+</td>
+<td class="tg-wvkc">
+8C
+</td>
+<td class="tg-wvkc">
+10001100
+</td>
+<td class="tg-wvkc">
+Œ
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+拉丁大写组合 OE
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+141
+</td>
+<td class="tg-nolz">
+215
+</td>
+<td class="tg-nolz">
+8D
+</td>
+<td class="tg-nolz">
+10001101
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+未定义
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+142
+</td>
+<td class="tg-wvkc">
+216
+</td>
+<td class="tg-wvkc">
+8E
+</td>
+<td class="tg-wvkc">
+10001110
+</td>
+<td class="tg-wvkc">
+Ž
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+143
+</td>
+<td class="tg-nolz">
+217
+</td>
+<td class="tg-nolz">
+8F
+</td>
+<td class="tg-nolz">
+10001111
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+未定义
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+144
+</td>
+<td class="tg-nolz">
+220
+</td>
+<td class="tg-nolz">
+90
+</td>
+<td class="tg-nolz">
+10010000
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+未定义
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+145
+</td>
+<td class="tg-wvkc">
+221
+</td>
+<td class="tg-wvkc">
+91
+</td>
+<td class="tg-wvkc">
+10010001
+</td>
+<td class="tg-wvkc">
+‘
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+左单引号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+146
+</td>
+<td class="tg-wvkc">
+222
+</td>
+<td class="tg-wvkc">
+92
+</td>
+<td class="tg-wvkc">
+10010010
+</td>
+<td class="tg-wvkc">
+’
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+左单引号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+147
+</td>
+<td class="tg-wvkc">
+223
+</td>
+<td class="tg-wvkc">
+93
+</td>
+<td class="tg-wvkc">
+10010011
+</td>
+<td class="tg-wvkc">
+“
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+左双引号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+148
+</td>
+<td class="tg-wvkc">
+224
+</td>
+<td class="tg-wvkc">
+94
+</td>
+<td class="tg-wvkc">
+10010100
+</td>
+<td class="tg-wvkc">
+”
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+右双引号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+149
+</td>
+<td class="tg-wvkc">
+225
+</td>
+<td class="tg-wvkc">
+95
+</td>
+<td class="tg-wvkc">
+10010101
+</td>
+<td class="tg-wvkc">
+•
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+150
+</td>
+<td class="tg-wvkc">
+226
+</td>
+<td class="tg-wvkc">
+96
+</td>
+<td class="tg-wvkc">
+10010110
+</td>
+<td class="tg-wvkc">
+–
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+半长破折号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+151
+</td>
+<td class="tg-wvkc">
+227
+</td>
+<td class="tg-wvkc">
+97
+</td>
+<td class="tg-wvkc">
+10010111
+</td>
+<td class="tg-wvkc">
+—
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+全长破折号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+152
+</td>
+<td class="tg-wvkc">
+230
+</td>
+<td class="tg-wvkc">
+98
+</td>
+<td class="tg-wvkc">
+10011000
+</td>
+<td class="tg-wvkc">
+˜
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+小波浪线
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+153
+</td>
+<td class="tg-wvkc">
+231
+</td>
+<td class="tg-wvkc">
+99
+</td>
+<td class="tg-wvkc">
+10011001
+</td>
+<td class="tg-wvkc">
+™
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+154
+</td>
+<td class="tg-wvkc">
+232
+</td>
+<td class="tg-wvkc">
+9A
+</td>
+<td class="tg-wvkc">
+10011010
+</td>
+<td class="tg-wvkc">
+š
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+带弯音号的拉丁小写字母 s
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+155
+</td>
+<td class="tg-wvkc">
+233
+</td>
+<td class="tg-wvkc">
+9B
+</td>
+<td class="tg-wvkc">
+10011011
+</td>
+<td class="tg-wvkc">
+›
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+右单书名号
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+156
+</td>
+<td class="tg-wvkc">
+234
+</td>
+<td class="tg-wvkc">
+9C
+</td>
+<td class="tg-wvkc">
+10011100
+</td>
+<td class="tg-wvkc">
+œ
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+拉丁小写组合 oe
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+157
+</td>
+<td class="tg-nolz">
+235
+</td>
+<td class="tg-nolz">
+9D
+</td>
+<td class="tg-nolz">
+10011101
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+未定义
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+158
+</td>
+<td class="tg-wvkc">
+236
+</td>
+<td class="tg-wvkc">
+9E
+</td>
+<td class="tg-wvkc">
+10011110
+</td>
+<td class="tg-wvkc">
+ž
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+带弯音号的拉丁小写字母 z
+</td>
+</tr>
+<tr>
+<td class="tg-wvkc">
+159
+</td>
+<td class="tg-wvkc">
+237
+</td>
+<td class="tg-wvkc">
+9F
+</td>
+<td class="tg-wvkc">
+10011111
+</td>
+<td class="tg-wvkc">
+Ÿ
+</td>
+<td class="tg-wvkc">
+</td>
+<td class="tg-wvkc">
+带弯音号的拉丁大写字母 Y
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+160
+</td>
+<td class="tg-nolz">
+240
+</td>
+<td class="tg-nolz">
+A0
+</td>
+<td class="tg-nolz">
+10100000
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+</td>
+<td class="tg-nolz">
+非间断空格
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+161
+</td>
+<td class="tg-nolz">
+241
+</td>
+<td class="tg-nolz">
+A1
+</td>
+<td class="tg-nolz">
+10100001
+</td>
+<td class="tg-nolz">
+¡
+</td>
+<td class="tg-nolz">
+¡
+</td>
+<td class="tg-nolz">
+倒置感叹号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+162
+</td>
+<td class="tg-nolz">
+242
+</td>
+<td class="tg-nolz">
+A2
+</td>
+<td class="tg-nolz">
+10100010
+</td>
+<td class="tg-nolz">
+¢
+</td>
+<td class="tg-nolz">
+¢
+</td>
+<td class="tg-nolz">
+美分符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+163
+</td>
+<td class="tg-nolz">
+243
+</td>
+<td class="tg-nolz">
+A3
+</td>
+<td class="tg-nolz">
+10100011
+</td>
+<td class="tg-nolz">
+£
+</td>
+<td class="tg-nolz">
+£
+</td>
+<td class="tg-nolz">
+英镑符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+164
+</td>
+<td class="tg-nolz">
+244
+</td>
+<td class="tg-nolz">
+A4
+</td>
+<td class="tg-nolz">
+10100100
+</td>
+<td class="tg-nolz">
+¤
+</td>
+<td class="tg-nolz">
+¤
+</td>
+<td class="tg-nolz">
+货币符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+165
+</td>
+<td class="tg-nolz">
+245
+</td>
+<td class="tg-nolz">
+A5
+</td>
+<td class="tg-nolz">
+10100101
+</td>
+<td class="tg-nolz">
+¥
+</td>
+<td class="tg-nolz">
+¥
+</td>
+<td class="tg-nolz">
+人民币/日元符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+166
+</td>
+<td class="tg-nolz">
+246
+</td>
+<td class="tg-nolz">
+A6
+</td>
+<td class="tg-nolz">
+10100110
+</td>
+<td class="tg-nolz">
+¦
+</td>
+<td class="tg-nolz">
+¦
+</td>
+<td class="tg-nolz">
+间断的竖杠
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+167
+</td>
+<td class="tg-nolz">
+247
+</td>
+<td class="tg-nolz">
+A7
+</td>
+<td class="tg-nolz">
+10100111
+</td>
+<td class="tg-nolz">
+§
+</td>
+<td class="tg-nolz">
+§
+</td>
+<td class="tg-nolz">
+小节号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+168
+</td>
+<td class="tg-nolz">
+250
+</td>
+<td class="tg-nolz">
+A8
+</td>
+<td class="tg-nolz">
+10101000
+</td>
+<td class="tg-nolz">
+¨
+</td>
+<td class="tg-nolz">
+¨
+</td>
+<td class="tg-nolz">
+分音符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+169
+</td>
+<td class="tg-nolz">
+251
+</td>
+<td class="tg-nolz">
+A9
+</td>
+<td class="tg-nolz">
+10101001
+</td>
+<td class="tg-nolz">
+©
+</td>
+<td class="tg-nolz">
+©
+</td>
+<td class="tg-nolz">
+版权所有
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+170
+</td>
+<td class="tg-nolz">
+252
+</td>
+<td class="tg-nolz">
+AA
+</td>
+<td class="tg-nolz">
+10101010
+</td>
+<td class="tg-nolz">
+ª
+</td>
+<td class="tg-nolz">
+ª
+</td>
+<td class="tg-nolz">
+阴性序数记号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+171
+</td>
+<td class="tg-nolz">
+253
+</td>
+<td class="tg-nolz">
+AB
+</td>
+<td class="tg-nolz">
+10101011
+</td>
+<td class="tg-nolz">
+«
+</td>
+<td class="tg-nolz">
+«
+</td>
+<td class="tg-nolz">
+左双角引号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+172
+</td>
+<td class="tg-nolz">
+254
+</td>
+<td class="tg-nolz">
+AC
+</td>
+<td class="tg-nolz">
+10101100
+</td>
+<td class="tg-nolz">
+¬
+</td>
+<td class="tg-nolz">
+¬
+</td>
+<td class="tg-nolz">
+否定符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+173
+</td>
+<td class="tg-nolz">
+255
+</td>
+<td class="tg-nolz">
+AD
+</td>
+<td class="tg-nolz">
+10101101
+</td>
+<td class="tg-nolz">
+­
+</td>
+<td class="tg-nolz">
+­
+</td>
+<td class="tg-nolz">
+软连字符
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+174
+</td>
+<td class="tg-nolz">
+256
+</td>
+<td class="tg-nolz">
+AE
+</td>
+<td class="tg-nolz">
+10101110
+</td>
+<td class="tg-nolz">
+®
+</td>
+<td class="tg-nolz">
+®
+</td>
+<td class="tg-nolz">
+注册商标
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+175
+</td>
+<td class="tg-nolz">
+257
+</td>
+<td class="tg-nolz">
+AF
+</td>
+<td class="tg-nolz">
+10101111
+</td>
+<td class="tg-nolz">
+¯
+</td>
+<td class="tg-nolz">
+¯
+</td>
+<td class="tg-nolz">
+长音符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+176
+</td>
+<td class="tg-nolz">
+260
+</td>
+<td class="tg-nolz">
+B0
+</td>
+<td class="tg-nolz">
+10110000
+</td>
+<td class="tg-nolz">
+°
+</td>
+<td class="tg-nolz">
+°
+</td>
+<td class="tg-nolz">
+度
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+177
+</td>
+<td class="tg-nolz">
+261
+</td>
+<td class="tg-nolz">
+B1
+</td>
+<td class="tg-nolz">
+10110001
+</td>
+<td class="tg-nolz">
+±
+</td>
+<td class="tg-nolz">
+±
+</td>
+<td class="tg-nolz">
+加减号/正负号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+178
+</td>
+<td class="tg-nolz">
+262
+</td>
+<td class="tg-nolz">
+B2
+</td>
+<td class="tg-nolz">
+10110010
+</td>
+<td class="tg-nolz">
+²
+</td>
+<td class="tg-nolz">
+²
+</td>
+<td class="tg-nolz">
+上标 2
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+179
+</td>
+<td class="tg-nolz">
+263
+</td>
+<td class="tg-nolz">
+B3
+</td>
+<td class="tg-nolz">
+10110011
+</td>
+<td class="tg-nolz">
+³
+</td>
+<td class="tg-nolz">
+³
+</td>
+<td class="tg-nolz">
+上标 3
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+180
+</td>
+<td class="tg-nolz">
+264
+</td>
+<td class="tg-nolz">
+B4
+</td>
+<td class="tg-nolz">
+10110100
+</td>
+<td class="tg-nolz">
+´
+</td>
+<td class="tg-nolz">
+´
+</td>
+<td class="tg-nolz">
+尖音符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+181
+</td>
+<td class="tg-nolz">
+265
+</td>
+<td class="tg-nolz">
+B5
+</td>
+<td class="tg-nolz">
+10110101
+</td>
+<td class="tg-nolz">
+µ
+</td>
+<td class="tg-nolz">
+µ
+</td>
+<td class="tg-nolz">
+微米符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+182
+</td>
+<td class="tg-nolz">
+266
+</td>
+<td class="tg-nolz">
+B6
+</td>
+<td class="tg-nolz">
+10110110
+</td>
+<td class="tg-nolz">
+¶
+</td>
+<td class="tg-nolz">
+¶
+</td>
+<td class="tg-nolz">
+段落符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+183
+</td>
+<td class="tg-nolz">
+267
+</td>
+<td class="tg-nolz">
+B7
+</td>
+<td class="tg-nolz">
+10110111
+</td>
+<td class="tg-nolz">
+·
+</td>
+<td class="tg-nolz">
+·
+</td>
+<td class="tg-nolz">
+中间点
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+184
+</td>
+<td class="tg-nolz">
+270
+</td>
+<td class="tg-nolz">
+B8
+</td>
+<td class="tg-nolz">
+10111000
+</td>
+<td class="tg-nolz">
+¸
+</td>
+<td class="tg-nolz">
+¸
+</td>
+<td class="tg-nolz">
+变音符号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+185
+</td>
+<td class="tg-nolz">
+271
+</td>
+<td class="tg-nolz">
+B9
+</td>
+<td class="tg-nolz">
+10111001
+</td>
+<td class="tg-nolz">
+¹
+</td>
+<td class="tg-nolz">
+¹
+</td>
+<td class="tg-nolz">
+上标 1
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+186
+</td>
+<td class="tg-nolz">
+272
+</td>
+<td class="tg-nolz">
+BA
+</td>
+<td class="tg-nolz">
+10111010
+</td>
+<td class="tg-nolz">
+º
+</td>
+<td class="tg-nolz">
+º
+</td>
+<td class="tg-nolz">
+阳性序数记号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+187
+</td>
+<td class="tg-nolz">
+273
+</td>
+<td class="tg-nolz">
+BB
+</td>
+<td class="tg-nolz">
+10111011
+</td>
+<td class="tg-nolz">
+»
+</td>
+<td class="tg-nolz">
+»
+</td>
+<td class="tg-nolz">
+右双角引号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+188
+</td>
+<td class="tg-nolz">
+274
+</td>
+<td class="tg-nolz">
+BC
+</td>
+<td class="tg-nolz">
+10111100
+</td>
+<td class="tg-nolz">
+¼
+</td>
+<td class="tg-nolz">
+¼
+</td>
+<td class="tg-nolz">
+1/4 分数
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+189
+</td>
+<td class="tg-nolz">
+275
+</td>
+<td class="tg-nolz">
+BD
+</td>
+<td class="tg-nolz">
+10111101
+</td>
+<td class="tg-nolz">
+½
+</td>
+<td class="tg-nolz">
+½
+</td>
+<td class="tg-nolz">
+1/2 分数
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+190
+</td>
+<td class="tg-nolz">
+276
+</td>
+<td class="tg-nolz">
+BE
+</td>
+<td class="tg-nolz">
+10111110
+</td>
+<td class="tg-nolz">
+¾
+</td>
+<td class="tg-nolz">
+¾
+</td>
+<td class="tg-nolz">
+3/4 分数
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+191
+</td>
+<td class="tg-nolz">
+277
+</td>
+<td class="tg-nolz">
+BF
+</td>
+<td class="tg-nolz">
+10111111
+</td>
+<td class="tg-nolz">
+¿
+</td>
+<td class="tg-nolz">
+¿
+</td>
+<td class="tg-nolz">
+倒置问号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+192
+</td>
+<td class="tg-nolz">
+300
+</td>
+<td class="tg-nolz">
+C0
+</td>
+<td class="tg-nolz">
+11000000
+</td>
+<td class="tg-nolz">
+À
+</td>
+<td class="tg-nolz">
+À
+</td>
+<td class="tg-nolz">
+大写字母 A，重音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+193
+</td>
+<td class="tg-nolz">
+301
+</td>
+<td class="tg-nolz">
+C1
+</td>
+<td class="tg-nolz">
+11000001
+</td>
+<td class="tg-nolz">
+Á
+</td>
+<td class="tg-nolz">
+Á
+</td>
+<td class="tg-nolz">
+大写字母 A，尖音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+194
+</td>
+<td class="tg-nolz">
+302
+</td>
+<td class="tg-nolz">
+C2
+</td>
+<td class="tg-nolz">
+11000010
+</td>
+<td class="tg-nolz">
+Â
+</td>
+<td class="tg-nolz">
+Â
+</td>
+<td class="tg-nolz">
+大写字母 A，抑扬音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+195
+</td>
+<td class="tg-nolz">
+303
+</td>
+<td class="tg-nolz">
+C3
+</td>
+<td class="tg-nolz">
+11000011
+</td>
+<td class="tg-nolz">
+Ã
+</td>
+<td class="tg-nolz">
+Ã
+</td>
+<td class="tg-nolz">
+大写字母 A，腭化
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+196
+</td>
+<td class="tg-nolz">
+304
+</td>
+<td class="tg-nolz">
+C4
+</td>
+<td class="tg-nolz">
+11000100
+</td>
+<td class="tg-nolz">
+Ä
+</td>
+<td class="tg-nolz">
+Ä
+</td>
+<td class="tg-nolz">
+大写字母 A，带有变音符号标记
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+197
+</td>
+<td class="tg-nolz">
+305
+</td>
+<td class="tg-nolz">
+C5
+</td>
+<td class="tg-nolz">
+11000101
+</td>
+<td class="tg-nolz">
+Å
+</td>
+<td class="tg-nolz">
+Å
+</td>
+<td class="tg-nolz">
+大写字母 A，带有上圆圈
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+198
+</td>
+<td class="tg-nolz">
+306
+</td>
+<td class="tg-nolz">
+C6
+</td>
+<td class="tg-nolz">
+11000110
+</td>
+<td class="tg-nolz">
+Æ
+</td>
+<td class="tg-nolz">
+Æ
+</td>
+<td class="tg-nolz">
+大写字母 AE
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+199
+</td>
+<td class="tg-nolz">
+307
+</td>
+<td class="tg-nolz">
+C7
+</td>
+<td class="tg-nolz">
+11000111
+</td>
+<td class="tg-nolz">
+Ç
+</td>
+<td class="tg-nolz">
+Ç
+</td>
+<td class="tg-nolz">
+大写字母 C，变音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+200
+</td>
+<td class="tg-nolz">
+310
+</td>
+<td class="tg-nolz">
+C8
+</td>
+<td class="tg-nolz">
+11001000
+</td>
+<td class="tg-nolz">
+È
+</td>
+<td class="tg-nolz">
+È
+</td>
+<td class="tg-nolz">
+大写字母 E，重音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+201
+</td>
+<td class="tg-nolz">
+311
+</td>
+<td class="tg-nolz">
+C9
+</td>
+<td class="tg-nolz">
+11001001
+</td>
+<td class="tg-nolz">
+É
+</td>
+<td class="tg-nolz">
+É
+</td>
+<td class="tg-nolz">
+大写字母 E，尖音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+202
+</td>
+<td class="tg-nolz">
+312
+</td>
+<td class="tg-nolz">
+CA
+</td>
+<td class="tg-nolz">
+11001010
+</td>
+<td class="tg-nolz">
+Ê
+</td>
+<td class="tg-nolz">
+Ê
+</td>
+<td class="tg-nolz">
+大写字母 E，抑扬音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+203
+</td>
+<td class="tg-nolz">
+313
+</td>
+<td class="tg-nolz">
+CB
+</td>
+<td class="tg-nolz">
+11001011
+</td>
+<td class="tg-nolz">
+Ë
+</td>
+<td class="tg-nolz">
+Ë
+</td>
+<td class="tg-nolz">
+大写字母 E，带有变音符号标记
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+204
+</td>
+<td class="tg-nolz">
+314
+</td>
+<td class="tg-nolz">
+CC
+</td>
+<td class="tg-nolz">
+11001100
+</td>
+<td class="tg-nolz">
+Ì
+</td>
+<td class="tg-nolz">
+Ì
+</td>
+<td class="tg-nolz">
+大写字母 I，重音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+205
+</td>
+<td class="tg-nolz">
+315
+</td>
+<td class="tg-nolz">
+CD
+</td>
+<td class="tg-nolz">
+11001101
+</td>
+<td class="tg-nolz">
+Í
+</td>
+<td class="tg-nolz">
+Í
+</td>
+<td class="tg-nolz">
+大写字母 I，尖音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+206
+</td>
+<td class="tg-nolz">
+316
+</td>
+<td class="tg-nolz">
+CE
+</td>
+<td class="tg-nolz">
+11001110
+</td>
+<td class="tg-nolz">
+Î
+</td>
+<td class="tg-nolz">
+Î
+</td>
+<td class="tg-nolz">
+大写字母 I，抑扬音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+207
+</td>
+<td class="tg-nolz">
+317
+</td>
+<td class="tg-nolz">
+CF
+</td>
+<td class="tg-nolz">
+11001111
+</td>
+<td class="tg-nolz">
+Ï
+</td>
+<td class="tg-nolz">
+Ï
+</td>
+<td class="tg-nolz">
+大写字母 I，带有变音符号标记
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+208
+</td>
+<td class="tg-nolz">
+320
+</td>
+<td class="tg-nolz">
+D0
+</td>
+<td class="tg-nolz">
+11010000
+</td>
+<td class="tg-nolz">
+Ð
+</td>
+<td class="tg-nolz">
+Ð
+</td>
+<td class="tg-nolz">
+冰岛语大写字母 eth
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+209
+</td>
+<td class="tg-nolz">
+321
+</td>
+<td class="tg-nolz">
+D1
+</td>
+<td class="tg-nolz">
+11010001
+</td>
+<td class="tg-nolz">
+Ñ
+</td>
+<td class="tg-nolz">
+Ñ
+</td>
+<td class="tg-nolz">
+大写字母 N，腭化
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+210
+</td>
+<td class="tg-nolz">
+322
+</td>
+<td class="tg-nolz">
+D2
+</td>
+<td class="tg-nolz">
+11010010
+</td>
+<td class="tg-nolz">
+Ò
+</td>
+<td class="tg-nolz">
+Ò
+</td>
+<td class="tg-nolz">
+大写字母 O，重音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+211
+</td>
+<td class="tg-nolz">
+323
+</td>
+<td class="tg-nolz">
+D3
+</td>
+<td class="tg-nolz">
+11010011
+</td>
+<td class="tg-nolz">
+Ó
+</td>
+<td class="tg-nolz">
+Ó
+</td>
+<td class="tg-nolz">
+大写字母 O，尖音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+212
+</td>
+<td class="tg-nolz">
+324
+</td>
+<td class="tg-nolz">
+D4
+</td>
+<td class="tg-nolz">
+11010100
+</td>
+<td class="tg-nolz">
+Ô
+</td>
+<td class="tg-nolz">
+Ô
+</td>
+<td class="tg-nolz">
+大写字母 O，抑扬音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+213
+</td>
+<td class="tg-nolz">
+325
+</td>
+<td class="tg-nolz">
+D5
+</td>
+<td class="tg-nolz">
+11010101
+</td>
+<td class="tg-nolz">
+Õ
+</td>
+<td class="tg-nolz">
+Õ
+</td>
+<td class="tg-nolz">
+大写字母 O，腭化
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+214
+</td>
+<td class="tg-nolz">
+326
+</td>
+<td class="tg-nolz">
+D6
+</td>
+<td class="tg-nolz">
+11010110
+</td>
+<td class="tg-nolz">
+Ö
+</td>
+<td class="tg-nolz">
+Ö
+</td>
+<td class="tg-nolz">
+大写字母 O，带有变音符号标记
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+215
+</td>
+<td class="tg-nolz">
+327
+</td>
+<td class="tg-nolz">
+D7
+</td>
+<td class="tg-nolz">
+11010111
+</td>
+<td class="tg-nolz">
+×
+</td>
+<td class="tg-nolz">
+×
+</td>
+<td class="tg-nolz">
+乘号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+216
+</td>
+<td class="tg-nolz">
+330
+</td>
+<td class="tg-nolz">
+D8
+</td>
+<td class="tg-nolz">
+11011000
+</td>
+<td class="tg-nolz">
+Ø
+</td>
+<td class="tg-nolz">
+Ø
+</td>
+<td class="tg-nolz">
+大写字母 O，带有斜线
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+217
+</td>
+<td class="tg-nolz">
+331
+</td>
+<td class="tg-nolz">
+D9
+</td>
+<td class="tg-nolz">
+11011001
+</td>
+<td class="tg-nolz">
+Ù
+</td>
+<td class="tg-nolz">
+Ù
+</td>
+<td class="tg-nolz">
+大写字母 U，重音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+218
+</td>
+<td class="tg-nolz">
+332
+</td>
+<td class="tg-nolz">
+DA
+</td>
+<td class="tg-nolz">
+11011010
+</td>
+<td class="tg-nolz">
+Ú
+</td>
+<td class="tg-nolz">
+Ú
+</td>
+<td class="tg-nolz">
+大写字母 U，尖音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+219
+</td>
+<td class="tg-nolz">
+333
+</td>
+<td class="tg-nolz">
+DB
+</td>
+<td class="tg-nolz">
+11011011
+</td>
+<td class="tg-nolz">
+Û
+</td>
+<td class="tg-nolz">
+Û
+</td>
+<td class="tg-nolz">
+大写字母 U，抑扬音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+220
+</td>
+<td class="tg-nolz">
+334
+</td>
+<td class="tg-nolz">
+DC
+</td>
+<td class="tg-nolz">
+11011100
+</td>
+<td class="tg-nolz">
+Ü
+</td>
+<td class="tg-nolz">
+Ü
+</td>
+<td class="tg-nolz">
+大写字母 U，带有变音符号标记
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+221
+</td>
+<td class="tg-nolz">
+335
+</td>
+<td class="tg-nolz">
+DD
+</td>
+<td class="tg-nolz">
+11011101
+</td>
+<td class="tg-nolz">
+Ý
+</td>
+<td class="tg-nolz">
+Ý
+</td>
+<td class="tg-nolz">
+大写字母 Y，尖音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+222
+</td>
+<td class="tg-nolz">
+336
+</td>
+<td class="tg-nolz">
+DE
+</td>
+<td class="tg-nolz">
+11011110
+</td>
+<td class="tg-nolz">
+Þ
+</td>
+<td class="tg-nolz">
+Þ
+</td>
+<td class="tg-nolz">
+冰岛语大写字母 THORN
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+223
+</td>
+<td class="tg-nolz">
+337
+</td>
+<td class="tg-nolz">
+DF
+</td>
+<td class="tg-nolz">
+11011111
+</td>
+<td class="tg-nolz">
+ß
+</td>
+<td class="tg-nolz">
+ß
+</td>
+<td class="tg-nolz">
+德语小写字母 sharp s
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+224
+</td>
+<td class="tg-nolz">
+340
+</td>
+<td class="tg-nolz">
+E0
+</td>
+<td class="tg-nolz">
+11100000
+</td>
+<td class="tg-nolz">
+à
+</td>
+<td class="tg-nolz">
+à
+</td>
+<td class="tg-nolz">
+小写字母 a，重音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+225
+</td>
+<td class="tg-nolz">
+341
+</td>
+<td class="tg-nolz">
+E1
+</td>
+<td class="tg-nolz">
+11100001
+</td>
+<td class="tg-nolz">
+á
+</td>
+<td class="tg-nolz">
+á
+</td>
+<td class="tg-nolz">
+小写字母 a，尖音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+226
+</td>
+<td class="tg-nolz">
+342
+</td>
+<td class="tg-nolz">
+E2
+</td>
+<td class="tg-nolz">
+11100010
+</td>
+<td class="tg-nolz">
+â
+</td>
+<td class="tg-nolz">
+â
+</td>
+<td class="tg-nolz">
+小写字母 a，抑扬音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+227
+</td>
+<td class="tg-nolz">
+343
+</td>
+<td class="tg-nolz">
+E3
+</td>
+<td class="tg-nolz">
+11100011
+</td>
+<td class="tg-nolz">
+ã
+</td>
+<td class="tg-nolz">
+ã
+</td>
+<td class="tg-nolz">
+小写字母 a，腭化
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+228
+</td>
+<td class="tg-nolz">
+344
+</td>
+<td class="tg-nolz">
+E4
+</td>
+<td class="tg-nolz">
+11100100
+</td>
+<td class="tg-nolz">
+ä
+</td>
+<td class="tg-nolz">
+ä
+</td>
+<td class="tg-nolz">
+小写字母 a，带有变音符号标记
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+229
+</td>
+<td class="tg-nolz">
+345
+</td>
+<td class="tg-nolz">
+E5
+</td>
+<td class="tg-nolz">
+11100101
+</td>
+<td class="tg-nolz">
+å
+</td>
+<td class="tg-nolz">
+å
+</td>
+<td class="tg-nolz">
+小写字母 a，带有上圆圈
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+230
+</td>
+<td class="tg-nolz">
+346
+</td>
+<td class="tg-nolz">
+E6
+</td>
+<td class="tg-nolz">
+11100110
+</td>
+<td class="tg-nolz">
+æ
+</td>
+<td class="tg-nolz">
+æ
+</td>
+<td class="tg-nolz">
+小写字母 ae
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+231
+</td>
+<td class="tg-nolz">
+347
+</td>
+<td class="tg-nolz">
+E7
+</td>
+<td class="tg-nolz">
+11100111
+</td>
+<td class="tg-nolz">
+ç
+</td>
+<td class="tg-nolz">
+ç
+</td>
+<td class="tg-nolz">
+小写字母 c，变音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+232
+</td>
+<td class="tg-nolz">
+350
+</td>
+<td class="tg-nolz">
+E8
+</td>
+<td class="tg-nolz">
+11101000
+</td>
+<td class="tg-nolz">
+è
+</td>
+<td class="tg-nolz">
+è
+</td>
+<td class="tg-nolz">
+小写字母 e，重音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+233
+</td>
+<td class="tg-nolz">
+351
+</td>
+<td class="tg-nolz">
+E9
+</td>
+<td class="tg-nolz">
+11101001
+</td>
+<td class="tg-nolz">
+é
+</td>
+<td class="tg-nolz">
+é
+</td>
+<td class="tg-nolz">
+小写字母 e，尖音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+234
+</td>
+<td class="tg-nolz">
+352
+</td>
+<td class="tg-nolz">
+EA
+</td>
+<td class="tg-nolz">
+11101010
+</td>
+<td class="tg-nolz">
+ê
+</td>
+<td class="tg-nolz">
+ê
+</td>
+<td class="tg-nolz">
+小写字母 e，抑扬音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+235
+</td>
+<td class="tg-nolz">
+353
+</td>
+<td class="tg-nolz">
+EB
+</td>
+<td class="tg-nolz">
+11101011
+</td>
+<td class="tg-nolz">
+ë
+</td>
+<td class="tg-nolz">
+ë
+</td>
+<td class="tg-nolz">
+小写字母 e，带有变音符号标记
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+236
+</td>
+<td class="tg-nolz">
+354
+</td>
+<td class="tg-nolz">
+EC
+</td>
+<td class="tg-nolz">
+11101100
+</td>
+<td class="tg-nolz">
+ì
+</td>
+<td class="tg-nolz">
+ì
+</td>
+<td class="tg-nolz">
+小写字母 i，重音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+237
+</td>
+<td class="tg-nolz">
+355
+</td>
+<td class="tg-nolz">
+ED
+</td>
+<td class="tg-nolz">
+11101101
+</td>
+<td class="tg-nolz">
+í
+</td>
+<td class="tg-nolz">
+í
+</td>
+<td class="tg-nolz">
+小写字母 i，尖音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+238
+</td>
+<td class="tg-nolz">
+356
+</td>
+<td class="tg-nolz">
+EE
+</td>
+<td class="tg-nolz">
+11101110
+</td>
+<td class="tg-nolz">
+î
+</td>
+<td class="tg-nolz">
+î
+</td>
+<td class="tg-nolz">
+小写字母 i，抑扬音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+239
+</td>
+<td class="tg-nolz">
+357
+</td>
+<td class="tg-nolz">
+EF
+</td>
+<td class="tg-nolz">
+11101111
+</td>
+<td class="tg-nolz">
+ï
+</td>
+<td class="tg-nolz">
+ï
+</td>
+<td class="tg-nolz">
+小写字母 i，带有变音符号标记
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+240
+</td>
+<td class="tg-nolz">
+360
+</td>
+<td class="tg-nolz">
+F0
+</td>
+<td class="tg-nolz">
+11110000
+</td>
+<td class="tg-nolz">
+ð
+</td>
+<td class="tg-nolz">
+ð
+</td>
+<td class="tg-nolz">
+冰岛语小写字母 eth
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+241
+</td>
+<td class="tg-nolz">
+361
+</td>
+<td class="tg-nolz">
+F1
+</td>
+<td class="tg-nolz">
+11110001
+</td>
+<td class="tg-nolz">
+ñ
+</td>
+<td class="tg-nolz">
+ñ
+</td>
+<td class="tg-nolz">
+小写字母 n，腭化
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+242
+</td>
+<td class="tg-nolz">
+362
+</td>
+<td class="tg-nolz">
+F2
+</td>
+<td class="tg-nolz">
+11110010
+</td>
+<td class="tg-nolz">
+ò
+</td>
+<td class="tg-nolz">
+ò
+</td>
+<td class="tg-nolz">
+小写字母 o，重音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+243
+</td>
+<td class="tg-nolz">
+363
+</td>
+<td class="tg-nolz">
+F3
+</td>
+<td class="tg-nolz">
+11110011
+</td>
+<td class="tg-nolz">
+ó
+</td>
+<td class="tg-nolz">
+ó
+</td>
+<td class="tg-nolz">
+小写字母 o，尖音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+244
+</td>
+<td class="tg-nolz">
+364
+</td>
+<td class="tg-nolz">
+F4
+</td>
+<td class="tg-nolz">
+11110100
+</td>
+<td class="tg-nolz">
+ô
+</td>
+<td class="tg-nolz">
+ô
+</td>
+<td class="tg-nolz">
+小写字母 o，抑扬音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+245
+</td>
+<td class="tg-nolz">
+365
+</td>
+<td class="tg-nolz">
+F5
+</td>
+<td class="tg-nolz">
+11110101
+</td>
+<td class="tg-nolz">
+õ
+</td>
+<td class="tg-nolz">
+õ
+</td>
+<td class="tg-nolz">
+小写字母 o，腭化
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+246
+</td>
+<td class="tg-nolz">
+366
+</td>
+<td class="tg-nolz">
+F6
+</td>
+<td class="tg-nolz">
+11110110
+</td>
+<td class="tg-nolz">
+ö
+</td>
+<td class="tg-nolz">
+ö
+</td>
+<td class="tg-nolz">
+小写字母 o，带有变音符号标记
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+247
+</td>
+<td class="tg-nolz">
+367
+</td>
+<td class="tg-nolz">
+F7
+</td>
+<td class="tg-nolz">
+11110111
+</td>
+<td class="tg-nolz">
+÷
+</td>
+<td class="tg-nolz">
+÷
+</td>
+<td class="tg-nolz">
+除号
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+248
+</td>
+<td class="tg-nolz">
+370
+</td>
+<td class="tg-nolz">
+F8
+</td>
+<td class="tg-nolz">
+11111000
+</td>
+<td class="tg-nolz">
+ø
+</td>
+<td class="tg-nolz">
+ø
+</td>
+<td class="tg-nolz">
+小写字母 o，带有斜线
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+249
+</td>
+<td class="tg-nolz">
+371
+</td>
+<td class="tg-nolz">
+F9
+</td>
+<td class="tg-nolz">
+11111001
+</td>
+<td class="tg-nolz">
+ù
+</td>
+<td class="tg-nolz">
+ù
+</td>
+<td class="tg-nolz">
+小写字母 u，重音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+250
+</td>
+<td class="tg-nolz">
+372
+</td>
+<td class="tg-nolz">
+FA
+</td>
+<td class="tg-nolz">
+11111010
+</td>
+<td class="tg-nolz">
+ú
+</td>
+<td class="tg-nolz">
+ú
+</td>
+<td class="tg-nolz">
+小写字母 u，尖音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+251
+</td>
+<td class="tg-nolz">
+373
+</td>
+<td class="tg-nolz">
+FB
+</td>
+<td class="tg-nolz">
+11111011
+</td>
+<td class="tg-nolz">
+û
+</td>
+<td class="tg-nolz">
+û
+</td>
+<td class="tg-nolz">
+小写字母 u，抑扬音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+252
+</td>
+<td class="tg-nolz">
+374
+</td>
+<td class="tg-nolz">
+FC
+</td>
+<td class="tg-nolz">
+11111100
+</td>
+<td class="tg-nolz">
+ü
+</td>
+<td class="tg-nolz">
+ü
+</td>
+<td class="tg-nolz">
+小写字母 u，带有变音符号标记
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+253
+</td>
+<td class="tg-nolz">
+375
+</td>
+<td class="tg-nolz">
+FD
+</td>
+<td class="tg-nolz">
+11111101
+</td>
+<td class="tg-nolz">
+ý
+</td>
+<td class="tg-nolz">
+ý
+</td>
+<td class="tg-nolz">
+小写字母 y，尖音
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+254
+</td>
+<td class="tg-nolz">
+376
+</td>
+<td class="tg-nolz">
+FE
+</td>
+<td class="tg-nolz">
+11111110
+</td>
+<td class="tg-nolz">
+þ
+</td>
+<td class="tg-nolz">
+þ
+</td>
+<td class="tg-nolz">
+冰岛语小写字母 thorn
+</td>
+</tr>
+<tr>
+<td class="tg-nolz">
+255
+</td>
+<td class="tg-nolz">
+377
+</td>
+<td class="tg-nolz">
+FF
+</td>
+<td class="tg-nolz">
+11111111
+</td>
+<td class="tg-nolz">
+ÿ
+</td>
+<td class="tg-nolz">
+ÿ
+</td>
+<td class="tg-nolz">
+小写字母 y，带有变音符号标记
+</td>
 </tr>
 </tbody>
 </table>
-</article><div class="post-copyright"><div class="post-copyright__author"><span class="post-copyright-meta"><i class="fas fa-circle-user fa-fw"></i>文章作者: </span><span class="post-copyright-info"><a href="https://nanxer.netlify.app">Nanxer</a></span></div><div class="post-copyright__type"><span class="post-copyright-meta"><i class="fas fa-square-arrow-up-right fa-fw"></i>文章链接: </span><span class="post-copyright-info"><a href="https://nanxer.netlify.app/2024/12/06/ASCII%E7%A0%81%E8%A1%A8/">https://nanxer.netlify.app/2024/12/06/ASCII%E7%A0%81%E8%A1%A8/</a></span></div><div class="post-copyright__notice"><span class="post-copyright-meta"><i class="fas fa-circle-exclamation fa-fw"></i>版权声明: </span><span class="post-copyright-info">本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a> 许可协议。转载请注明来源 <a href="https://nanxer.netlify.app" target="_blank">Nanxer's blog</a>！</span></div></div><div class="tag_share"></div><nav class="pagination-post" id="pagination"><a class="pagination-related" href="/2024/12/06/MoeCTF-crypto/" title="MoeCTF-crypto"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info"><div class="info-1"><div class="info-item-1">上一篇</div><div class="info-item-2">MoeCTF-crypto</div></div><div class="info-2"><div class="info-item-1">现代密码学入门指北 根据已有信息，得到d=10937306181556310949935858914795529677662422361690470235893559064877687528573 直接计算 Signin 计算p,q,d即可 12345p=-(pq-n+p_q-2)q=-(qp-n+p_q-2)d=reverse(e,(p-1)*(q-1))print(long_to_bytes(pow(c,d,n)))#b&#x27;moectf&#123;Just_4_signin_ch4ll3ng3_for_y0u&#125;&#x27; ez_hash 1.网站查表 2.直接爆破 Big and small e很小=&gt;m^e&lt;n或者没比n大多少，那对c+kn开1/e次方的根就是m 12345678910import libnumfrom gmpy2 import irootc =...</div></div></div></a><a class="pagination-related" href="/2024/12/06/%E5%9B%9B%E5%8F%89%E6%A0%91%E5%9B%BE%E5%83%8F%E6%A8%A1%E7%B3%8A/" title="四叉树图像模糊"><div class="cover" style="background: var(--default-bg-color)"></div><div class="info text-right"><div class="info-1"><div class="info-item-1">下一篇</div><div class="info-item-2">四叉树图像模糊</div></div><div class="info-2"><div class="info-item-1">1.图片数据载入 为便于处理，我使用的是ppm格式的图片。其内容符合： 1234第一行：Type //这里我采用P3格式第二行：Width Height第三行：Max_colord第四行以后：RGB的data 对其直接用ifstream进行读取并储存至ImageData中： 1234567891011121314151617181920212223242526272829303132333435// 读取数据int*** Read_File_Data(const string filename, int&amp; Height, int&amp; Width)&#123;    ifstream readfile(filename);    if (!readfile)    &#123;        cerr &lt;&lt; &quot;Error: Unable to open file!&quot; &lt;&lt; endl;        return nullptr;    &#125;    string type;    int maxColor; ...</div></div></div></a></nav><hr class="custom-hr"/><div id="post-comment"><div class="comment-head"><div class="comment-headline"><i class="fas fa-comments fa-fw"></i><span> 评论</span></div></div><div class="comment-wrap"><div><div class="vcomment" id="vcomment"></div></div></div></div></div><div class="aside-content" id="aside-content"><div class="card-widget card-info text-center"><div class="avatar-img"><img src="/img/head.jpg" onerror="this.onerror=null;this.src='/img/friend_404.gif'" alt="avatar"/></div><div class="author-info-name">Nanxer</div><div class="author-info-description">Nanxer's blog</div><div class="site-data"><a href="/archives/"><div class="headline">文章</div><div class="length-num">8</div></a><a href="/tags/"><div class="headline">标签</div><div class="length-num">4</div></a><a href="/categories/"><div class="headline">分类</div><div class="length-num">5</div></a></div></div><div class="sticky_layout"><div class="card-widget card-recent-post"><div class="item-headline"><i class="fas fa-history"></i><span>最新文章</span></div><div class="aside-list"><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/10/%E4%B8%AD%E5%9B%BD%E8%BF%91%E7%8E%B0%E4%BB%A3%E5%8F%B2%E7%BA%B2%E8%A6%81/" title="中国近现代史纲要（进行中）">中国近现代史纲要（进行中）</a><time datetime="2024-12-10T00:46:57.000Z" title="发表于 2024-12-10 08:46:57">2024-12-10</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/09/%E8%87%AA%E7%84%B6%E6%8E%A8%E7%90%86%E7%B3%BB%E7%BB%9F%EF%BC%88%E5%AE%9E%E8%AE%AD%EF%BC%89/" title="自然推理系统实训">自然推理系统实训</a><time datetime="2024-12-09T13:08:46.000Z" title="发表于 2024-12-09 21:08:46">2024-12-09</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/07/%E7%A6%BB%E6%95%A3%E6%95%B0%E5%AD%A6%E6%9C%9F%E6%9C%AB%E5%A4%8D%E4%B9%A0/" title="离散数学">离散数学</a><time datetime="2024-12-07T01:24:52.000Z" title="发表于 2024-12-07 09:24:52">2024-12-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/07/cryptoEXP/" title="cryptoEXP（完善中）">cryptoEXP（完善中）</a><time datetime="2024-12-07T00:44:31.000Z" title="发表于 2024-12-07 08:44:31">2024-12-07</time></div></div><div class="aside-list-item no-cover"><div class="content"><a class="title" href="/2024/12/06/MoeCTF-crypto/" title="MoeCTF-crypto">MoeCTF-crypto</a><time datetime="2024-12-06T03:09:18.000Z" title="发表于 2024-12-06 11:09:18">2024-12-06</time></div></div></div></div></div></div></main><footer id="footer" style="background: transparent;"><div id="footer-wrap"><div class="framework-info"><span>框架 </span><a target="_blank" rel="noopener" href="https://hexo.io">Hexo</a><span class="footer-separator">|</span><span>主题 </span><a target="_blank" rel="noopener" href="https://github.com/jerryc127/hexo-theme-butterfly">Butterfly</a></div></div></footer></div><div id="rightside"><div id="rightside-config-hide"><button id="readmode" type="button" title="阅读模式"><i class="fas fa-book-open"></i></button><button id="translateLink" type="button" title="简繁转换">繁</button><button id="darkmode" type="button" title="日间和夜间模式切换"><i class="fas fa-adjust"></i></button><button id="hide-aside-btn" type="button" title="单栏和双栏切换"><i class="fas fa-arrows-alt-h"></i></button></div><div id="rightside-config-show"><button id="rightside-config" type="button" title="设置"><i class="fas fa-cog fa-spin"></i></button><a id="to_comment" href="#post-comment" title="前往评论"><i class="fas fa-comments"></i></a><button id="go-up" type="button" title="回到顶部"><span class="scroll-percent"></span><i class="fas fa-arrow-up"></i></button></div></div><div><script src="/js/utils.js"></script><script src="/js/main.js"></script><script src="/js/tw_cn.js"></script><script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox/fancybox.umd.min.js"></script><script src="https://cdn.jsdelivr.net/npm/node-snackbar/dist/snackbar.min.js"></script><div class="js-pjax"><script>(() => {
-  const loadMathjax = () => {
-    if (!window.MathJax) {
-      window.MathJax = {
-        tex: {
-          inlineMath: [['$', '$'], ['\\(', '\\)']],
-          tags: 'none',
-        },
-        chtml: {
-          scale: 1.1
-        },
-        options: {
-          enableMenu: true,
-          renderActions: {
-            findScript: [10, doc => {
-              for (const node of document.querySelectorAll('script[type^="math/tex"]')) {
-                const display = !!node.type.match(/; *mode=display/)
-                const math = new doc.options.MathItem(node.textContent, doc.inputJax[0], display)
-                const text = document.createTextNode('')
-                node.parentNode.replaceChild(text, node)
-                math.start = {node: text, delim: '', n: 0}
-                math.end = {node: text, delim: '', n: 0}
-                doc.math.push(math)
-              }
-            }, '']
-          }
-        }
-      }
+
+
+                
+              </div>
+            
+            <hr/>
+            <div>
+              <div class="post-metas my-3">
+  
+    <div class="post-meta mr-3 d-flex align-items-center">
+      <i class="iconfont icon-category"></i>
       
-      const script = document.createElement('script')
-      script.src = 'https://cdn.jsdelivr.net/npm/mathjax/es5/tex-mml-chtml.min.js'
-      script.id = 'MathJax-script'
-      script.async = true
-      document.head.appendChild(script)
-    } else {
-      MathJax.startup.document.state(0)
-      MathJax.texReset()
-      MathJax.typesetPromise()
-    }
-  }
 
-  btf.addGlobalFn('encrypt', loadMathjax, 'mathjax')
-  window.pjax ? loadMathjax() : window.addEventListener('load', loadMathjax)
-})()</script><script>(() => {
-  const runMermaid = ele => {
-    window.loadMermaid = true
-    const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'default'
-
-    ele.forEach((item, index) => {
-      const mermaidSrc = item.firstElementChild
-      const mermaidThemeConfig = `%%{init:{ 'theme':'${theme}'}}%%\n`
-      const mermaidID = `mermaid-${index}`
-      const mermaidDefinition = mermaidThemeConfig + mermaidSrc.textContent
-
-      const renderFn = mermaid.render(mermaidID, mermaidDefinition)
-      const renderMermaid = svg => {
-        mermaidSrc.insertAdjacentHTML('afterend', svg)
-      }
-
-      // mermaid v9 and v10 compatibility
-      typeof renderFn === 'string' ? renderMermaid(renderFn) : renderFn.then(({ svg }) => renderMermaid(svg))
-    })
-  }
-
-  const codeToMermaid = () => {
-    const codeMermaidEle = document.querySelectorAll('pre > code.mermaid')
-    if (codeMermaidEle.length === 0) return
-
-    codeMermaidEle.forEach(ele => {
-      const preEle = document.createElement('pre')
-      preEle.className = 'mermaid-src'
-      preEle.hidden = true
-      preEle.textContent = ele.textContent
-      const newEle = document.createElement('div')
-      newEle.className = 'mermaid-wrap'
-      newEle.appendChild(preEle)
-      ele.parentNode.replaceWith(newEle)
-    })
-  }
-
-  const loadMermaid = () => {
-    if (true) codeToMermaid()
-    const $mermaid = document.querySelectorAll('#article-container .mermaid-wrap')
-    if ($mermaid.length === 0) return
-
-    const runMermaidFn = () => runMermaid($mermaid)
-    btf.addGlobalFn('themeChange', runMermaidFn, 'mermaid')
-    window.loadMermaid ? runMermaidFn() : btf.getScript('https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid.min.js').then(runMermaidFn)
-  }
-
-  btf.addGlobalFn('encrypt', loadMermaid, 'mermaid')
-  window.pjax ? loadMermaid() : document.addEventListener('DOMContentLoaded', loadMermaid)
-})()</script><script>(() => {
-  const $chartjs = document.querySelectorAll('#article-container .chartjs-container')
-  if ($chartjs.length === 0) return
-
-  const applyThemeDefaultsConfig = theme => {
-    if (theme === 'dark-mode') {
-      Chart.defaults.color = "rgba(255, 255, 255, 0.8)"
-      Chart.defaults.borderColor = "rgba(255, 255, 255, 0.2)"
-      Chart.defaults.scale.ticks.backdropColor = "transparent"
-    } else {
-      Chart.defaults.color = "rgba(0, 0, 0, 0.8)"
-      Chart.defaults.borderColor = "rgba(0, 0, 0, 0.1)"
-      Chart.defaults.scale.ticks.backdropColor = "transparent"
-    }
-  }
-
-  // Recursively traverse the config object and automatically apply theme-specific color schemes
-  const applyThemeConfig = (obj, theme) => {
-    if (typeof obj !== 'object' || obj === null) return
+<span class="category-chains">
+  
+  
     
-    Object.keys(obj).forEach(key => {
-      const value = obj[key]
-      // If the property is an object and has theme-specific options, apply them
-      if (typeof value === 'object' && value !== null) {
-        if (value[theme]) {
-          obj[key] = value[theme] // Apply the value for the current theme
-        } else {
-          // Recursively process child objects
-          applyThemeConfig(value, theme)
-        }
-      }
+      <span class="category-chain">
+        
+  <a href="/categories/%E8%AE%A1%E7%AE%97%E6%9C%BA/" class="category-chain-item">计算机</a>
+  
+  
+
+      </span>
+    
+  
+    
+      <span class="category-chain">
+        
+  <a href="/categories/CTF/" class="category-chain-item">CTF</a>
+  
+  
+
+      </span>
+    
+  
+</span>
+
+    </div>
+  
+  
+</div>
+
+
+              
+  
+
+  <div class="license-box my-3">
+    <div class="license-title">
+      <div>ASCII码表</div>
+      <div>https://nanxer.netlify.app/2024/12/06/ASCII码表/</div>
+    </div>
+    <div class="license-meta">
+      
+        <div class="license-meta-item">
+          <div>作者</div>
+          <div>Nanxer</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>发布于</div>
+          <div>2024年12月6日</div>
+        </div>
+      
+      
+        <div class="license-meta-item license-meta-date">
+          <div>更新于</div>
+          <div>2024年12月11日</div>
+        </div>
+      
+      
+        <div class="license-meta-item">
+          <div>许可协议</div>
+          <div>
+            
+              
+              
+                <a class="print-no-link" target="_blank" href="https://creativecommons.org/licenses/by/4.0/">
+                  <span class="hint--top hint--rounded" aria-label="BY - 署名">
+                    <i class="iconfont icon-cc-by"></i>
+                  </span>
+                </a>
+              
+            
+          </div>
+        </div>
+      
+    </div>
+    <div class="license-icon iconfont"></div>
+  </div>
+
+
+
+              
+                <div class="post-prevnext my-3">
+                  <article class="post-prev col-6">
+                    
+                    
+                      <a href="/2024/12/06/MoeCTF-crypto/" title="MoeCTF-crypto">
+                        <i class="iconfont icon-arrowleft"></i>
+                        <span class="hidden-mobile">MoeCTF-crypto</span>
+                        <span class="visible-mobile">上一篇</span>
+                      </a>
+                    
+                  </article>
+                  <article class="post-next col-6">
+                    
+                    
+                      <a href="/2024/12/06/%E5%9B%9B%E5%8F%89%E6%A0%91%E5%9B%BE%E5%83%8F%E6%A8%A1%E7%B3%8A/" title="四叉树图像模糊">
+                        <span class="hidden-mobile">四叉树图像模糊</span>
+                        <span class="visible-mobile">下一篇</span>
+                        <i class="iconfont icon-arrowright"></i>
+                      </a>
+                    
+                  </article>
+                </div>
+              
+            </div>
+
+            
+  
+  
+    <article id="comments" lazyload>
+      
+  <div id="valine"></div>
+  <script type="text/javascript">
+    Fluid.utils.loadComments('#valine', function() {
+      Fluid.utils.createScript('https://lib.baomitu.com/valine/1.5.1/Valine.min.js', function() {
+        var options = Object.assign(
+          {"appId":"S9gubhKsLgjHDOcY9bUhrKnT-gzGzoHsz","appKey":"zerFf1BfdowSPXSdYAr3p5HK","path":"window.location.pathname","placeholder":null,"avatar":"hide","meta":["nick","mail","link"],"requiredFields":[],"pageSize":10,"lang":"zh-CN","highlight":false,"recordIP":false,"serverURLs":"","emojiCDN":null,"emojiMaps":null,"enableQQ":true,"el":"#vcomments","visitor":true},
+          {
+            el: "#valine",
+            path: window.location.pathname
+          }
+        )
+        new Valine(options);
+        Fluid.utils.waitElementVisible('#valine .vcontent', () => {
+          var imgSelector = '#valine .vcontent img:not(.vemoji)';
+          Fluid.plugins.imageCaption(imgSelector);
+          Fluid.plugins.fancyBox(imgSelector);
+        })
+      });
+    });
+  </script>
+  <noscript>Please enable JavaScript to view the comments</noscript>
+
+
+    </article>
+  
+
+
+          </article>
+        </div>
+      </div>
+    </div>
+
+    <div class="side-col d-none d-lg-block col-lg-2">
+      
+  <aside class="sidebar" style="margin-left: -1rem">
+    <div id="toc">
+  <p class="toc-header">
+    <i class="iconfont icon-list"></i>
+    <span>目录</span>
+  </p>
+  <div class="toc-body" id="toc-body"></div>
+</div>
+
+
+
+  </aside>
+
+
+    </div>
+  </div>
+</div>
+
+
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+  
+
+
+
+
+
+
+
+    
+
+    
+      <a id="scroll-top-button" aria-label="TOP" href="#" role="button">
+        <i class="iconfont icon-arrowup" aria-hidden="true"></i>
+      </a>
+    
+
+    
+      <div class="modal fade" id="modalSearch" tabindex="-1" role="dialog" aria-labelledby="ModalLabel"
+     aria-hidden="true">
+  <div class="modal-dialog modal-dialog-scrollable modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <h4 class="modal-title w-100 font-weight-bold">搜索</h4>
+        <button type="button" id="local-search-close" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-5">
+          <input type="text" id="local-search-input" class="form-control validate">
+          <label data-error="x" data-success="v" for="local-search-input">关键词</label>
+        </div>
+        <div class="list-group" id="local-search-result"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+  
+    <div class="footer-content">
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i>
+<a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> 
+    </div>
+  
+  
+    <div class="statistics">
+  
+  
+
+  
+    
+      <span id="busuanzi_container_site_pv" style="display: none">
+        总访问量 
+        <span id="busuanzi_value_site_pv"></span>
+         次
+      </span>
+    
+    
+      <span id="busuanzi_container_site_uv" style="display: none">
+        总访客数 
+        <span id="busuanzi_value_site_uv"></span>
+         人
+      </span>
+    
+    
+
+  
+
+</div>
+
+  
+  
+    <!-- 备案信息 ICP for China -->
+    <div class="beian">
+  <span>
+    <a href="http://beian.miit.gov.cn/" target="_blank" rel="nofollow noopener">
+      萌新2024ヾ(≧▽≦*)o
+    </a>
+  </span>
+  
+</div>
+
+  
+</div>
+
+  </footer>
+
+  <!-- Scripts -->
+  
+  <script  src="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.js" ></script>
+  <link  rel="stylesheet" href="https://lib.baomitu.com/nprogress/0.2.0/nprogress.min.css" />
+
+  <script>
+    NProgress.configure({"showSpinner":false,"trickleSpeed":100})
+    NProgress.start()
+    window.addEventListener('load', function() {
+      NProgress.done();
     })
-  }
+  </script>
 
-  const runChartJS = () => {
-    window.loadChartJS = true
 
-    Array.from($chartjs).forEach((item, index) => {
-      const chartSrc = item.firstElementChild
-      const chartID = item.getAttribute('data-chartjs-id') || ('chartjs-' + index) // Use custom ID or default ID
-      const width = item.getAttribute('data-width')
-      const existingCanvas = document.getElementById(chartID)
+<script  src="https://lib.baomitu.com/jquery/3.6.4/jquery.min.js" ></script>
+<script  src="https://lib.baomitu.com/twitter-bootstrap/4.6.1/js/bootstrap.min.js" ></script>
+<script  src="/js/events.js" ></script>
+<script  src="/js/plugins.js" ></script>
 
-      // If a canvas already exists, remove it to avoid rendering duplicates
-      if (existingCanvas) {
-          existingCanvas.parentNode.remove()
+
+  <script  src="https://lib.baomitu.com/typed.js/2.0.12/typed.min.js" ></script>
+  <script>
+    (function (window, document) {
+      var typing = Fluid.plugins.typing;
+      var subtitle = document.getElementById('subtitle');
+      if (!subtitle || !typing) {
+        return;
       }
+      var text = subtitle.getAttribute('data-typed-text');
+      
+        typing(text);
+      
+    })(window, document);
+  </script>
 
-      const chartDefinition = chartSrc.textContent
-      const canvas = document.createElement('canvas')
-      canvas.id = chartID
 
-      const div = document.createElement('div')
-      div.className = 'chartjs-wrap'
 
-      if (width) {
-        div.style.width = width
+
+  
+    <script  src="/js/img-lazyload.js" ></script>
+  
+
+
+
+
+  
+<script>
+  var relativeDate = function() {
+    var updatedTime = document.getElementById('updated-time');
+    if (updatedTime) {
+      var text = updatedTime.textContent;
+      var reg = /\d{4}-\d{2}-\d{2}T\d{2}:\d{2}:\d{2}(?:Z|[+-]\d{2}:\d{2})/;
+      var matchs = text.match(reg);
+      if (matchs) {
+        var relativeTime = moment(matchs[0]).fromNow();
+        updatedTime.textContent = text.replace(reg, relativeTime);
       }
-
-      div.appendChild(canvas)
-      chartSrc.insertAdjacentElement('afterend', div)
-
-      const ctx = document.getElementById(chartID).getContext('2d')
-
-      const config = JSON.parse(chartDefinition)
-
-      const theme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark-mode' : 'light-mode'
-
-      // Set default styles (initial setup)
-      applyThemeDefaultsConfig(theme)
-
-      // Automatically traverse the config and apply dual-mode color schemes
-      applyThemeConfig(config, theme)
-
-      new Chart(ctx, config)
-    })
-  }
-
-  const loadChartJS = () => {
-    window.loadChartJS ? runChartJS() : btf.getScript('https://cdn.jsdelivr.net/npm/chart.js/dist/chart.umd.min.js').then(runChartJS)
-  }
-
-  // Listen for theme change events
-  btf.addGlobalFn('themeChange', runChartJS, 'chartjs')
-  btf.addGlobalFn('encrypt', runChartJS, 'chartjs')
-
-  window.pjax ? loadChartJS() : document.addEventListener('DOMContentLoaded', loadChartJS)
-})()</script><script>(() => {
-  const isShuoshuo = GLOBAL_CONFIG_SITE.isShuoshuo
-  const option = null
-
-  const initValine = (el, path) => {
-    if (isShuoshuo) {
-      window.shuoshuoComment.destroyValine = () => {
-        if (el.children.length) {
-          el.innerHTML = ''
-          el.classList.add('no-comment')
-        }
-      }
+      updatedTime.style.display = '';
     }
-
-    const valineConfig = {
-      el: '#vcomment',
-      appId: 'S9gubhKsLgjHDOcY9bUhrKnT-gzGzoHsz',
-      appKey: 'zerFf1BfdowSPXSdYAr3p5HK',
-      avatar: 'monsterid',
-      serverURLs: '',
-      emojiMaps: "",
-      visitor: true,
-      ...option,
-      path: isShuoshuo ? path : (option && option.path) || window.location.pathname
-    }
-
-    new Valine(valineConfig)
-  }
-
-  const loadValine = async (el, path) => {
-    if (typeof Valine === 'function') {
-      initValine(el, path)
+  };
+  Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/moment.min.js', function() {
+    if (!'zh-cn'.startsWith('en')) {
+      Fluid.utils.createScript('https://lib.baomitu.com/moment.js/2.29.4/locale/zh-cn.min.js', function() {
+        relativeDate();
+      });
     } else {
-      await btf.getScript('https://cdn.jsdelivr.net/npm/valine/dist/Valine.min.js')
-      initValine(el, path)
+      relativeDate();
     }
-  }
+  });
+</script>
 
-  if (isShuoshuo) {
-    'Valine' === 'Valine'
-      ? window.shuoshuoComment = { loadComment: loadValine }
-      : window.loadOtherComment = loadValine
-    return
-  }
 
-  if ('Valine' === 'Valine' || !false) {
-    if (false) btf.loadComment(document.getElementById('vcomment'),loadValine)
-    else setTimeout(loadValine, 0)
-  } else {
-    window.loadOtherComment = loadValine
-  }
-})()</script></div><script src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/activate-power-mode.min.js"></script><script>POWERMODE.colorful = true;
-POWERMODE.shake = true;
-POWERMODE.mobile = false;
-document.body.addEventListener('input', POWERMODE);
-</script><script id="click-heart" src="https://cdn.jsdelivr.net/npm/butterfly-extsrc/dist/click-heart.min.js" async="async" mobile="false"></script><div id="local-search"><div class="search-dialog"><nav class="search-nav"><span class="search-dialog-title">搜索</span><span id="loading-status"></span><button class="search-close-button"><i class="fas fa-times"></i></button></nav><div class="text-center" id="loading-database"><i class="fas fa-spinner fa-pulse"></i><span>  数据加载中</span></div><div class="search-wrap"><div id="local-search-input"><div class="local-search-box"><input class="local-search-box--input" placeholder="搜索文章" type="text"/></div></div><hr/><div id="local-search-results"></div><div id="local-search-stats-wrap"></div></div></div><div id="search-mask"></div><script src="/js/search/local-search.js"></script></div></div></body></html>
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/tocbot/4.20.1/tocbot.min.js', function() {
+    var toc = jQuery('#toc');
+    if (toc.length === 0 || !window.tocbot) { return; }
+    var boardCtn = jQuery('#board-ctn');
+    var boardTop = boardCtn.offset().top;
+
+    window.tocbot.init(Object.assign({
+      tocSelector     : '#toc-body',
+      contentSelector : '.markdown-body',
+      linkClass       : 'tocbot-link',
+      activeLinkClass : 'tocbot-active-link',
+      listClass       : 'tocbot-list',
+      isCollapsedClass: 'tocbot-is-collapsed',
+      collapsibleClass: 'tocbot-is-collapsible',
+      scrollSmooth    : true,
+      includeTitleTags: true,
+      headingsOffset  : -boardTop,
+    }, CONFIG.toc));
+    if (toc.find('.toc-list-item').length > 0) {
+      toc.css('visibility', 'visible');
+    }
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('tocbot' in window) {
+        tocbot.refresh();
+        var toc = jQuery('#toc');
+        if (toc.length === 0 || !tocbot) {
+          return;
+        }
+        if (toc.find('.toc-list-item').length > 0) {
+          toc.css('visibility', 'visible');
+        }
+      }
+    });
+  });
+</script>
+
+
+  <script src=https://lib.baomitu.com/clipboard.js/2.0.11/clipboard.min.js></script>
+
+  <script>Fluid.plugins.codeWidget();</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/anchor-js/5.0.0/anchor.min.js', function() {
+    window.anchors.options = {
+      placement: CONFIG.anchorjs.placement,
+      visible  : CONFIG.anchorjs.visible
+    };
+    if (CONFIG.anchorjs.icon) {
+      window.anchors.options.icon = CONFIG.anchorjs.icon;
+    }
+    var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+    var res = [];
+    for (var item of el) {
+      res.push('.markdown-body > ' + item.trim());
+    }
+    if (CONFIG.anchorjs.placement === 'left') {
+      window.anchors.options.class = 'anchorjs-link-left';
+    }
+    window.anchors.add(res.join(', '));
+
+    Fluid.events.registerRefreshCallback(function() {
+      if ('anchors' in window) {
+        anchors.removeAll();
+        var el = (CONFIG.anchorjs.element || 'h1,h2,h3,h4,h5,h6').split(',');
+        var res = [];
+        for (var item of el) {
+          res.push('.markdown-body > ' + item.trim());
+        }
+        if (CONFIG.anchorjs.placement === 'left') {
+          anchors.options.class = 'anchorjs-link-left';
+        }
+        anchors.add(res.join(', '));
+      }
+    });
+  });
+</script>
+
+
+  
+<script>
+  Fluid.utils.createScript('https://lib.baomitu.com/fancybox/3.5.7/jquery.fancybox.min.js', function() {
+    Fluid.plugins.fancyBox();
+  });
+</script>
+
+
+  <script>Fluid.plugins.imageCaption();</script>
+
+  <script defer src="/js/leancloud.js" ></script>
+
+  <script  src="/js/local-search.js" ></script>
+
+  <script defer src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js" ></script>
+
+
+
+
+
+<!-- 主题的启动项，将它保持在最底部 -->
+<!-- the boot of the theme, keep it at the bottom -->
+<script  src="/js/boot.js" ></script>
+
+
+  
+
+  <noscript>
+    <div class="noscript-warning">博客在允许 JavaScript 运行的环境下浏览效果更佳</div>
+  </noscript>
+  
+  <!--鼠标点击礼花特效-->
+  <script async src="/js/fireworks.js"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+        tex2jax: {
+            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
+            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
+            processEscapes: true
+        }
+    });
+    MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax();
+        for (var i = 0; i < all.length; ++i)
+            all[i].SourceElement().parentNode.className += ' has-jax';
+    });
+</script>
+<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script>
+  <link defer rel="stylesheet" href="/css/backgroundize.css" />
+  <!-- hexo injector body_end end --></body>
+</html>
