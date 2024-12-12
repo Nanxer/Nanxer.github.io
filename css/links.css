@@ -2,7 +2,7 @@ a.card-body.hover-with-bg {
   border-left: 5px solid #72ffb7;
   background: #00000020;
   color: #fff;
-  box-shadow: 0 5px 10px #ffffff50;
+  box-shadow: 0 5px 10px #00000050;
   transition: all .3s;
 }
 
@@ -23,5 +23,5 @@ a.card-body.hover-with-bg:hover img{
 
 a.card-body.hover-with-bg:hover {
   border-left-width: 15px;
-  background-color: #00000080;
+  background-color: #fff;
 }
