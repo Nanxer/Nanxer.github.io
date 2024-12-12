@@ -1,18 +1,18 @@
 a.card-body.hover-with-bg {
   border-left: 5px solid #72ffb7;
-  background: #ffffff80;
+  background: #00000020;
   color: #fff;
   box-shadow: 0 5px 10px #ffffff50;
   transition: all .3s;
 }
 
 a.card-body.hover-with-bg img {
-  transition: all 5s;
+  transition: all 3s;
   border: 2px solid #fff;
 }
 
 a.card-body.hover-with-bg:hover img{
-  transform: rotate(360deg);
+  transform: rotate(540deg);
 }
 
 .link-intro {
@@ -23,5 +23,5 @@ a.card-body.hover-with-bg:hover img{
 
 a.card-body.hover-with-bg:hover {
   border-left-width: 15px;
-  background-color: #fff;
+  background-color: #00000080;
 }
