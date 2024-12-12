@@ -21,12 +21,12 @@
   <meta name="author" content="Nanxer">
   <meta name="keywords" content="">
   
-    <meta name="description" content="一、 编码 ctf中常见的编码和密码收集_音乐符加密-CSDN博客 识别密文加密方式_根据密文判断加密方式-CSDN博客  1.base家族  2.url编码  3.Quoted-printable 编码 任何一个8位的字节值可编码为3个字符：一个等号”&#x3D;”后跟随两个十六进制数字(0–9或A–F)表示该字节的数值.例如，ASCII码换页符（十进制值为12）可以表示为”&#x3D;0C”, 等号”&#x3D;”（十进">
+    <meta name="description" content="一、 编码 ctf中常见的编码和密码收集_音乐符加密-CSDN博客 识别密文加密方式_根据密文判断加密方式-CSDN博客 1.base家族 2.url编码 3.Quoted-printable 编码 任何一个8位的字节值可编码为3个字符：一个等号”&#x3D;”后跟随两个十六进制数字(0–9或A–F)表示该字节的数值.例如，ASCII码换页符（十进制值为12）可以表示为”&#x3D;0C”, 等号”&#x3D;”">
 <meta property="og:type" content="article">
 <meta property="og:title" content="cryptoEXP（完善中）">
 <meta property="og:url" content="https://nanxer.netlify.app/2024/12/07/cryptoEXP/index.html">
 <meta property="og:site_name" content="Nanxer&#39;s blog">
-<meta property="og:description" content="一、 编码 ctf中常见的编码和密码收集_音乐符加密-CSDN博客 识别密文加密方式_根据密文判断加密方式-CSDN博客  1.base家族  2.url编码  3.Quoted-printable 编码 任何一个8位的字节值可编码为3个字符：一个等号”&#x3D;”后跟随两个十六进制数字(0–9或A–F)表示该字节的数值.例如，ASCII码换页符（十进制值为12）可以表示为”&#x3D;0C”, 等号”&#x3D;”（十进">
+<meta property="og:description" content="一、 编码 ctf中常见的编码和密码收集_音乐符加密-CSDN博客 识别密文加密方式_根据密文判断加密方式-CSDN博客 1.base家族 2.url编码 3.Quoted-printable 编码 任何一个8位的字节值可编码为3个字符：一个等号”&#x3D;”后跟随两个十六进制数字(0–9或A–F)表示该字节的数值.例如，ASCII码换页符（十进制值为12）可以表示为”&#x3D;0C”, 等号”&#x3D;”">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://nanxer.netlify.app/2024/12/07/cryptoEXP/1.PNG">
 <meta property="og:image" content="https://nanxer.netlify.app/2024/12/07/cryptoEXP/2.JPEG">
@@ -339,24 +339,36 @@
             
               <div class="markdown-body">
                 
-                <h1 id="一-编码"><a class="markdownIt-Anchor" href="#一-编码"></a> 一、 编码</h1>
+                <h1 id="一-编码">一、 编码</h1>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/weixin_54515836/article/details/113357816">ctf中常见的编码和密码收集_音乐符加密-CSDN博客</a></p>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/Baiyi_destroyer/article/details/127494046">识别密文加密方式_根据密文判断加密方式-CSDN博客</a></p>
-<h2 id="1base家族"><a class="markdownIt-Anchor" href="#1base家族"></a> 1.base家族</h2>
-<h2 id="2url编码"><a class="markdownIt-Anchor" href="#2url编码"></a> 2.url编码</h2>
-<h2 id="3quoted-printable-编码"><a class="markdownIt-Anchor" href="#3quoted-printable-编码"></a> 3.Quoted-printable 编码</h2>
-<p>任何一个8位的字节值可编码为3个字符：一个等号”=”后跟随两个十六进制数字(0–9或A–F)表示该字节的数值.例如，ASCII码换页符（十进制值为12）可以表示为”=0C”, 等号”=”（十进制值为61）必须表示为”=3D”. 除了可打印ASCII字符与换行符以外，所有字符必须表示为这种格式.</p>
-<p>所有可打印ASCII字符(十进制值的范围为33到126)可用ASCII字符编码来直接表示, 但是等号”=”(十进制值为61)不可以这样直接表示.ASCII的水平制表符(tab)与空格符, 十进制为9和32, 如果不出现在行尾则可以用其ASCII字符编码直接表示。如果这两个字符出现在行尾，必须QP编码表示为”=09″ (tab)或”=20″ (space).</p>
-<p>如果数据中包含有意义的行结束标志，必须转换为ASCII回车(CR)换行(LF)序列，既不能用原来的ASCII字符也不能用QP编码的”=”转义字符序列。 相反，如果字节值13与10有其它的不是行结束的含义，它们必须QP编码为=0D与=0A.</p>
-<p>quoted-printable编码的数据的每行长度不能超过76个字符. 为满足此要求又不改变被编码文本，在QP编码结果的每行末尾加上软换行(soft line break). 即在每行末尾加上一个”=”, 但并不会出现在解码得到的文本中.</p>
-<h1 id="二-算法问题"><a class="markdownIt-Anchor" href="#二-算法问题"></a> 二、算法问题</h1>
-<h2 id="1variable-precision-swar-算法汉明重量强网杯_2024_21_steps"><a class="markdownIt-Anchor" href="#1variable-precision-swar-算法汉明重量强网杯_2024_21_steps"></a> 1.variable-precision SWAR 算法（汉明重量）强网杯_2024_21_steps</h2>
-<p><strong>统计一个位数组中非0二进制位的数量</strong>。在数学上被称为“计算汉明重量（Hamming Weight)”，目前已知效率最好的通用算法为variable-precision SWAR 算法</p>
+<h2 id="base家族">1.base家族</h2>
+<h2 id="url编码">2.url编码</h2>
+<h2 id="quoted-printable-编码">3.Quoted-printable 编码</h2>
+<p>任何一个8位的字节值可编码为3个字符：一个等号”=”后跟随两个十六进制数字(0–9或A–F)表示该字节的数值.例如，ASCII码换页符（十进制值为12）可以表示为”=0C”,
+等号”=”（十进制值为61）必须表示为”=3D”.
+除了可打印ASCII字符与换行符以外，所有字符必须表示为这种格式.</p>
+<p>所有可打印ASCII字符(十进制值的范围为33到126)可用ASCII字符编码来直接表示,
+但是等号”=”(十进制值为61)不可以这样直接表示.ASCII的水平制表符(tab)与空格符,
+十进制为9和32,
+如果不出现在行尾则可以用其ASCII字符编码直接表示。如果这两个字符出现在行尾，必须QP编码表示为”=09″
+(tab)或”=20″ (space).</p>
+<p>如果数据中包含有意义的行结束标志，必须转换为ASCII回车(CR)换行(LF)序列，既不能用原来的ASCII字符也不能用QP编码的”=”转义字符序列。
+相反，如果字节值13与10有其它的不是行结束的含义，它们必须QP编码为=0D与=0A.</p>
+<p>quoted-printable编码的数据的每行长度不能超过76个字符.
+为满足此要求又不改变被编码文本，在QP编码结果的每行末尾加上软换行(soft
+line break). 即在每行末尾加上一个”=”,
+但并不会出现在解码得到的文本中.</p>
+<h1 id="二算法问题">二、算法问题</h1>
+<h2 id="variable-precision-swar-算法汉明重量强网杯_2024_21_steps">1.variable-precision
+SWAR 算法（汉明重量）强网杯_2024_21_steps</h2>
+<p><strong>统计一个位数组中非0二进制位的数量</strong>。在数学上被称为“计算汉明重量（Hamming
+Weight)”，目前已知效率最好的通用算法为variable-precision SWAR 算法</p>
 <p>网上常见32bits的variable-precision SWAR算法求汉明重量</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-comment">//计算32位二进制的汉明重量</span><br>   <span class="hljs-function"><span class="hljs-type">uint32_t</span> <span class="hljs-title">swar</span><span class="hljs-params">(<span class="hljs-type">uint32_t</span> i)</span></span><br><span class="hljs-function">   </span>&#123;<br>           i = (i &amp; <span class="hljs-number">0x55555555</span>) + ((i &gt;&gt; <span class="hljs-number">1</span>) &amp; <span class="hljs-number">0x55555555</span>);<br>           i = (i &amp; <span class="hljs-number">0x33333333</span>) + ((i &gt;&gt; <span class="hljs-number">2</span>) &amp; <span class="hljs-number">0x33333333</span>);<br>           i = (i &amp; <span class="hljs-number">0x0F0F0F0F</span>) + ((i &gt;&gt; <span class="hljs-number">4</span>) &amp; <span class="hljs-number">0x0F0F0F0F</span>);<br>           i = (i * (<span class="hljs-number">0x01010101</span>) &gt;&gt; <span class="hljs-number">24</span>);<br>           <span class="hljs-keyword">return</span> i;<br>   &#125;<br></code></pre></td></tr></table></figure>
 <p>其本质如图：</p>
-<p><img src="/2024/12/07/cryptoEXP/1.PNG" srcset="/img/loading.gif" lazyload alt></p>
-<p><img src="/2024/12/07/cryptoEXP/2.JPEG" srcset="/img/loading.gif" lazyload alt></p>
+<p><img src="/2024/12/07/cryptoEXP/1.PNG" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/2024/12/07/cryptoEXP/2.JPEG" srcset="/img/loading.gif" lazyload></p>
 <p>第一次是计算数量，后面每一次位移都是在将之前的数量进行加和。</p>
 <p>那么对于本题的长度，可以有：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs python">B = A &gt;&gt; <span class="hljs-number">1</span><br>   B = B &amp; <span class="hljs-number">0x55555555555555555555555555555555</span><br>   A = A &amp; <span class="hljs-number">0x55555555555555555555555555555555</span><br>   A =A + B<br>   B = A &gt;&gt; <span class="hljs-number">2</span><br>   B = B &amp; <span class="hljs-number">0x33333333333333333333333333333333</span><br>   A = A &amp; <span class="hljs-number">0x33333333333333333333333333333333</span><br>   A = A + B<br>   B = A &gt;&gt; <span class="hljs-number">4</span><br>   B = B &amp; <span class="hljs-number">0x0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f</span><br>   A = A &amp; <span class="hljs-number">0x0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f</span><br>   A = A + B<br>   B = A &gt;&gt; <span class="hljs-number">8</span><br>   B = B &amp; <span class="hljs-number">0x00ff00ff00ff00ff00ff00ff00ff00ff</span><br>   A = A &amp; <span class="hljs-number">0x00ff00ff00ff00ff00ff00ff00ff00ff</span><br>   A = A + B<br>   B = A &gt;&gt; <span class="hljs-number">16</span><br>   B = B &amp; <span class="hljs-number">0x0000ffff0000ffff0000ffff0000ffff</span><br>   A = A &amp; <span class="hljs-number">0x0000ffff0000ffff0000ffff0000ffff</span><br>   A = A + B<br>   B = A &gt;&gt; <span class="hljs-number">32</span><br>   B = B &amp; <span class="hljs-number">0x00000000ffffffff00000000ffffffff</span><br>   A = A &amp; <span class="hljs-number">0x00000000ffffffff00000000ffffffff</span><br>   A = A + B<br>   B = A &gt;&gt; <span class="hljs-number">64</span><br>   B = B &amp; <span class="hljs-number">0x0000000000000000ffffffffffffffff</span><br>   A = A &amp; <span class="hljs-number">0x0000000000000000ffffffffffffffff</span><br>   A = A + B<br></code></pre></td></tr></table></figure>
@@ -370,92 +382,79 @@
 <p>会发现，只要最后5位就够了（使用“与”来获取后5位），即使A中还有前边的10100000000，也不会干扰最终结果。</p>
 <p>那么对于128bits，可以：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs python">B = A &gt;&gt; <span class="hljs-number">1</span><br>B = B &amp; <span class="hljs-number">0x55555555555555555555555555555555</span><br>A = A &amp; <span class="hljs-number">0x55555555555555555555555555555555</span><br>A = A + B<br><br>B = A &gt;&gt; <span class="hljs-number">2</span><br>B = B &amp; <span class="hljs-number">0x33333333333333333333333333333333</span><br>A = A &amp; <span class="hljs-number">0x33333333333333333333333333333333</span><br>A = A + B<br><br>B = A &gt;&gt; <span class="hljs-number">4</span><br>B = B &amp; <span class="hljs-number">0x0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f</span><br>A = A &amp; <span class="hljs-number">0x0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f</span><br>A = A + B<br><br>B = A &gt;&gt; <span class="hljs-number">8</span><br>A = A + B<br><br>B = A &gt;&gt; <span class="hljs-number">16</span><br>A = A + B<br><br>B = A &gt;&gt; <span class="hljs-number">32</span><br>A = A + B<br><br>B = A &gt;&gt; <span class="hljs-number">64</span><br>A = A + B<br><br>A = A &amp; <span class="hljs-number">0b11111111</span><br></code></pre></td></tr></table></figure>
-<h2 id="2离散对数求解dlp问题"><a class="markdownIt-Anchor" href="#2离散对数求解dlp问题"></a> 2.离散对数求解（DLP问题）</h2>
-<p>离散对数问题是指在一个离散对数群中寻找指定的基值 g、模数 p 和给定结果 y 时，解方程</p>
-<p class="katex-block"><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><msup><mi>g</mi><mi>x</mi></msup><mo>=</mo><mi>y</mi><mtext> </mtext><mi>m</mi><mi>o</mi><mi>d</mi><mtext> </mtext><mi>p</mi></mrow><annotation encoding="application/x-tex">g^x=y \ mod \ p
-</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.9088319999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.03588em;">g</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7143919999999999em;"><span style="top:-3.113em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">x</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8888799999999999em;vertical-align:-0.19444em;"></span><span class="mord mathnormal" style="margin-right:0.03588em;">y</span><span class="mspace"> </span><span class="mord mathnormal">m</span><span class="mord mathnormal">o</span><span class="mord mathnormal">d</span><span class="mspace"> </span><span class="mord mathnormal">p</span></span></span></span></span></p>
+<h2 id="离散对数求解dlp问题">2.离散对数求解（DLP问题）</h2>
+<p>离散对数问题是指在一个离散对数群中寻找指定的基值 g、模数 p 和给定结果
+y 时，解方程</p>
+<p><span class="math display">\[
+g^x=y \ mod \ p
+\]</span></p>
 <p>其中 x 为未知数，也是要求解的数。</p>
 <p>常用Pohlig-Hellman算法求解（n-1素因数分解需要光滑）</p>
 <p>可以sage直接调用<code>discrete_log()</code>函数</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><code class="hljs python">p = <span class="hljs-number">2050446265000552948792079248541986570794560388346670845037360320379574792744856498763181701382659864976718683844252858211123523214530581897113968018397826268834076569364339813627884756499465068203125112750486486807221544715872861263738186430034771887175398652172387692870928081940083735448965507812844169983643977</span><br>y = <span class="hljs-number">1210552586072154479867426776758107463169244511186991628141504400199024936339296845132507655589933479768044598418932176690108379140298480790405551573061005655909291462247675584868840035141893556748770266337895571889128422577613223452797329555381197215533551339146807187891070847348454214231505098834813871022509186</span><br><br>G=GF(p)<br>g=<span class="hljs-number">7</span><br>s=discrete_log(G(y),G(g))<br><br><span class="hljs-keyword">assert</span> <span class="hljs-built_in">pow</span>(<span class="hljs-number">7</span>,s,p)==cipher<br></code></pre></td></tr></table></figure>
-<h2 id="3勒让德符号-moectf_2024_ezlegendre"><a class="markdownIt-Anchor" href="#3勒让德符号-moectf_2024_ezlegendre"></a> 3.勒让德符号 moectf_2024_ezlegendre</h2>
+<h2 id="勒让德符号-moectf_2024_ezlegendre">3.勒让德符号
+moectf_2024_ezlegendre</h2>
 <p><a target="_blank" rel="noopener" href="https://baike.baidu.com/item/%E5%8B%92%E8%AE%A9%E5%BE%B7%E7%AC%A6%E5%8F%B7/18903549">勒让德符号_百度百科</a></p>
-<p>开始时经过欧拉判别法有：<code>((a+1)|p)=1</code> <code>(a|p)=-1</code></p>
-<p>又e为奇数，故其不改变勒让德符号。则如果int(bit)=1，那么<code>((a+1)|p)=1</code> 成立。(判断pow(x,(p-1)//2,p)的结果是-1，0，1之中的哪一个)</p>
+<p>开始时经过欧拉判别法有：<code>((a+1)|p)=1</code>
+<code>(a|p)=-1</code></p>
+<p>又e为奇数，故其不改变勒让德符号。则如果int(bit)=1，那么<code>((a+1)|p)=1</code>
+成立。(判断pow(x,(p-1)//2,p)的结果是-1，0，1之中的哪一个)</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">from</span> Crypto.Util.number <span class="hljs-keyword">import</span> *<br><br>p = <span class="hljs-number">303597842163255391032954159827039706827</span><br>a = <span class="hljs-number">34032839867482535877794289018590990371</span><br>ciphertext = [···]<br><br>msg=<span class="hljs-string">&#x27;&#x27;</span><br><span class="hljs-keyword">for</span> i <span class="hljs-keyword">in</span> <span class="hljs-built_in">range</span>(<span class="hljs-built_in">len</span>(ciphertext)):<br>    msg+=<span class="hljs-string">&#x27;1&#x27;</span> <span class="hljs-keyword">if</span>(<span class="hljs-built_in">pow</span>(ciphertext[i],(p-<span class="hljs-number">1</span>)//<span class="hljs-number">2</span>,p)==<span class="hljs-number">1</span>) <span class="hljs-keyword">else</span> <span class="hljs-string">&#x27;0&#x27;</span><br><span class="hljs-built_in">print</span>(long_to_bytes(<span class="hljs-built_in">int</span>(msg,<span class="hljs-number">2</span>)))<br></code></pre></td></tr></table></figure>
-<h1 id="三-古典密码学"><a class="markdownIt-Anchor" href="#三-古典密码学"></a> 三、古典密码学</h1>
-<h2 id="1凯撒加密"><a class="markdownIt-Anchor" href="#1凯撒加密"></a> 1.凯撒加密</h2>
-<h2 id="2维吉尼亚加密"><a class="markdownIt-Anchor" href="#2维吉尼亚加密"></a> 2.维吉尼亚加密</h2>
-<h2 id="3栅栏加密"><a class="markdownIt-Anchor" href="#3栅栏加密"></a> 3.栅栏加密</h2>
-<h1 id="四-现代密码学"><a class="markdownIt-Anchor" href="#四-现代密码学"></a> 四、现代密码学</h1>
-<h2 id="1rsa"><a class="markdownIt-Anchor" href="#1rsa"></a> 1.RSA</h2>
-<h2 id="2dsa"><a class="markdownIt-Anchor" href="#2dsa"></a> 2.DSA</h2>
-<h2 id="3aes"><a class="markdownIt-Anchor" href="#3aes"></a> 3.AES</h2>
-<h2 id="4des"><a class="markdownIt-Anchor" href="#4des"></a> 4.DES</h2>
-<h2 id="5ecc椭圆曲线"><a class="markdownIt-Anchor" href="#5ecc椭圆曲线"></a> 5.ECC椭圆曲线</h2>
-<h2 id="6格理论"><a class="markdownIt-Anchor" href="#6格理论"></a> 6.格理论</h2>
-<h2 id="7rabbit加密"><a class="markdownIt-Anchor" href="#7rabbit加密"></a> 7.Rabbit加密</h2>
+<h1 id="三古典密码学">三、古典密码学</h1>
+<h2 id="凯撒加密">1.凯撒加密</h2>
+<h2 id="维吉尼亚加密">2.维吉尼亚加密</h2>
+<h2 id="栅栏加密">3.栅栏加密</h2>
+<h1 id="四现代密码学">四、现代密码学</h1>
+<h2 id="rsa">1.RSA</h2>
+<h2 id="dsa">2.DSA</h2>
+<h2 id="aes">3.AES</h2>
+<h2 id="des">4.DES</h2>
+<h2 id="ecc椭圆曲线">5.ECC椭圆曲线</h2>
+<h2 id="格理论">6.格理论</h2>
+<h2 id="rabbit加密">7.Rabbit加密</h2>
 <p>Rabbit加密算法采用了一种称为“兔子循环”的特殊循环结构，实现对比特串的加密。具体实现如下：</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs textile">（1）将明文转化为比特串。根据明文长度，创建一个相同长度的比特串，将明文的每个字符映射为比特串的一个比特。<br>（2）初始化兔子循环。设定一个初始状态，用于记录兔子循环的当前位置。<br>（3）兔子循环。每次循环，将比特串的一个比特与加密密钥进行异或操作，然后根据兔子循环的当前状态，更新比特串的其他比特。<br>（4）输出加密后的比特串。完成兔子循环后，输出加密后的比特串。<br></code></pre></td></tr></table></figure>
-<p>密钥管理实现</p>
+<p> 密钥管理实现</p>
 <p>Rabbit加密技术的密钥管理主要包括加密密钥生成、初始向量生成和密钥分发。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><code class="hljs textile">（1）加密密钥生成：采用对称密钥生成算法，如AES，生成加密密钥。<br>（2）初始向量生成：根据加密密钥和当前时间，生成一个固定长度的初始向量。<br>（3）密钥分发：将加密密钥和初始向量分发给通信双方，确保双方拥有相同的加密密钥和初始向量。<br></code></pre></td></tr></table></figure>
-<h2 id="8md5"><a class="markdownIt-Anchor" href="#8md5"></a> 8.MD5</h2>
+<h2 id="md5">8.MD5</h2>
 <p>MD5算法是一种广泛使用的哈希函数，用于生成128位（32个十六进制数字）的消息摘要。它接受任意长度的输入，并输出固定长度的哈希值，通常用于验证数据完整性、数字签名、密码存储等领域。MD5算法以其简洁高效的设计和快速计算速度而闻名，但近年来由于其存在一些安全性弱点，逐渐被更安全的哈希算法所取代。</p>
 <p>MD5算法的实现方法通常包括以下几个步骤：</p>
-<ol>
-<li>
-<p><strong>填充消息</strong>：将输入消息填充到512位的倍数，同时记录消息的原始长度。</p>
-</li>
-<li>
-<p><strong>初始化寄存器</strong>：初始化四个32位寄存器A、B、C、D，赋予特定的常量初值。</p>
-</li>
-<li>
-<p><strong>处理数据块</strong>：将填充后的消息分为若干个512位的数据块，每个数据块进行四轮循环操作。</p>
-</li>
-<li>
-<p><strong>更新寄存器</strong>：根据四轮循环操作的结果，更新寄存器A、B、C、D的值。</p>
-</li>
-<li>
-<p><strong>生成哈希值</strong>**：将最终的寄存器值按照A、B、C、D的顺序连接起来，即得到128位的MD5哈希值。</p>
-</li>
+<ol type="1">
+<li><p><strong>填充消息</strong>：将输入消息填充到512位的倍数，同时记录消息的原始长度。</p></li>
+<li><p><strong>初始化寄存器</strong>：初始化四个32位寄存器A、B、C、D，赋予特定的常量初值。</p></li>
+<li><p><strong>处理数据块</strong>：将填充后的消息分为若干个512位的数据块，每个数据块进行四轮循环操作。</p></li>
+<li><p><strong>更新寄存器</strong>：根据四轮循环操作的结果，更新寄存器A、B、C、D的值。</p></li>
+<li><p><strong>生成哈希值</strong>**：将最终的寄存器值按照A、B、C、D的顺序连接起来，即得到128位的MD5哈希值。</p></li>
 </ol>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-keyword">import</span> hashlib<br><br><span class="hljs-keyword">def</span> <span class="hljs-title function_">calculate_md5</span>(<span class="hljs-params">message</span>):<br>    md5 = hashlib.md5()<br>    md5.update(message.encode(<span class="hljs-string">&#x27;utf-8&#x27;</span>))<br>    <span class="hljs-keyword">return</span> md5.hexdigest()<br><br>message = <span class="hljs-string">&quot;Hello, World!&quot;</span><br>md5_hash = calculate_md5(message)<br><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;MD5 Hash of the message:&quot;</span>, md5_hash)<br></code></pre></td></tr></table></figure>
-<h2 id="9windows用户密码的加密"><a class="markdownIt-Anchor" href="#9windows用户密码的加密"></a> 9.Windows用户密码的加密</h2>
+<h2 id="windows用户密码的加密">9.Windows用户密码的加密</h2>
 <p><a target="_blank" rel="noopener" href="https://blog.csdn.net/vanarrow/article/details/105667617">Windows用户密码的加密方法与破解_procdump官网-CSDN博客</a></p>
-<h3 id="lm"><a class="markdownIt-Anchor" href="#lm"></a> LM</h3>
-<p>LAN Manager（LM）哈希是Windows系统所用的第一种密码哈希算法，是一种较古老的Hash，在LAN Manager协议中使用，非常容易通过暴力破解获取明文凭据。它只有唯一一个版本且一直用到了NT LAN Manager（NTLM）哈希的出现，在Windows Vista/Windows 7/Windows Server 2008以及后面的系统中，LM哈希算法是默认关闭的，LM算法是在DES基础上实现的，不区分字母大小写。</p>
+<h3 id="lm">LM</h3>
+<p>LAN
+Manager（LM）哈希是Windows系统所用的第一种密码哈希算法，是一种较古老的Hash，在LAN
+Manager协议中使用，非常容易通过暴力破解获取明文凭据。它只有唯一一个版本且一直用到了NT
+LAN Manager（NTLM）哈希的出现，在Windows Vista/Windows
+7/Windows Server 2008以及后面的系统中，LM哈希算法是默认关闭的，LM算法是在DES基础上实现的，不区分字母大小写。</p>
 <p>生成原理</p>
-<ol>
-<li>
-<p>用户的密码转换为大写，密码转换为16进制字符串，不足14字节将会用0来再后面补全。</p>
-</li>
-<li>
-<p>密码的16进制字符串被分成两个7byte部分。每部分转换成比特流，并且长度位56bit，长度不足使用0在左边补齐长度</p>
-</li>
-<li>
-<p>再分7bit为一组,每组末尾加0，再组成一组</p>
-</li>
-<li>
-<p>上步骤得到的二组，分别作为key 为 <code>KGS!@#$%</code>进行DES加密。</p>
-</li>
-<li>
-<p>将加密后的两组拼接在一起，得到最终LM HASH值。</p>
-</li>
+<ol type="1">
+<li><p>用户的密码转换为大写，密码转换为16进制字符串，不足14字节将会用0来再后面补全。</p></li>
+<li><p>密码的16进制字符串被分成两个7byte部分。每部分转换成比特流，并且长度位56bit，长度不足使用0在左边补齐长度</p></li>
+<li><p>再分7bit为一组,每组末尾加0，再组成一组</p></li>
+<li><p>上步骤得到的二组，分别作为key
+为 <code>KGS!@#$%</code>进行DES加密。</p></li>
+<li><p>将加密后的两组拼接在一起，得到最终LM HASH值。</p></li>
 </ol>
-<h3 id="ntlm"><a class="markdownIt-Anchor" href="#ntlm"></a> NTLM</h3>
-<p>NT LAN Manager（NTLM）哈希是Windows系统认可的另一种算法，用于替代古老的LM-Hash，一般指Windows系统下Security Account Manager（SAM）中保存的用户密码hash，在Windows Vista/Windows 7/Windows Server 2008以及后面的系统中，NTLM哈希算法是默认启用的。</p>
+<h3 id="ntlm">NTLM</h3>
+<p>NT LAN
+Manager（NTLM）哈希是Windows系统认可的另一种算法，用于替代古老的LM-Hash，一般指Windows系统下Security
+Account Manager（SAM）中保存的用户密码hash，在Windows Vista/Windows
+7/Windows Server 2008以及后面的系统中，NTLM哈希算法是默认启用的。</p>
 <p>生成原理</p>
-<ol>
-<li>
-<p>先将用户密码转换为十六进制格式。</p>
-</li>
-<li>
-<p>将十六进制格式的密码进行Unicode编码。</p>
-</li>
-<li>
-<p>使用MD4摘要算法对Unicode编码数据进行Hash计算</p>
-</li>
+<ol type="1">
+<li><p>先将用户密码转换为十六进制格式。</p></li>
+<li><p>将十六进制格式的密码进行Unicode编码。</p></li>
+<li><p>使用MD4摘要算法对Unicode编码数据进行Hash计算</p></li>
 </ol>
 
                 
@@ -709,7 +708,7 @@
     <div class="footer-inner">
   
     <div class="footer-content">
-       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> 🚀🚀 <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> <img src="https://img.shields.io/badge/Frame-Hexo-blue?logo=Hexo&label=框架" srcset="/img/loading.gif" lazyload> <img src="https://img.shields.io/badge/Theme-Fluid-6513df?logo=fluid&label=主题" srcset="/img/loading.gif" lazyload> <img src="https://img.shields.io/badge/Source-Github-d021d6?style=plastic&logo=GitHub" srcset="/img/loading.gif" lazyload> 
+       <a href="https://hexo.io" target="_blank" rel="nofollow noopener"><span>Hexo</span></a> <i class="iconfont icon-love"></i> <a href="https://github.com/fluid-dev/hexo-theme-fluid" target="_blank" rel="nofollow noopener"><span>Fluid</span></a> <div style="font-size: 0.85rem"> 🚀🚀 <span id="timeDate">载入天数...</span> <span id="times">载入时分秒...</span> <script src="/js/duration.js"></script> </div> <a target="_blank" rel="noopener" href="https://nodejs.org/zh-cn"> <img src="\img\Base-node-green.svg" srcset="/img/loading.gif" lazyload> </a> <a target="_blank" rel="noopener" href="https://github.com/fluid-dev/hexo-theme-fluid"> <img src="\img\Theme-Fluid-orange.svg" srcset="/img/loading.gif" lazyload> </a> <a target="_blank" rel="noopener" href="https://github.com"> <img src="\img\Page-Github-8A2BE2.svg" srcset="/img/loading.gif" lazyload> </a> <a target="_blank" rel="noopener" href="https://hexo.io"> <img src="\img\Frame-Hexo-blue.svg" srcset="/img/loading.gif" lazyload> </a> 
     </div>
   
   
@@ -990,20 +989,5 @@
   
   <!--鼠标点击礼花特效-->
   <script async src="/js/fireworks.js"></script>
-<script type="text/x-mathjax-config">
-    MathJax.Hub.Config({
-        tex2jax: {
-            inlineMath: [ ["$","$"], ["\\(","\\)"] ],
-            skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code'],
-            processEscapes: true
-        }
-    });
-    MathJax.Hub.Queue(function() {
-        var all = MathJax.Hub.getAllJax();
-        for (var i = 0; i < all.length; ++i)
-            all[i].SourceElement().parentNode.className += ' has-jax';
-    });
-</script>
-<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
 <!-- hexo injector body_end start --><script src="/js/backgroundize.js"></script><!-- hexo injector body_end end --></body>
 </html>
