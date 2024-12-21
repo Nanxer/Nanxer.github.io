@@ -21,12 +21,12 @@
   <meta name="author" content="Nanxer">
   <meta name="keywords" content="">
   
-    <meta name="description" content="variable-precision SWAR 算法（汉明重量）强网杯_2024_21_steps 统计一个位数组中非0二进制位的数量。在数学上被称为“计算汉明重量（Hamming Weight)”，目前已知效率最好的通用算法为variable-precision SWAR 算法 网上常见32bits的variable-precision SWAR算法求汉明重量 123456789&#x2F;&#x2F;计算32位">
+    <meta name="description" content="variable-precision SWAR 算法（汉明重量）强网杯_2024_21_steps 统计一个位数组中非0二进制位的数量。在数学上被称为“计算汉明重量（Hamming Weight)”，目前已知效率最好的通用算法为variable-precision SWAR 算法 网上常见32bits的variable-precision SWAR算法求汉明重量 123456789&#x2F;&#x2F;计">
 <meta property="og:type" content="article">
 <meta property="og:title" content="汉明重量（qwb2024_21steps）">
 <meta property="og:url" content="https://nanxer.site/2024/12/07/Hanming%20Weight/index.html">
 <meta property="og:site_name" content="Nanxer&#39;s blog">
-<meta property="og:description" content="variable-precision SWAR 算法（汉明重量）强网杯_2024_21_steps 统计一个位数组中非0二进制位的数量。在数学上被称为“计算汉明重量（Hamming Weight)”，目前已知效率最好的通用算法为variable-precision SWAR 算法 网上常见32bits的variable-precision SWAR算法求汉明重量 123456789&#x2F;&#x2F;计算32位">
+<meta property="og:description" content="variable-precision SWAR 算法（汉明重量）强网杯_2024_21_steps 统计一个位数组中非0二进制位的数量。在数学上被称为“计算汉明重量（Hamming Weight)”，目前已知效率最好的通用算法为variable-precision SWAR 算法 网上常见32bits的variable-precision SWAR算法求汉明重量 123456789&#x2F;&#x2F;计">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://nanxer.site/img/qwb.png">
 <meta property="article:published_time" content="2024-12-07T00:44:31.000Z">
@@ -337,13 +337,15 @@
             
               <div class="markdown-body">
                 
-                <h2 id="variable-precision-swar-算法汉明重量强网杯_2024_21_steps"><a class="markdownIt-Anchor" href="#variable-precision-swar-算法汉明重量强网杯_2024_21_steps"></a> variable-precision SWAR 算法（汉明重量）强网杯_2024_21_steps</h2>
-<p><strong>统计一个位数组中非0二进制位的数量</strong>。在数学上被称为“计算汉明重量（Hamming Weight)”，目前已知效率最好的通用算法为variable-precision SWAR 算法</p>
+                <h2 id="variable-precision-swar-算法汉明重量强网杯_2024_21_steps">variable-precision
+SWAR 算法（汉明重量）强网杯_2024_21_steps</h2>
+<p><strong>统计一个位数组中非0二进制位的数量</strong>。在数学上被称为“计算汉明重量（Hamming
+Weight)”，目前已知效率最好的通用算法为variable-precision SWAR 算法</p>
 <p>网上常见32bits的variable-precision SWAR算法求汉明重量</p>
 <figure class="highlight c++"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><code class="hljs c++"><span class="hljs-comment">//计算32位二进制的汉明重量</span><br>   <span class="hljs-function"><span class="hljs-type">uint32_t</span> <span class="hljs-title">swar</span><span class="hljs-params">(<span class="hljs-type">uint32_t</span> i)</span></span><br><span class="hljs-function">   </span>&#123;<br>           i = (i &amp; <span class="hljs-number">0x55555555</span>) + ((i &gt;&gt; <span class="hljs-number">1</span>) &amp; <span class="hljs-number">0x55555555</span>);<br>           i = (i &amp; <span class="hljs-number">0x33333333</span>) + ((i &gt;&gt; <span class="hljs-number">2</span>) &amp; <span class="hljs-number">0x33333333</span>);<br>           i = (i &amp; <span class="hljs-number">0x0F0F0F0F</span>) + ((i &gt;&gt; <span class="hljs-number">4</span>) &amp; <span class="hljs-number">0x0F0F0F0F</span>);<br>           i = (i * (<span class="hljs-number">0x01010101</span>) &gt;&gt; <span class="hljs-number">24</span>);<br>           <span class="hljs-keyword">return</span> i;<br>   &#125;<br></code></pre></td></tr></table></figure>
 <p>其本质如图：</p>
-<p><img src="/2024/12/07/Hanming%20Weight/1.PNG" srcset="/img/loading.gif" lazyload alt></p>
-<p><img src="/2024/12/07/Hanming%20Weight/2.JPEG" srcset="/img/loading.gif" lazyload alt></p>
+<p><img src="/2024/12/07/Hanming%20Weight/1.PNG" srcset="/img/loading.gif" lazyload></p>
+<p><img src="/2024/12/07/Hanming%20Weight/2.JPEG" srcset="/img/loading.gif" lazyload></p>
 <p>第一次是计算数量，后面每一次位移都是在将之前的数量进行加和。</p>
 <p>那么对于本题的长度，可以有：</p>
 <figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><code class="hljs python">B = A &gt;&gt; <span class="hljs-number">1</span><br>   B = B &amp; <span class="hljs-number">0x55555555555555555555555555555555</span><br>   A = A &amp; <span class="hljs-number">0x55555555555555555555555555555555</span><br>   A =A + B<br>   B = A &gt;&gt; <span class="hljs-number">2</span><br>   B = B &amp; <span class="hljs-number">0x33333333333333333333333333333333</span><br>   A = A &amp; <span class="hljs-number">0x33333333333333333333333333333333</span><br>   A = A + B<br>   B = A &gt;&gt; <span class="hljs-number">4</span><br>   B = B &amp; <span class="hljs-number">0x0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f</span><br>   A = A &amp; <span class="hljs-number">0x0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f0f</span><br>   A = A + B<br>   B = A &gt;&gt; <span class="hljs-number">8</span><br>   B = B &amp; <span class="hljs-number">0x00ff00ff00ff00ff00ff00ff00ff00ff</span><br>   A = A &amp; <span class="hljs-number">0x00ff00ff00ff00ff00ff00ff00ff00ff</span><br>   A = A + B<br>   B = A &gt;&gt; <span class="hljs-number">16</span><br>   B = B &amp; <span class="hljs-number">0x0000ffff0000ffff0000ffff0000ffff</span><br>   A = A &amp; <span class="hljs-number">0x0000ffff0000ffff0000ffff0000ffff</span><br>   A = A + B<br>   B = A &gt;&gt; <span class="hljs-number">32</span><br>   B = B &amp; <span class="hljs-number">0x00000000ffffffff00000000ffffffff</span><br>   A = A &amp; <span class="hljs-number">0x00000000ffffffff00000000ffffffff</span><br>   A = A + B<br>   B = A &gt;&gt; <span class="hljs-number">64</span><br>   B = B &amp; <span class="hljs-number">0x0000000000000000ffffffffffffffff</span><br>   A = A &amp; <span class="hljs-number">0x0000000000000000ffffffffffffffff</span><br>   A = A + B<br></code></pre></td></tr></table></figure>
